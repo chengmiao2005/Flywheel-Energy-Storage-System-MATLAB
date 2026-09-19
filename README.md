@@ -1,10 +1,18 @@
 # Flywheel Energy Storage Modeling and Control
 
-MATLAB/Simulink models for a final-year project on urban rail transit braking energy recovery. This repository contains the motor–flywheel modeling and control workstream, developed through five incremental stages.
+MATLAB/Simulink models for a final-year project on urban rail transit braking energy recovery. The repository contains two related simulation workstreams: five stages of motor–flywheel modeling, and a separate synthetic rail DC-node dispatch study.
 
 **Technologies:** MATLAB · Simulink · Dynamic Modeling · Feedback Control · Energy Storage
 
-## Project Overview
+## Research study: schedule-informed rail storage dispatch
+
+**[Research overview and results](research/rail-dispatch/README.md)** · **[Working manuscript](research/rail-dispatch/MANUSCRIPT.md)** · **[中文说明](research/rail-dispatch/README_CN.md)**
+
+The study asks whether a frozen nominal-schedule rule saves additional source energy beyond a developed voltage-feedback controller using the same flywheel storage. It uses paired comparisons, explicit terminal restoration and energy-loss accounting. Across 100 independent synthetic scenarios, the mean increment is **0.0827 kWh (about 0.099%)**. The study also retains counterexamples and limits of the benefit.
+
+The research directory includes a runnable Python check of saved MATLAB results, selected historical MATLAB sources for inspection, and an **unpublished, non-peer-reviewed working manuscript**. The DC-node study uses an aggregate storage model; it is separate from the motor-level Simulink stages below. Its public Python check does not rerun the simulations.
+
+## Motor–flywheel project overview
 
 The models progress from ideal flywheel dynamics to electromechanical coupling, cascaded control, and operating-mode supervision. Numerical values are provisional test parameters; parameter selection and integration with the wider rail energy-recovery system remain in progress.
 
@@ -41,6 +49,6 @@ Each script builds its own model, simulates it and plots results. Scripts replac
 
 Original Stage 5 output supplied with the project, using temporary simulation parameters. It illustrates operating-mode behavior, rather than measured rail-system performance.
 
-## Engineering Scope
+## Motor–flywheel engineering scope
 
 This is an ongoing simulation study. It does not yet establish hardware performance, full train/DC-bus integration, optimized design parameters or experimentally verified recovery efficiency. Stage 4 uses proportional control with compensation; PI control with anti-windup is a possible future comparison.

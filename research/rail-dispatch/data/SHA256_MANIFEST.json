@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_archive": "FYP_ResultVerification_20260918.zip",
+  "scope": "Unchanged archived CSV bytes; gzip only changes storage encoding. Hashes establish file identity, not an external preregistration timestamp.",
+  "files": {
+    "data/HoldoutSummary.csv.gz": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/HoldoutSummary.csv",
+      "original_filename": "HoldoutSummary.csv",
+      "encoding": "gzip",
+      "original_bytes": 764369,
+      "uncompressed_sha256": "40c9fd2256628f39f3a4051b1bb69efcd5607a7877a020427635b8122f6860f0",
+      "stored_sha256": "3c6fea21c21fb7106886cfec1ee4df05d00894b661e1c441af1b1ac96841fd04"
+    },
+    "data/HoldoutOriginalMetrics.csv.gz": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/HoldoutOriginalMetrics.csv",
+      "original_filename": "HoldoutOriginalMetrics.csv",
+      "encoding": "gzip",
+      "original_bytes": 703528,
+      "uncompressed_sha256": "fd1641c5ddc01a5515a51a5163a16f4231c3e630dae9e75d8ecfcceaf0724f61",
+      "stored_sha256": "21c34b809056373ffe9e196e7fa936998687ce07e3e1e56ce7c4052fa9f9137c"
+    },
+    "data/HoldoutManifest.csv": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/HoldoutManifest.csv",
+      "original_filename": "HoldoutManifest.csv",
+      "encoding": "plain",
+      "original_bytes": 11051,
+      "uncompressed_sha256": "b54f5baa650117498238136fd41cd9a9cc4d15d6b0eff4cc63f5d0d279dafc9b",
+      "stored_sha256": "b54f5baa650117498238136fd41cd9a9cc4d15d6b0eff4cc63f5d0d279dafc9b"
+    },
+    "data/FrozenPolicies.csv": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/FrozenPolicies.csv",
+      "original_filename": "FrozenPolicies.csv",
+      "encoding": "plain",
+      "original_bytes": 251,
+      "uncompressed_sha256": "70ad7e5c2ca7f9203f33117ff0eda162645df624884432bf29ee1f26414c9f35",
+      "stored_sha256": "70ad7e5c2ca7f9203f33117ff0eda162645df624884432bf29ee1f26414c9f35"
+    },
+    "expected/HoldoutSceneEffects.csv": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/HoldoutSceneEffects.csv",
+      "original_filename": "HoldoutSceneEffects.csv",
+      "encoding": "plain",
+      "original_bytes": 17678,
+      "uncompressed_sha256": "de2aabe7854a2336afdb7becf6ce1fca8f5922281d79194a324dc899b8191a2b",
+      "stored_sha256": "de2aabe7854a2336afdb7becf6ce1fca8f5922281d79194a324dc899b8191a2b"
+    },
+    "expected/HoldoutPrimarySummary.csv": {
+      "source_member": "FYP_ResultVerification/evidence/holdout_verified/native_inputs/HoldoutPrimarySummary.csv",
+      "original_filename": "HoldoutPrimarySummary.csv",
+      "encoding": "plain",
+      "original_bytes": 754,
+      "uncompressed_sha256": "ba785395626eed78da8a36fe866b66249295f6b92c9eab67750bf609bdbb3aa3",
+      "stored_sha256": "ba785395626eed78da8a36fe866b66249295f6b92c9eab67750bf609bdbb3aa3"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "FYP_DCSchedule_v1.m",
+    "source_in_archived_verification_packet": "evidence/causal_stage/FYP_DCSchedule_v1.m",
+    "sha256": "fa6356c1feb4211eab3960cc852aae44b4a9dfdf0543bdb7ed8f48198451bb31",
+    "bytes": 42692
+  },
+  {
+    "file": "FYP_DCThreshold_v1.m",
+    "source_in_archived_verification_packet": "evidence/reserve_verified/FYP_DCThreshold_v1.m",
+    "sha256": "a677c8d075f60878cb87ed13e877ed8a786befb07beb0c43aedb9ef20bc72906",
+    "bytes": 44039
+  },
+  {
+    "file": "FYP_DCHoldout_v1.m",
+    "source_in_archived_verification_packet": "evidence/threshold_verified/FYP_DCHoldout_v1.m",
+    "sha256": "7f74e97875112638a8618dbe49ec2a5050743e643f2d8a9532cdc77d1c2ad219",
+    "bytes": 59953
+  }
+]

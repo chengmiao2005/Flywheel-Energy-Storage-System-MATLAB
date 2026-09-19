@@ -1,0 +1,72 @@
+{
+  "Pass": true,
+  "Scope": "Archived summary-record recalculation only",
+  "InputFilesHashVerified": 6,
+  "OriginalRecords": 1200,
+  "CompleteRecords": 1200,
+  "PairedSOCConditionsAtFineStep": 200,
+  "Primary": {
+    "InferentialN": 100,
+    "MeanSaving_kWh": 0.0827273423070973,
+    "SceneSD_kWh": 0.03800191917331932,
+    "SceneSE_kWh": 0.003800191917331932,
+    "DegreesOfFreedom": 99,
+    "T975Critical": 1.9842169515864174,
+    "Approx95Lower_kWh": 0.07518693708544559,
+    "Approx95Upper_kWh": 0.09026774752874901,
+    "CoarseMeanSaving_kWh": 0.08272698581166522,
+    "FineMinusCoarseMean_kWh": 3.564954320772751e-07,
+    "MaxAbsSceneMeanStepChange_kWh": 4.767985195996971e-06,
+    "MaxAbsSOCSpecificStepChange_kWh": 4.768869999338676e-06,
+    "MinSceneSaving_kWh": 0.018407928692354858,
+    "MaxSceneSaving_kWh": 0.18057116369129744,
+    "NegativeSceneCount": 0,
+    "NearZeroSceneCount": 0,
+    "PositiveSceneCount": 100,
+    "MeanReferenceSource_kWh": 83.6557741504921,
+    "MeanScheduleSource_kWh": 83.57304680818501,
+    "RatioOfMeanSavingToMeanReference_percent": 0.09889017601854404
+  },
+  "PrimaryEnergyDecomposition": {
+    "OriginalSourceSaving_kWh": 0.08367410256683463,
+    "ContinuationSourceSaving_kWh": -0.0009467602597414349,
+    "ChopperSaving_kWh": 0.08606778142869935,
+    "SourceResistanceSaving_kWh": 0.020312928428210437,
+    "ConversionSaving_kWh": -0.023653367382740903,
+    "ConversionOffset_percent": 22.234639545606058
+  },
+  "MaximumRecomputedBalanceResiduals": {
+    "OriginalSourceSplit_kWh": 2.4928237252197505e-10,
+    "OriginalStorage_kWh": 5.0963677722393186e-12,
+    "OriginalBus_kWh": 2.977857238573023e-09,
+    "TailSourceSplit_kWh": 1.0475013911825926e-10,
+    "TailStorage_kWh": 6.466049917719374e-12,
+    "CompleteSystem_kWh": 9.946865275889394e-09
+  },
+  "StepDiagnostics": {
+    "OriginalMaxEnergyChange_kWh": 5.348622295286987e-06,
+    "OriginalMaxVoltageChange_V": 1.867244498043874e-05,
+    "CompleteMaxEnergyChange_kWh": 5.370227000867089e-06,
+    "CompleteMaxVoltageChange_V": 2.2399717636290006e-09,
+    "PrimaryResolvedSignChanges": 0
+  },
+  "MaximumPrimaryDifferenceFromArchivedSummary": 7.105427611710886e-14,
+  "SecondaryMatchedThresholdMean_kWh": 0.08194235788477208,
+  "TestedEnvironment": {
+    "Python": "3.12.14",
+    "Platform": "Linux",
+    "NumPy": "2.3.5",
+    "pandas": "2.2.3",
+    "SciPy": "1.17.0"
+  },
+  "MATLABExecuted": false,
+  "CppExecuted": false,
+  "NewScenarios": 0,
+  "Limitations": [
+    "The approximate mean interval is conditional on the frozen synthetic generator, nominal efficiency, zero rotor loss and declared 194 s continuation.",
+    "Two SOCs and two integration steps are repetitions, not additional independent scenes.",
+    "This script does not rerun the train or DC model, decode scene MAT files, or audit saved C++ reference outputs.",
+    "Later seven-case diagnostics and field or hardware performance are outside this package.",
+    "Step comparisons are numerical diagnostics, not rigorous error bounds. Hashes do not prove external preregistration."
+  ]
+}

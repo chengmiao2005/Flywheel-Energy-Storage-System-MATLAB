@@ -1,0 +1,5 @@
+# Exact versions used for the archived-result verification on Python 3.12.14.
+# These pins document the tested environment, not the only compatible versions.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0

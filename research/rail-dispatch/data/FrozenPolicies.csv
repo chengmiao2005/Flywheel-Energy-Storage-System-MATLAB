@@ -1,0 +1,4 @@
+PolicyID,Controller,InheritedController,CoreControllerID,ChargeThreshold_V,DischargeThreshold_V
+1,VoltageReactiveSelected,VoltageReactive,0,820,710
+2,ScheduleSelected,SchedulePreview,2,780,710
+3,ScheduleAtReactiveSetting,SchedulePreview,2,820,710
