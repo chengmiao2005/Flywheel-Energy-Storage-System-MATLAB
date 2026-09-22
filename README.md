@@ -1,8 +1,16 @@
 # Flywheel Energy Storage Modeling and Control
 
-MATLAB/Simulink models for a final-year project on urban rail transit braking energy recovery. The repository contains two related simulation workstreams: five stages of motor–flywheel modeling, and a separate synthetic rail DC-node dispatch study.
+MATLAB/Simulink models for a final-year project on urban rail transit braking energy recovery. The repository contains five motor–flywheel modeling stages, an integrated train-load/DC-link/converter simulation, and a separate synthetic rail DC-node dispatch study.
 
 **Technologies:** MATLAB · Simulink · Dynamic Modeling · Feedback Control · Energy Storage
+
+## Integrated system update — 21 September 2026
+
+**[Integrated model, source and saved results](integrated-system/README.md)** · **[中文文件说明](integrated-system/docs/FILE_GUIDE_CN.md)** · **[Technical report](integrated-system/docs/THESIS_DRAFT_CN.md)**
+
+The new integrated system connects synthetic railway demand, a DC link, a nonideal bidirectional converter and the DC motor–flywheel plant. Saved native MATLAB results cover **11 cases and 322 checks**; the native Simulink combined-parameter case passed **67 checks**. An independent reanalysis verifies the complete shared trace and energy accounts. Four paired scenarios show source-energy reductions of **1.46% to 9.50%**, including a common restoration phase and a spinning-bypass baseline. These are model results, not measured railway savings or round-trip efficiency.
+
+The update includes the original runnable model, compressed native CSV evidence, verification scripts, laboratory-data analysis, a technical report and defense notes. Actual parameter identification and hardware validation remain outstanding. This integrated DC model does not implement PMSM/FOC or PSIM.
 
 ## Research study: schedule-informed rail storage dispatch
 
@@ -14,7 +22,7 @@ The research directory includes a runnable Python check of saved MATLAB results,
 
 ## Motor–flywheel project overview
 
-The models progress from ideal flywheel dynamics to electromechanical coupling, cascaded control, and operating-mode supervision. Numerical values are provisional test parameters; parameter selection and integration with the wider rail energy-recovery system remain in progress.
+The models progress from ideal flywheel dynamics to electromechanical coupling, cascaded control, and operating-mode supervision. Numerical values are provisional test parameters. The new integrated-system directory extends the original stages with a synthetic train load, DC link and bidirectional converter; actual parameter identification remains in progress.
 
 ## Simulation Stages
 
@@ -51,4 +59,4 @@ Original Stage 5 output supplied with the project, using temporary simulation pa
 
 ## Motor–flywheel engineering scope
 
-This is an ongoing simulation study. It does not yet establish hardware performance, full train/DC-bus integration, optimized design parameters or experimentally verified recovery efficiency. Stage 4 uses proportional control with compensation; PI control with anti-windup is a possible future comparison.
+This is an ongoing simulation study. The original Stage 4 uses proportional control with compensation. The integrated-system extension adds PI current control with anti-windup, a synthetic train/DC-bus load and a bidirectional converter model. Neither workstream establishes hardware performance, optimized physical design parameters or experimentally verified recovery efficiency.

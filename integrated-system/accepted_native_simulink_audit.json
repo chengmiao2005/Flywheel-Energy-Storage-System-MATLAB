@@ -1,0 +1,116 @@
+{
+  "accepted": true,
+  "execution": "Independent audit of user native MATLAB/Simulink R2024a results; no local Simulink execution",
+  "native_created": "2026-09-21 18:26:01",
+  "native_elapsed_s": 1313.7725269,
+  "source_sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+  "slx_sha256": "7c8f475980259647e12f76d5d1b305aa9a6e759ae95bd7b69a2a83ad621470b5",
+  "native_checks": {
+    "passed": 67,
+    "count": 67
+  },
+  "preceding_matlab_checks": {
+    "passed": 322,
+    "count": 322
+  },
+  "full_trace": {
+    "rows": 9001,
+    "common_columns": 48,
+    "max_error_per_column": {
+      "t_s": 0.0,
+      "i_A": 0.0,
+      "omega_rad_s": 0.0,
+      "Vdc_V": 0.0,
+      "Wsource_J": 0.0,
+      "Wline_J": 0.0,
+      "Wload_J": 0.0,
+      "Wchopper_J": 0.0,
+      "Wconverter_J": 0.0,
+      "Wcopper_J": 0.0,
+      "Wviscous_J": 0.0,
+      "Wcoulomb_J": 0.0,
+      "Wfess_J": 0.0,
+      "Wcharge_J": 0.0,
+      "Wreturn_J": 0.0,
+      "Wtraction_J": 0.0,
+      "Wregen_J": 0.0,
+      "Qcurrent_As": 0.0,
+      "Wchannel_J": 0.0,
+      "Wdiode_J": 0.0,
+      "Wtransition_J": 0.0,
+      "Woss_J": 0.0,
+      "Wgate_J": 0.0,
+      "Wterminal_J": 0.0,
+      "Wem_J": 0.0,
+      "Pload_W": 0.0,
+      "iref_A": 1.1400125288218987e-10,
+      "Preq_W": 3.8269831748039e-09,
+      "Ptarget_W": 3.8269831748039e-09,
+      "high_block": 0.0,
+      "low_block": 0.0,
+      "gate_blocked": 0.0,
+      "duty": 9.911460541189854e-10,
+      "integrator_V": 6.210143510543276e-12,
+      "cycle_mean_i_A": 0.0,
+      "rpm": 0.0,
+      "Erot_J": 0.0,
+      "Emag_J": 0.0,
+      "Ecap_J": 0.0,
+      "residual_J": 0.0,
+      "restore_active": 0.0,
+      "connected": 0.0,
+      "speed_integrator_A": 1.1897149931883177e-12,
+      "recovery_credit_J": 0.0,
+      "credited_J": 0.0,
+      "spent_J": 0.0,
+      "leaked_J": 0.0,
+      "initial_bus_V": 0.0
+    },
+    "within_tolerance": true
+  },
+  "energy_identities": {
+    "total_balance_J": 9.534138371236622e-06,
+    "converter_balance_J": 5.954689186182804e-09,
+    "motor_balance_J": 1.171818775347333e-08,
+    "credit_bookkeeping_J": 1.2946088645549025e-11
+  },
+  "MAT_CSV_max_difference": 5.093170329928398e-11,
+  "slx_wires_verified": 14,
+  "slx_solver": {
+    "StartTime": "0",
+    "StopTime": "90",
+    "FixedStep": "5.0000000000000002e-05",
+    "SolverName": "FixedStepDiscrete"
+  },
+  "model_workspace_present": true,
+  "peak_current_A": 20.0190307158781,
+  "logged_min_rpm": 2849.81383668296,
+  "final_rpm": 3000.00000000045,
+  "matched_terminal_pairs": [
+    {
+      "pair": "nominal",
+      "reduction_J": 444.12798573659893,
+      "reduction_percent": 2.381847033061317,
+      "final_stored_energy_difference_J": 2.139913801713078e-10
+    },
+    {
+      "pair": "friction_high",
+      "reduction_J": 471.72483228180135,
+      "reduction_percent": 1.5736651267338027,
+      "final_stored_energy_difference_J": 2.4209401594532665e-08
+    },
+    {
+      "pair": "combined_corner",
+      "reduction_J": 509.32629598920175,
+      "reduction_percent": 1.464811874335637,
+      "final_stored_energy_difference_J": 3.1303090930467903e-07
+    },
+    {
+      "pair": "pulse_combined",
+      "reduction_J": 3329.4589920998988,
+      "reduction_percent": 9.496176421484583,
+      "final_stored_energy_difference_J": 5.108948234466837e-07
+    }
+  ],
+  "scope": "Custom PWM cycle map; provisional DC motor and synthetic train load; no hardware/real-rail validation"
+}

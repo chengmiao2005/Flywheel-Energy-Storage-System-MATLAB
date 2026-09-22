@@ -1,0 +1,32 @@
+{
+  "prepared_on": "2026-09-21",
+  "python_version": "3.12.14",
+  "scope": "Reanalysis of saved native records plus a newly executed C++ reference and analytical tests. No new native MATLAB run or hardware experiment.",
+  "saved_result_reanalysis": {
+    "status": "PASS",
+    "cases": 11,
+    "source_manifest_files": 57,
+    "metrics": "verified_metrics.json"
+  },
+  "cpp_reference_rerun": {
+    "status": "PASS",
+    "count": 56,
+    "passed": 56,
+    "native_simulink_executed_by_this_check": false
+  },
+  "laboratory_analyzer_tests": {
+    "status": "PASS",
+    "count": 9,
+    "fixture_type": "Analytical synthetic data only"
+  },
+  "code_sha256": {
+    "verify_saved_results.py": "9b77515578a7d5425c6e171f79b2530726effd109522fc7010ccd524bbe9d3d8",
+    "validate_reference.py": "13cf64a0d78186f596c0104167aeada9d6b5f2f95d23d2d6512db2f2a9576e1a",
+    "lab_analysis.py": "4b33e3547845316e005c7e8ac6d058cb39040096192218990f932d7eb11a3425",
+    "tests/test_lab_analysis.py": "c64cdb34d5fd3397fe520097198124493623e61c352a876cea689f1c766b2b8c"
+  },
+  "limitations": [
+    "MATLAB/Simulink execution evidence comes from preserved earlier native logs.",
+    "No measured hardware data are included."
+  ]
+}

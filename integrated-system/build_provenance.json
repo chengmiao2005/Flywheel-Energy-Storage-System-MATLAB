@@ -1,0 +1,13 @@
+{
+  "accepted_matlab_sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+  "physical_cycle_map_sha256": "37edd53da4dee8d4e0b4578561a3f3fc0c84615c1285ef4f379a53b5ad9062d0",
+  "physical_cycle_map_verbatim_preserved": true,
+  "outer_supervisor_verbatim_preserved": true,
+  "controller_sees_actual_plant_parameters": false,
+  "execution": "User native MATLAB/Simulink R2024a run accepted; local environment has no MATLAB/Simulink",
+  "native_acceptance": {
+    "passed": 67,
+    "count": 67,
+    "source_sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee"
+  }
+}

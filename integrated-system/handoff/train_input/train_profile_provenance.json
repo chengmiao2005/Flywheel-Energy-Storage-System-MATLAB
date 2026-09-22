@@ -1,0 +1,33 @@
+{
+  "scope": "Synthetic inherited nominal two-train model; Python reconstruction checked against archived MATLAB aggregates. Scaled lab replay, not railway-rated hardware.",
+  "source_sha256": {
+    "ScheduleSettings.mat": "47f5dd2c2c6884797165e7f1fd9406fd029dee02132d0ddff006a93e2f9bc74f",
+    "SourceSnapshot.m": "fa6356c1feb4211eab3960cc852aae44b4a9dfdf0543bdb7ed8f48198451bb31",
+    "NodeChecks.csv": "16c4b40512ce69e144973c7da20035d4a35f9f4574999acf5234fae3b439d14a"
+  },
+  "original_rows": 205465,
+  "replay_rows": 602,
+  "rail_bin_s": 0.5,
+  "alpha_power": 0.0001,
+  "beta_time": 0.06853440026167665,
+  "energy_ratio": 6.853440026167665e-06,
+  "actual": {
+    "duration_s": 291.8242506483811,
+    "gross_demand_kWh": 112.18701134759007,
+    "offered_regen_kWh": 56.541692434872274,
+    "direct_exchange_kWh": 34.330657792812154
+  },
+  "archive_differences": {
+    "duration_s": 0.0,
+    "gross_demand_kWh": 7.105427357601002e-14,
+    "offered_regen_kWh": 2.842170943040401e-14,
+    "direct_exchange_kWh": 4.263256414560601e-14
+  },
+  "positive_energy_resample_error_J": 9.632110595703125e-05,
+  "negative_energy_resample_error_J": 6.42538070678711e-05,
+  "lab_duration_s": 20.000000000000004,
+  "lab_peak_demand_W": 320.00000000029206,
+  "lab_peak_regen_W": 280.0000000002563,
+  "lab_demand_J": 1920.901859078254,
+  "lab_regen_J": 547.9991778181285
+}

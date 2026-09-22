@@ -1,0 +1,16 @@
+{
+  "load_succeeded": true,
+  "new_system_file": 0,
+  "new_system_builtin": 5,
+  "new_system_location": "built-in (D:\\Program Files\\MATLAB\\R2024a\\toolbox\\simulink\\core\\api\\new_system)",
+  "load_system_file": 2,
+  "load_system_builtin": 0,
+  "load_system_location": "D:\\Program Files\\MATLAB\\R2024a\\toolbox\\simulink\\slx\\m\\load_system.m",
+  "license_test": 1,
+  "simulink_version": {
+    "Name": "Simulink",
+    "Version": "24.1",
+    "Release": "(R2024a)",
+    "Date": "19-Nov-2023"
+  }
+}

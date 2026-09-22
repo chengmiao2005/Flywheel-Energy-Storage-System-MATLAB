@@ -1,0 +1,28 @@
+{
+  "scope": "Handoff and analysis additions; accepted simulation bytes preserved.",
+  "allocation_docx_pages": 1,
+  "methods_docx_pages": 4,
+  "presentation_slides": 9,
+  "all_document_pages_and_slides_visually_reviewed": true,
+  "workbook": {
+    "sheets": 3,
+    "parameter_rows": 48,
+    "formulas": 28,
+    "formula_edit_restore_checks_passed": true,
+    "real_measurement_records": 0
+  },
+  "lab_analyzer": {
+    "matlab_static_lint": "PASS - MISS_HIT 0.9.44",
+    "native_matlab_executed": false,
+    "real_hardware_data_used": false
+  },
+  "native_simulation_audit": {
+    "passed": true,
+    "matlab_checks": 322,
+    "simulink_checks": 67,
+    "trajectory_rows": 9001,
+    "common_columns": 48
+  },
+  "presentation_final_sha256": "ffcbad6f00e2f30c90865c8ccf14b1fdbc088fe77e599bf342805f86d7d42c7b",
+  "remaining": "Confirm requirements with advisor; source actual parameters; collect and compare hardware data; integrate final thesis and presentation."
+}

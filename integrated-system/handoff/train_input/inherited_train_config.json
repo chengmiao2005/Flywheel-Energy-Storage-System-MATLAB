@@ -1,0 +1,52 @@
+{
+  "Train": {
+    "mass": 203000,
+    "g": 9.81,
+    "resA": 1.2414,
+    "resB": 0.0144,
+    "resC": 0.000221,
+    "etaT": 0.9,
+    "etaR": 0.9,
+    "Paux": 200000,
+    "PbusMax": 3000000,
+    "vRegenMin": 1.3888888888888888
+  },
+  "Route": [
+    [
+      850.0,
+      70.0,
+      1.0,
+      1.0,
+      18.0
+    ],
+    [
+      1000.0,
+      80.0,
+      1.0,
+      1.0,
+      20.0
+    ],
+    [
+      900.0,
+      75.0,
+      0.9,
+      1.0,
+      22.0
+    ]
+  ],
+  "train_dt_s": 0.0025,
+  "offset_s": 35.0,
+  "rail_bin_s": 0.5,
+  "power_ratio": 0.0001,
+  "time_ratio": 0.06853440026167665,
+  "expected_duration_s": 291.8242506483811,
+  "expected_gross_demand_kWh": 112.18701134759,
+  "expected_offered_regen_kWh": 56.5416924348723,
+  "expected_direct_exchange_kWh": 34.3306577928122,
+  "scope": "Synthetic inherited nominal two-train model; Python reconstruction checked against archived MATLAB aggregates. Scaled lab replay, not railway-rated hardware.",
+  "source_sha256": {
+    "ScheduleSettings.mat": "47f5dd2c2c6884797165e7f1fd9406fd029dee02132d0ddff006a93e2f9bc74f",
+    "SourceSnapshot.m": "fa6356c1feb4211eab3960cc852aae44b4a9dfdf0543bdb7ed8f48198451bb31",
+    "NodeChecks.csv": "16c4b40512ce69e144973c7da20035d4a35f9f4574999acf5234fae3b439d14a"
+  }
+}

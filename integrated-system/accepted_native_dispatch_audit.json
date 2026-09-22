@@ -1,0 +1,193 @@
+{
+  "native_MATLAB": "24.1.0.2537033 (R2024a)",
+  "created": "2026-09-21 17:54:38",
+  "passed": 322,
+  "count": 322,
+  "all_passed": true,
+  "source_exact_match": true,
+  "source_sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+  "records": [
+    {
+      "case": "01_nominal_bypass",
+      "independent_residual_J": 3.4217136999359354e-06,
+      "reference_difference": {
+        "i_A": 5.3290705182007514e-14,
+        "rpm": 5.4569682106375694e-12,
+        "Vdc_V": 5.684341886080802e-14,
+        "Wsource_J": 5.093170329928398e-11,
+        "recovery_credit_J": 0.0,
+        "speed_integrator_A": 4.884981308350689e-15
+      }
+    },
+    {
+      "case": "02_nominal_dispatch",
+      "independent_residual_J": 3.616971298470162e-06,
+      "reference_difference": {
+        "i_A": 1.9054446909194667e-09,
+        "rpm": 5.3660187404602766e-11,
+        "Vdc_V": 8.621725555713056e-11,
+        "Wsource_J": 4.225512384437025e-09,
+        "recovery_credit_J": 2.05631067728973e-11,
+        "speed_integrator_A": 2.2642965649619377e-11
+      }
+    },
+    {
+      "case": "03_friction_bypass",
+      "independent_residual_J": 8.807965059531853e-06,
+      "reference_difference": {
+        "i_A": 7.51612105887034e-11,
+        "rpm": 5.4569682106375694e-12,
+        "Vdc_V": 5.4214410738495644e-12,
+        "Wsource_J": 1.0368239600211382e-10,
+        "recovery_credit_J": 0.0,
+        "speed_integrator_A": 4.884981308350689e-15
+      }
+    },
+    {
+      "case": "04_friction_dispatch",
+      "independent_residual_J": 8.496339432895184e-06,
+      "reference_difference": {
+        "i_A": 1.4452865571001894e-09,
+        "rpm": 1.9554136088117957e-11,
+        "Vdc_V": 7.577938276881468e-11,
+        "Wsource_J": 9.262294042855501e-09,
+        "recovery_credit_J": 2.665956344571896e-11,
+        "speed_integrator_A": 7.083222897108499e-12
+      }
+    },
+    {
+      "case": "05_combined_bypass",
+      "independent_residual_J": 9.525858331471682e-06,
+      "reference_difference": {
+        "i_A": 1.0209131318106301e-09,
+        "rpm": 9.549694368615746e-12,
+        "Vdc_V": 4.884981308350689e-11,
+        "Wsource_J": 1.0841176845133305e-09,
+        "recovery_credit_J": 0.0,
+        "speed_integrator_A": 1.596056620201125e-12
+      }
+    },
+    {
+      "case": "06_combined_dispatch",
+      "independent_residual_J": 9.534138371236622e-06,
+      "reference_difference": {
+        "i_A": 1.5157315402802851e-09,
+        "rpm": 2.2737367544323206e-11,
+        "Vdc_V": 5.912426104259794e-11,
+        "Wsource_J": 3.103195922449231e-09,
+        "recovery_credit_J": 6.0254023992456496e-12,
+        "speed_integrator_A": 1.0186518295540736e-11
+      }
+    },
+    {
+      "case": "07_pulse_bypass",
+      "independent_residual_J": 9.516959835309535e-06,
+      "reference_difference": {
+        "i_A": 5.291411753205466e-11,
+        "rpm": 5.4569682106375694e-12,
+        "Vdc_V": 3.723243935382925e-12,
+        "Wsource_J": 8.003553375601768e-11,
+        "recovery_credit_J": 0.0,
+        "speed_integrator_A": 5.329070518200751e-15
+      }
+    },
+    {
+      "case": "08_pulse_dispatch",
+      "independent_residual_J": 9.656083420850337e-06,
+      "reference_difference": {
+        "i_A": 1.9359749359182388e-09,
+        "rpm": 5.5933924159035087e-11,
+        "Vdc_V": 1.0064127309306059e-10,
+        "Wsource_J": 8.15634848549962e-09,
+        "recovery_credit_J": 2.9899638320785016e-11,
+        "speed_integrator_A": 2.632294382465261e-11
+      }
+    },
+    {
+      "case": "09_no_regeneration",
+      "independent_residual_J": 1.9522221919032745e-06,
+      "reference_difference": {
+        "i_A": 5.082197683525802e-20,
+        "rpm": 5.4569682106375694e-12,
+        "Vdc_V": 4.973799150320701e-14,
+        "Wsource_J": 5.002220859751105e-12,
+        "recovery_credit_J": 5.082197683525802e-20,
+        "speed_integrator_A": 0.0
+      }
+    },
+    {
+      "case": "10_high_source",
+      "independent_residual_J": 1.0319313332729507e-06,
+      "reference_difference": {
+        "i_A": 3.7545966335983394e-11,
+        "rpm": 6.821210263296962e-12,
+        "Vdc_V": 1.8403056856186595e-12,
+        "Wsource_J": 1.432454155292362e-11,
+        "recovery_credit_J": 9.956124813470524e-11,
+        "speed_integrator_A": 0.0
+      }
+    },
+    {
+      "case": "11_credit_depletion",
+      "independent_residual_J": 1.9786775737884454e-06,
+      "reference_difference": {
+        "i_A": 3.323405439059233e-11,
+        "rpm": 5.4569682106375694e-12,
+        "Vdc_V": 5.044853423896711e-13,
+        "Wsource_J": 1.318767317570746e-11,
+        "recovery_credit_J": 1.212452360732641e-11,
+        "speed_integrator_A": 0.0
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "pair": "nominal",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 76.65880376827045,
+      "restore_extra_source_coupled_J": -367.4691819683103,
+      "matched_source_reduction_J": 444.12798573658074,
+      "matched_reduction_percent": 2.381847033061223,
+      "bypass_total_source_J": 18646.368955346967,
+      "coupled_total_source_J": 18202.240969610386,
+      "final_store_mismatch_J": 3.4410574389909243e-10,
+      "paired_energy_identity_error_J": 1.6905611188722247e-07
+    },
+    {
+      "pair": "friction_high",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 64.86021904128438,
+      "restore_extra_source_coupled_J": -406.8646132405738,
+      "matched_source_reduction_J": 471.72483228185956,
+      "matched_reduction_percent": 1.5736651267339956,
+      "bypass_total_source_J": 29976.18897871132,
+      "coupled_total_source_J": 29504.464146429462,
+      "final_store_mismatch_J": 2.4881877891402837e-08,
+      "paired_energy_identity_error_J": 3.116527622637477e-07
+    },
+    {
+      "pair": "combined_corner",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 58.75645692837543,
+      "restore_extra_source_coupled_J": -450.5698390608195,
+      "matched_source_reduction_J": 509.3262959891945,
+      "matched_reduction_percent": 1.4648118743356169,
+      "bypass_total_source_J": 34770.76510048129,
+      "coupled_total_source_J": 34261.43880449209,
+      "final_store_mismatch_J": 3.171650327926656e-07,
+      "paired_energy_identity_error_J": 8.205902513047647e-09
+    },
+    {
+      "pair": "pulse_combined",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 273.7871205776719,
+      "restore_extra_source_coupled_J": -3055.6718715222305,
+      "matched_source_reduction_J": 3329.4589920999024,
+      "matched_reduction_percent": 9.496176421484579,
+      "bypass_total_source_J": 35061.04819795874,
+      "coupled_total_source_J": 31731.58920585884,
+      "final_store_mismatch_J": 5.205787068085499e-07,
+      "paired_energy_identity_error_J": 1.3902592632675237e-07
+    }
+  ]
+}

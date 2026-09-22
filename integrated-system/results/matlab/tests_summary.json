@@ -1,0 +1,2860 @@
+{
+  "execution": "Native MATLAB energy-dispatch run",
+  "build": "2026-09-21 energy dispatch v1",
+  "MATLABVersion": "24.1.0.2537033 (R2024a)",
+  "created": "2026-09-21 17:54:38",
+  "controller": {
+    "R": 0.8,
+    "L": 0.02,
+    "Ke": 0.05,
+    "Kt": 0.05,
+    "J": 0.51,
+    "b": 0.001,
+    "Tc": 0.05,
+    "Ron": 0.02,
+    "Rd": 0.01,
+    "Vf": 0.7,
+    "td": 1E-6,
+    "ton": 5E-8,
+    "toff": 5E-8,
+    "Ceq": 6E-10,
+    "Qg": 3E-8,
+    "Vg": 10,
+    "blend": 0.5,
+    "Vs": 60,
+    "Rs": 0.3,
+    "C": 0.1,
+    "fsw": 20000,
+    "outer": 0.01,
+    "Imax": 20,
+    "nmin": 2850,
+    "nmax": 3150,
+    "soft": 20,
+    "hyst": 5,
+    "Vcharge": 61,
+    "Vdischarge": 59.5,
+    "Kg": 80,
+    "chop_on": 68,
+    "chop_band": 2,
+    "Rchop": 6,
+    "Kp": 25.132741228718348,
+    "Ki": 1030.4423903774521,
+    "restore_gain": 4,
+    "restore_rpm": 3000,
+    "credit_decay": 0.02,
+    "credit_margin": 0.9,
+    "credit_reserve": 5,
+    "credit_time": 0.2,
+    "loss_fraction": 0.25,
+    "speed_Kp": 10.18,
+    "speed_Ki": 2.55
+  },
+  "passed": 322,
+  "count": 322,
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "01_nominal_bypass.max_balance_J",
+      "value": 3.4219629014842212E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.ledger_split_error_J",
+      "value": 2.2737367544323206E-13,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.device_split_error_J",
+      "value": 1.9771562165260548E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.independent_energy_balance_J",
+      "value": 3.4217209758935496E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.converter_energy_identity_J",
+      "value": 2.2212958583622822E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.motor_energy_identity_J",
+      "value": 6.4616559880548152E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.target_rpm_error",
+      "value": 8.4583007264882326E-11,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.target_mean_current_error_A",
+      "value": 4.5395358583277812E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.final_second_store_drift_J",
+      "value": 6.0124037304376541E-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.speed_integral_learns_friction_A",
+      "value": 4.65274517475626E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.max_balance_J",
+      "value": 3.617451511672698E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.ledger_split_error_J",
+      "value": 1.4348700005939463E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.device_split_error_J",
+      "value": 2.0059189864696236E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.independent_energy_balance_J",
+      "value": 3.6170367820886895E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.converter_energy_identity_J",
+      "value": 1.9352938807060127E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.motor_energy_identity_J",
+      "value": 7.04865454892456E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.target_rpm_error",
+      "value": 7.23048287909478E-11,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.target_mean_current_error_A",
+      "value": 4.5395358583277812E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.final_second_store_drift_J",
+      "value": 3.9939862972460105E-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.speed_integral_learns_friction_A",
+      "value": 4.6684146098650865E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.credit_ledger_J",
+      "value": 1.7096546400807711E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.withdrawal_above_earned_credit_J",
+      "value": 9.442922648043982E-6,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "02_nominal_dispatch.restoration_does_not_earn_credit_J",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.max_balance_J",
+      "value": 8.8079577835742384E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.ledger_split_error_J",
+      "value": 1.1368683772161603E-13,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.device_split_error_J",
+      "value": 6.7069549913867377E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.independent_energy_balance_J",
+      "value": 8.8079577835742384E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.converter_energy_identity_J",
+      "value": 1.70103930940968E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.motor_energy_identity_J",
+      "value": 1.5857930080187543E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.target_rpm_error",
+      "value": 4.6306922740768641E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.target_mean_current_error_A",
+      "value": 1.2493645229483263E-8,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.final_second_store_drift_J",
+      "value": 2.373864688820504E-8,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.speed_integral_learns_friction_A",
+      "value": 8.0129898272218725E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.max_balance_J",
+      "value": 8.4963030531071126E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.ledger_split_error_J",
+      "value": 8.44266878630151E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.device_split_error_J",
+      "value": 6.1919536165078171E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.independent_energy_balance_J",
+      "value": 8.4963030531071126E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.converter_energy_identity_J",
+      "value": 1.2362704637780553E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.motor_energy_identity_J",
+      "value": 3.3521650122381175E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.target_rpm_error",
+      "value": 3.2487150747328997E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.target_mean_current_error_A",
+      "value": 1.2493645229483263E-8,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.final_second_store_drift_J",
+      "value": 2.274581362371464E-8,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.speed_integral_learns_friction_A",
+      "value": 9.158882097182186E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.credit_ledger_J",
+      "value": 3.2004621175474313E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.withdrawal_above_earned_credit_J",
+      "value": 9.37781734070633E-6,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "04_friction_dispatch.restoration_does_not_earn_credit_J",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.max_balance_J",
+      "value": 9.52582195168361E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.ledger_split_error_J",
+      "value": 1.1368683772161603E-13,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.device_split_error_J",
+      "value": 3.2014213502407074E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.independent_energy_balance_J",
+      "value": 9.52582195168361E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.converter_energy_identity_J",
+      "value": 3.9711949284537695E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.motor_energy_identity_J",
+      "value": 8.0318282025260146E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.target_rpm_error",
+      "value": 1.4280431059887633E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.target_mean_current_error_A",
+      "value": 3.5231012773806469E-8,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.final_second_store_drift_J",
+      "value": 6.2419008365566249E-7,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.speed_integral_learns_friction_A",
+      "value": 1.9599812439707875E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.max_balance_J",
+      "value": 9.53402923187241E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.ledger_split_error_J",
+      "value": 1.4354384347825544E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.device_split_error_J",
+      "value": 1.7473666957812384E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.independent_energy_balance_J",
+      "value": 9.53402923187241E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.converter_energy_identity_J",
+      "value": 5.8968225857825018E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.motor_energy_identity_J",
+      "value": 1.17762557483303E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.target_rpm_error",
+      "value": 4.4656189857050776E-10,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.target_mean_current_error_A",
+      "value": 2.1588592247212546E-8,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.final_second_store_drift_J",
+      "value": 3.4236733675641057E-7,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.speed_integral_learns_friction_A",
+      "value": 2.1234318747787029E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.credit_ledger_J",
+      "value": 1.2891021583527618E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.withdrawal_above_earned_credit_J",
+      "value": 1.4345430695760778E-5,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "06_combined_dispatch.restoration_does_not_earn_credit_J",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.max_balance_J",
+      "value": 9.5168652478605509E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.ledger_split_error_J",
+      "value": 2.2737367544323206E-13,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.device_split_error_J",
+      "value": 1.1738165994756855E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.independent_energy_balance_J",
+      "value": 9.5168652478605509E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.converter_energy_identity_J",
+      "value": 5.32759258931037E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.motor_energy_identity_J",
+      "value": 1.0372907532918418E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.input_energy_J",
+      "value": 1.4897523215040565E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.target_rpm_error",
+      "value": 1.4257238944992423E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.target_mean_current_error_A",
+      "value": 3.2957276019374149E-8,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.final_second_store_drift_J",
+      "value": 6.24759290730026E-7,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "07_pulse_bypass.speed_integral_learns_friction_A",
+      "value": 1.9642585336043794E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.max_balance_J",
+      "value": 9.65589060797356E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.ledger_split_error_J",
+      "value": 2.1401547201094218E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.device_split_error_J",
+      "value": 8.6754425865365192E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.independent_energy_balance_J",
+      "value": 9.6558869699947536E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.converter_energy_identity_J",
+      "value": 4.0291183722729329E-9,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.motor_energy_identity_J",
+      "value": 1.9845953658226279E-8,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.input_energy_J",
+      "value": 1.4897523215040565E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.target_rpm_error",
+      "value": 7.6661308412440121E-9,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.target_mean_current_error_A",
+      "value": 3.398698211753981E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.final_second_store_drift_J",
+      "value": 3.378110193352768E-9,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.speed_integral_learns_friction_A",
+      "value": 1.1625992168973198E-8,
+      "limit": 1E-5,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.credit_ledger_J",
+      "value": 4.638422979041934E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.withdrawal_above_earned_credit_J",
+      "value": 4.2597018456609939E-6,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "08_pulse_dispatch.restoration_does_not_earn_credit_J",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.max_balance_J",
+      "value": 1.9521307876857463E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.ledger_split_error_J",
+      "value": 3.6193270602780103E-14,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.device_split_error_J",
+      "value": 1.4852008511923032E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.independent_energy_balance_J",
+      "value": 1.9521307876857463E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.converter_energy_identity_J",
+      "value": 9.1038288019262836E-15,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.motor_energy_identity_J",
+      "value": 3.120550295174237E-17,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.input_energy_J",
+      "value": 2.5561348593328148E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.credit_ledger_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.withdrawal_above_earned_credit_J",
+      "value": 3.5585836720039756E-5,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "09_no_regeneration.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.max_balance_J",
+      "value": 1.0320377441530582E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.ledger_split_error_J",
+      "value": 9.0665253082988784E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.device_split_error_J",
+      "value": 1.6013856907193258E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.independent_energy_balance_J",
+      "value": 1.0320377441530582E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.converter_energy_identity_J",
+      "value": 1.0302869668521453E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.motor_energy_identity_J",
+      "value": 1.0245028999766977E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.input_energy_J",
+      "value": 8.6117779574124143E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.credit_ledger_J",
+      "value": 9.36228872205902E-11,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.withdrawal_above_earned_credit_J",
+      "value": 6.6539765467159169E-6,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "10_high_source.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.max_balance_J",
+      "value": 1.9785788936133031E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.high_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.low_direction_error_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.ledger_split_error_J",
+      "value": 5.8548721426632255E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.device_split_error_J",
+      "value": 1.5143442055887135E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.midpoint_defect",
+      "value": 4.9737991503207013E-13,
+      "limit": 5E-13,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.current_reference_excess_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.current_peak_excess_A",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.chopper_voltage_excess_V",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.finite_data",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.complete_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.independent_energy_balance_J",
+      "value": 1.9785788936133031E-6,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.converter_energy_identity_J",
+      "value": 1.8416379532482097E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.motor_energy_identity_J",
+      "value": 2.0072213082283129E-12,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.nonreversible_source_energy",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.input_energy_J",
+      "value": 1.723492459859699E-9,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.initial_bus_measurement_V",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.credit_ledger_J",
+      "value": 1.2318190911742022E-10,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.withdrawal_above_earned_credit_J",
+      "value": 6.3888867791463533E-7,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.credit_above_regeneration_J",
+      "value": 0,
+      "limit": 1E-7,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.no_initial_energy_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.no_empty_credit_discharge_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "11_credit_depletion.actual_resistive_fraction_excess",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "nominal.same_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "nominal.same_load_J",
+      "value": 0,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "nominal.terminal_store_J",
+      "value": 3.4410574389909243E-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal.energy_identity_J",
+      "value": 1.6905611188722247E-7,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "nominal.valid_common_terminal",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal.positive_matched_saving",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high.same_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "friction_high.same_load_J",
+      "value": 0,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "friction_high.terminal_store_J",
+      "value": 2.4881877891402837E-8,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high.energy_identity_J",
+      "value": 3.1165276226374772E-7,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "friction_high.valid_common_terminal",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high.positive_matched_saving",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.same_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.same_load_J",
+      "value": 0,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.terminal_store_J",
+      "value": 3.1716503279266561E-7,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.energy_identity_J",
+      "value": 8.2059025130476471E-9,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.valid_common_terminal",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.positive_matched_saving",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.same_horizon_s",
+      "value": 0,
+      "limit": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.same_load_J",
+      "value": 0,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.terminal_store_J",
+      "value": 5.205787068085499E-7,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.energy_identity_J",
+      "value": 1.3902592632675237E-7,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.valid_common_terminal",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "pulse_combined.positive_matched_saving",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_i_A",
+      "value": 4.6185277824406512E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_rpm",
+      "value": 5.0022208597511053E-12,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_Vdc_V",
+      "value": 4.9737991503207013E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_Wsource_J",
+      "value": 4.9112713895738125E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_Erot_J",
+      "value": 4.7293724492192268E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_Emag_J",
+      "value": 4.4408920985006262E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_Ecap_J",
+      "value": 4.8316906031686813E-13,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "01_nominal_bypass.accepted_native_speed_integrator_A",
+      "value": 3.5527136788005009E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_i_A",
+      "value": 4.9737991503207013E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_rpm",
+      "value": 5.0022208597511053E-12,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_Vdc_V",
+      "value": 4.9737991503207013E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_Wsource_J",
+      "value": 5.0931703299283981E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_Erot_J",
+      "value": 4.7293724492192268E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_Emag_J",
+      "value": 4.8849813083506888E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_Ecap_J",
+      "value": 5.1159076974727213E-13,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "03_friction_bypass.accepted_native_speed_integrator_A",
+      "value": 4.8849813083506888E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_i_A",
+      "value": 4.7961634663806763E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_rpm",
+      "value": 5.0022208597511053E-12,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_Vdc_V",
+      "value": 4.9737991503207013E-14,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_Wsource_J",
+      "value": 4.7293724492192268E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_Erot_J",
+      "value": 5.0931703299283981E-11,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_Emag_J",
+      "value": 4.4408920985006262E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_Ecap_J",
+      "value": 4.9737991503207013E-13,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "05_combined_bypass.accepted_native_speed_integrator_A",
+      "value": 4.4408920985006262E-15,
+      "limit": 1E-6,
+      "passed": true
+    },
+    {
+      "name": "nominal.improved_over_accepted_legacy",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high.improved_over_accepted_legacy",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_corner.improved_over_accepted_legacy",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "no_braking.no_fess_command_A",
+      "value": 0,
+      "limit": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "no_braking.no_credit_earned_J",
+      "value": 0,
+      "limit": 1E-12,
+      "passed": true
+    },
+    {
+      "name": "no_braking.cycle_mean_current_A",
+      "value": 1.3772585228089406E-5,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "depletion.recovery_and_discharge_exercised",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "depletion.cutoff_exercised",
+      "value": 0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "depletion.stops_current_after_cutoff_A",
+      "value": 8.354428260304303E-7,
+      "limit": 0.001,
+      "passed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "pair": "nominal",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 76.658803768270445,
+      "restore_extra_source_coupled_J": -367.46918196831029,
+      "matched_source_reduction_J": 444.12798573658074,
+      "matched_reduction_percent": 2.3818470330612231,
+      "bypass_total_source_J": 18646.368955346967,
+      "coupled_total_source_J": 18202.240969610386,
+      "final_store_mismatch_J": 3.4410574389909243E-10,
+      "paired_energy_identity_error_J": 1.6905611188722247E-7
+    },
+    {
+      "pair": "friction_high",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 64.860219041284381,
+      "restore_extra_source_coupled_J": -406.86461324057382,
+      "matched_source_reduction_J": 471.72483228185956,
+      "matched_reduction_percent": 1.5736651267339956,
+      "bypass_total_source_J": 29976.188978711321,
+      "coupled_total_source_J": 29504.464146429462,
+      "final_store_mismatch_J": 2.4881877891402837E-8,
+      "paired_energy_identity_error_J": 3.1165276226374772E-7
+    },
+    {
+      "pair": "combined_corner",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 58.756456928375428,
+      "restore_extra_source_coupled_J": -450.5698390608195,
+      "matched_source_reduction_J": 509.32629598919448,
+      "matched_reduction_percent": 1.4648118743356169,
+      "bypass_total_source_J": 34770.765100481287,
+      "coupled_total_source_J": 34261.438804492092,
+      "final_store_mismatch_J": 3.1716503279266561E-7,
+      "paired_energy_identity_error_J": 8.2059025130476471E-9
+    },
+    {
+      "pair": "pulse_combined",
+      "valid_common_terminal": true,
+      "task_raw_source_difference_J": 273.78712057767189,
+      "restore_extra_source_coupled_J": -3055.6718715222305,
+      "matched_source_reduction_J": 3329.4589920999024,
+      "matched_reduction_percent": 9.496176421484579,
+      "bypass_total_source_J": 35061.048197958742,
+      "coupled_total_source_J": 31731.58920585884,
+      "final_store_mismatch_J": 5.205787068085499E-7,
+      "paired_energy_identity_error_J": 1.3902592632675237E-7
+    }
+  ],
+  "legacy_comparison": [
+    {
+      "pair": "nominal",
+      "accepted_native_legacy_saving_J": 130.4166842873492,
+      "new_saving_J": 444.12798573658074,
+      "source_reduction_vs_legacy_J": 313.71130144923154
+    },
+    {
+      "pair": "friction_high",
+      "accepted_native_legacy_saving_J": 196.27687499427338,
+      "new_saving_J": 471.72483228185956,
+      "source_reduction_vs_legacy_J": 275.44795728758618
+    },
+    {
+      "pair": "combined_corner",
+      "accepted_native_legacy_saving_J": -1765.1716457634684,
+      "new_saving_J": 509.32629598919448,
+      "source_reduction_vs_legacy_J": 2274.4979417526629
+    }
+  ],
+  "summaries": [
+    {
+      "case_name": "01_nominal_bypass",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 3.4219629014842212E-6,
+      "max_current_A": 20.048596765213791,
+      "max_reference_A": 20,
+      "Vmin": 56.594473478034772,
+      "Vmax": 68.708798939396189,
+      "nmin": 2866.2582127291153,
+      "nmax": 3001.6220943944572,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 0,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 2.2737367544323206E-13,
+      "device_split_error_J": 1.9771562165260548E-9,
+      "task_source_J": 1773.5828924848606,
+      "restore_source_J": 16872.786062862106,
+      "total_source_J": 18646.368955346967,
+      "total_losses_J": 17277.724558896378,
+      "task_chopper_J": 349.38761400168386,
+      "task_charge_J": 0,
+      "task_return_J": 0,
+      "load_J": 1372.9026812515126,
+      "channel_J": 144.149551460761,
+      "diode_J": 21.231425347811967,
+      "transition_J": 38.252416239801875,
+      "oss_J": 1.4914078043400447,
+      "gate_J": 0.83988480001529731,
+      "final_rpm": 3000.0000000000846,
+      "final_i_A": 7.2837233074606882,
+      "final_V": 59.196484124393884,
+      "target_rpm_error": 8.4583007264882326E-11,
+      "target_mean_current_error_A": 4.5395358583277812E-9,
+      "final_second_store_drift_J": 6.0124037304376541E-10,
+      "plant_R": 0.8,
+      "plant_L": 0.02,
+      "plant_J": 0.51,
+      "plant_b": 0.001,
+      "plant_Tc": 0.05,
+      "plant_Ron": 0.02,
+      "plant_Rd": 0.01,
+      "plant_Vf": 0.7,
+      "plant_Vs": 60,
+      "plant_Rs": 0.3,
+      "plant_C": 0.1,
+      "plant_deadtime_s": 1E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": -4.65274517475626E-9,
+      "recovery_credit_J": 0,
+      "credited_J": 0,
+      "spent_J": 0,
+      "leaked_J": 0,
+      "initial_bus_V": 60,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "02_nominal_dispatch",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 3.617451511672698E-6,
+      "max_current_A": 20.046794344935478,
+      "max_reference_A": 20,
+      "Vmin": 56.594469790825556,
+      "Vmax": 67.263705809088933,
+      "nmin": 2875.264749755605,
+      "nmax": 3001.6212430544306,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 7480,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 1.4348700005939463E-10,
+      "device_split_error_J": 2.0059189864696236E-9,
+      "task_source_J": 1696.9240887165902,
+      "restore_source_J": 16505.316880893795,
+      "total_source_J": 18202.240969610386,
+      "total_losses_J": 16833.596572990955,
+      "task_chopper_J": 0,
+      "task_charge_J": 373.9025083662994,
+      "task_return_J": 89.983385758727607,
+      "load_J": 1372.9026812515126,
+      "channel_J": 142.3446555692486,
+      "diode_J": 21.61641124217779,
+      "transition_J": 39.315514047742809,
+      "oss_J": 1.6345991519378484,
+      "gate_J": 1.0797750000074342,
+      "final_rpm": 3000.0000000000723,
+      "final_i_A": 7.28372330691905,
+      "final_V": 59.196484124404883,
+      "target_rpm_error": 7.23048287909478E-11,
+      "target_mean_current_error_A": 4.5395358583277812E-9,
+      "final_second_store_drift_J": 3.9939862972460105E-10,
+      "plant_R": 0.8,
+      "plant_L": 0.02,
+      "plant_J": 0.51,
+      "plant_b": 0.001,
+      "plant_Tc": 0.05,
+      "plant_Ron": 0.02,
+      "plant_Rd": 0.01,
+      "plant_Vf": 0.7,
+      "plant_Vs": 60,
+      "plant_Rs": 0.3,
+      "plant_C": 0.1,
+      "plant_deadtime_s": 1E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": -4.6684146098650865E-9,
+      "recovery_credit_J": 111.33758324068107,
+      "credited_J": 233.73145733402174,
+      "spent_J": 112.17514593815405,
+      "leaked_J": 10.218728155171302,
+      "initial_bus_V": 60,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "03_friction_bypass",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 8.8079577835742384E-6,
+      "max_current_A": 20.04730987483331,
+      "max_reference_A": 20,
+      "Vmin": 56.594436105652576,
+      "Vmax": 68.708798939396189,
+      "nmin": 2801.3215442087303,
+      "nmax": 3000.1862756939113,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 0,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 1.1368683772161603E-13,
+      "device_split_error_J": 6.7069549913867377E-10,
+      "task_source_J": 1773.5828924848606,
+      "restore_source_J": 28202.60608622646,
+      "total_source_J": 29976.188978711321,
+      "total_losses_J": 28610.300729202736,
+      "task_chopper_J": 349.38761400168386,
+      "task_charge_J": 0,
+      "task_return_J": 0,
+      "load_J": 1372.9026812515126,
+      "channel_J": 281.21653311735719,
+      "diode_J": 33.013419300903436,
+      "transition_J": 56.387765052141653,
+      "oss_J": 1.4534211398950592,
+      "gate_J": 0.83988600001529734,
+      "final_rpm": 3000.0000000046307,
+      "final_i_A": 10.925390279725365,
+      "final_V": 58.61602775004318,
+      "target_rpm_error": 4.6306922740768641E-9,
+      "target_mean_current_error_A": 1.2493645229483263E-8,
+      "final_second_store_drift_J": 2.373864688820504E-8,
+      "plant_R": 0.8,
+      "plant_L": 0.02,
+      "plant_J": 0.51,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.02,
+      "plant_Rd": 0.01,
+      "plant_Vf": 0.7,
+      "plant_Vs": 60,
+      "plant_Rs": 0.3,
+      "plant_C": 0.1,
+      "plant_deadtime_s": 1E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926455768028,
+      "recovery_credit_J": 0,
+      "credited_J": 0,
+      "spent_J": 0,
+      "leaked_J": 0,
+      "initial_bus_V": 60,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "04_friction_dispatch",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 8.4963030531071126E-6,
+      "max_current_A": 20.047279484520224,
+      "max_reference_A": 20,
+      "Vmin": 56.594423858961193,
+      "Vmax": 67.263391500113,
+      "nmin": 2811.137182235952,
+      "nmax": 3000.1845335685712,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 6914,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 8.44266878630151E-11,
+      "device_split_error_J": 6.1919536165078171E-10,
+      "task_source_J": 1708.7226734435762,
+      "restore_source_J": 27795.741472985887,
+      "total_source_J": 29504.464146429462,
+      "total_losses_J": 28138.575896633422,
+      "task_chopper_J": 0,
+      "task_charge_J": 373.82723124124209,
+      "task_return_J": 78.466716653559487,
+      "load_J": 1372.9026812515126,
+      "channel_J": 278.51552752562048,
+      "diode_J": 33.350484902752306,
+      "transition_J": 57.399157129142147,
+      "oss_J": 1.586076306443654,
+      "gate_J": 1.0797720000074347,
+      "final_rpm": 3000.0000000032487,
+      "final_i_A": 10.925390281290552,
+      "final_V": 58.616027749812631,
+      "target_rpm_error": 3.2487150747328997E-9,
+      "target_mean_current_error_A": 1.2493645229483263E-8,
+      "final_second_store_drift_J": 2.274581362371464E-8,
+      "plant_R": 0.8,
+      "plant_L": 0.02,
+      "plant_J": 0.51,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.02,
+      "plant_Rd": 0.01,
+      "plant_Vf": 0.7,
+      "plant_Vs": 60,
+      "plant_Rs": 0.3,
+      "plant_C": 0.1,
+      "plant_deadtime_s": 1E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926444309106,
+      "recovery_credit_J": 121.67422840215178,
+      "credited_J": 232.10853408913857,
+      "spent_J": 99.041531873432149,
+      "leaked_J": 11.392773813523142,
+      "initial_bus_V": 60,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "05_combined_bypass",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 9.52582195168361E-6,
+      "max_current_A": 20.019181652962676,
+      "max_reference_A": 20,
+      "Vmin": 50.527696778125353,
+      "Vmax": 68.709144747461863,
+      "nmin": 2843.1361443080132,
+      "nmax": 3000.5263561314828,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 0,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 1.1368683772161603E-13,
+      "device_split_error_J": 3.2014213502407074E-10,
+      "task_source_J": 1787.3602726940449,
+      "restore_source_J": 32983.404827787243,
+      "total_source_J": 34770.765100481287,
+      "total_losses_J": 33407.910747306632,
+      "task_chopper_J": 337.16184893057869,
+      "task_charge_J": 0,
+      "task_return_J": 0,
+      "load_J": 1372.9026812515126,
+      "channel_J": 406.35234057405353,
+      "diode_J": 79.911078085927727,
+      "transition_J": 51.794462571467754,
+      "oss_J": 1.2389928568850541,
+      "gate_J": 0.839910600015298,
+      "final_rpm": 3000.0000000142804,
+      "final_i_A": 10.926692612690225,
+      "final_V": 54.560959683508621,
+      "target_rpm_error": 1.4280431059887633E-8,
+      "target_mean_current_error_A": 3.5231012773806469E-8,
+      "final_second_store_drift_J": 6.2419008365566249E-7,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926339899802,
+      "recovery_credit_J": 0,
+      "credited_J": 0,
+      "spent_J": 0,
+      "leaked_J": 0,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "06_combined_dispatch",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 9.53402923187241E-6,
+      "max_current_A": 20.019030715878088,
+      "max_reference_A": 20,
+      "Vmin": 50.5277064417879,
+      "Vmax": 67.057005557240316,
+      "nmin": 2849.7998256212163,
+      "nmax": 3000.5274694621376,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 10714,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 1.4354384347825544E-10,
+      "device_split_error_J": 1.7473666957812384E-10,
+      "task_source_J": 1728.6038157656694,
+      "restore_source_J": 32532.834988726423,
+      "total_source_J": 34261.438804492092,
+      "total_losses_J": 32898.584451638708,
+      "task_chopper_J": 0,
+      "task_charge_J": 375.6987164425575,
+      "task_return_J": 77.590303467596272,
+      "load_J": 1372.9026812515126,
+      "channel_J": 403.19593839330366,
+      "diode_J": 80.704358414322513,
+      "transition_J": 52.857555339446044,
+      "oss_J": 1.3714800014339952,
+      "gate_J": 1.0797402000074396,
+      "final_rpm": 3000.0000000004466,
+      "final_i_A": 10.926692626094578,
+      "final_V": 54.560959679091233,
+      "target_rpm_error": 4.4656189857050776E-10,
+      "target_mean_current_error_A": 2.1588592247212546E-8,
+      "final_second_store_drift_J": 3.4236733675641057E-7,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926323554739,
+      "recovery_credit_J": 104.83993580765139,
+      "credited_J": 219.10252376265404,
+      "spent_J": 105.14486055473583,
+      "leaked_J": 9.11772740025471,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "07_pulse_bypass",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 9.5168652478605509E-6,
+      "max_current_A": 20.019018409059989,
+      "max_reference_A": 20,
+      "Vmin": 50.527708229288081,
+      "Vmax": 69.007959010902752,
+      "nmin": 2843.1336990022614,
+      "nmax": 3000.527675406423,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 0,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 2.2737367544323206E-13,
+      "device_split_error_J": 1.1738165994756855E-10,
+      "task_source_J": 2041.1219966811977,
+      "restore_source_J": 33019.926201277543,
+      "total_source_J": 35061.048197958742,
+      "total_losses_J": 35571.096526028596,
+      "task_chopper_J": 2473.0191418944105,
+      "task_charge_J": 0,
+      "task_return_J": 0,
+      "load_J": -500.00000000148975,
+      "channel_J": 406.35533124926627,
+      "diode_J": 79.909190931061417,
+      "transition_J": 51.786685822367716,
+      "oss_J": 1.238742787781455,
+      "gate_J": 0.83988720001529737,
+      "final_rpm": 3000.0000000142572,
+      "final_i_A": 10.926692612815424,
+      "final_V": 54.560959683513644,
+      "target_rpm_error": 1.4257238944992423E-8,
+      "target_mean_current_error_A": 3.2957276019374149E-8,
+      "final_second_store_drift_J": 6.24759290730026E-7,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926339472073,
+      "recovery_credit_J": 0,
+      "credited_J": 0,
+      "spent_J": 0,
+      "leaked_J": 0,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "08_pulse_dispatch",
+      "task_s": 20,
+      "restore_s": 70,
+      "max_balance_J": 9.65589060797356E-6,
+      "max_current_A": 20.01881195682153,
+      "max_reference_A": 20,
+      "Vmin": 50.527739668429675,
+      "Vmax": 68.0963144750028,
+      "nmin": 2886.2418465714695,
+      "nmax": 3000.5313005269459,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 7201,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 2.1401547201094218E-10,
+      "device_split_error_J": 8.6754425865365192E-10,
+      "task_source_J": 1767.3348761035259,
+      "restore_source_J": 29964.254329755313,
+      "total_source_J": 31731.58920585884,
+      "total_losses_J": 32241.637534578622,
+      "task_chopper_J": 140.27016123926265,
+      "task_charge_J": 2344.6848147610003,
+      "task_return_J": 269.59787178469219,
+      "load_J": -500.00000000148975,
+      "channel_J": 388.78145880639994,
+      "diode_J": 82.712559140187238,
+      "transition_J": 56.466021391592506,
+      "oss_J": 1.5811046097110468,
+      "gate_J": 1.0795692000074664,
+      "final_rpm": 2999.9999999923339,
+      "final_i_A": 10.926692644442042,
+      "final_V": 54.560959672761328,
+      "target_rpm_error": 7.6661308412440121E-9,
+      "target_mean_current_error_A": 3.398698211753981E-9,
+      "final_second_store_drift_J": 3.378110193352768E-9,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 3.6415926419638005,
+      "recovery_credit_J": 635.40220763958087,
+      "credited_J": 1192.0933436395799,
+      "spent_J": 394.40401974896264,
+      "leaked_J": 162.28711625107988,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "09_no_regeneration",
+      "task_s": 20,
+      "restore_s": 0,
+      "max_balance_J": 1.9521307876857463E-6,
+      "max_current_A": 0.020447500284228828,
+      "max_reference_A": 0,
+      "Vmin": 54.350407056941442,
+      "Vmax": 57,
+      "nmin": 2843.1491018365286,
+      "nmax": 3000,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 0,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 3.6193270602780103E-14,
+      "device_split_error_J": 1.4852008511923032E-12,
+      "task_source_J": 1978.2330109044753,
+      "restore_source_J": 0,
+      "total_source_J": 1978.2330109044753,
+      "total_losses_J": 3324.4918492559223,
+      "task_chopper_J": 0,
+      "task_charge_J": 1.796702187232261,
+      "task_return_J": 1.5087085401597011,
+      "load_J": 1920.9018590756968,
+      "channel_J": 6.3677209145807857E-5,
+      "diode_J": 0.022878151702458851,
+      "transition_J": 0.022414195253207182,
+      "oss_J": 0,
+      "gate_J": 0.23999999999850979,
+      "final_rpm": 2843.1491018365286,
+      "final_i_A": -3.7513559442231559E-5,
+      "final_V": 56.84155130902036,
+      "target_rpm_error": 156.85089816347136,
+      "target_mean_current_error_A": 10.924777960795609,
+      "final_second_store_drift_J": 155.68732818846092,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 0,
+      "recovery_credit_J": -3.5585836720039756E-5,
+      "credited_J": 0,
+      "spent_J": 3.5585836720039756E-5,
+      "leaked_J": 0,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "10_high_source",
+      "task_s": 20,
+      "restore_s": 0,
+      "max_balance_J": 1.0320377441530582E-6,
+      "max_current_A": 10.870011556510716,
+      "max_reference_A": 10.847973906212138,
+      "Vmin": 62.032725540244407,
+      "Vmax": 67.286761659917929,
+      "nmin": 2879.033388208511,
+      "nmax": 3000,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 5516,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 9.0665253082988784E-12,
+      "device_split_error_J": 1.6013856907193258E-12,
+      "task_source_J": 1735.8604097971793,
+      "restore_source_J": 0,
+      "total_source_J": 1735.8604097971793,
+      "total_losses_J": 2352.0441247270937,
+      "task_chopper_J": 0,
+      "task_charge_J": 415.56340045970131,
+      "task_return_J": 69.8093600938741,
+      "load_J": 1372.9026812515126,
+      "channel_J": 3.1191812724770323,
+      "diode_J": 0.74100257656063984,
+      "transition_J": 1.6000037049976688,
+      "oss_J": 0.15634988232254518,
+      "gate_J": 0.23993519999851093,
+      "final_rpm": 2879.033388208511,
+      "final_i_A": -1.1206097275465177E-5,
+      "final_V": 62.94861739252714,
+      "target_rpm_error": 120.96661179148896,
+      "target_mean_current_error_A": 7.2831850985997653,
+      "final_second_store_drift_J": 125.8055409285833,
+      "plant_R": 0.8,
+      "plant_L": 0.02,
+      "plant_J": 0.51,
+      "plant_b": 0.001,
+      "plant_Tc": 0.05,
+      "plant_Ron": 0.02,
+      "plant_Rd": 0.01,
+      "plant_Vf": 0.7,
+      "plant_Vs": 63,
+      "plant_Rs": 0.2,
+      "plant_C": 0.12,
+      "plant_deadtime_s": 1E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 0,
+      "recovery_credit_J": 163.16826091278085,
+      "credited_J": 259.25623362781573,
+      "spent_J": 78.317251385652838,
+      "leaked_J": 17.770721329474096,
+      "initial_bus_V": 63,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    },
+    {
+      "case_name": "11_credit_depletion",
+      "task_s": 20,
+      "restore_s": 0,
+      "max_balance_J": 1.9785788936133031E-6,
+      "max_current_A": 5.6036191930453692,
+      "max_reference_A": 5.5778416164233517,
+      "Vmin": 54.523903171362811,
+      "Vmax": 65.409265590234043,
+      "nmin": 2843.6788817382826,
+      "nmax": 3000,
+      "high_direction_error_A": 0,
+      "low_direction_error_A": 0,
+      "blocked_reference_A": 0,
+      "block_entry_i_A": 0,
+      "block_end_i_A": 0,
+      "zero_events": 5611,
+      "max_midpoint_iterations": 5,
+      "midpoint_defect": 4.9737991503207013E-13,
+      "ledger_split_error_J": 5.8548721426632255E-12,
+      "device_split_error_J": 1.5143442055887135E-12,
+      "task_source_J": 5554.2728698202973,
+      "restore_source_J": 0,
+      "total_source_J": 5554.2728698202973,
+      "total_losses_J": 3541.0202283630529,
+      "task_chopper_J": 0,
+      "task_charge_J": 80.619675389443,
+      "task_return_J": 35.011016248357983,
+      "load_J": 5279.9999999982765,
+      "channel_J": 0.87192606244866855,
+      "diode_J": 0.48196485193028621,
+      "transition_J": 0.42455892917210564,
+      "oss_J": 0.047136141659615445,
+      "gate_J": 0.23989979999851155,
+      "final_rpm": 2843.6788817382826,
+      "final_i_A": -3.8744084716629823E-5,
+      "final_V": 54.52390374580542,
+      "target_rpm_error": 156.3211182617174,
+      "target_mean_current_error_A": 10.924777960764937,
+      "final_second_store_drift_J": 155.74117610935568,
+      "plant_R": 1,
+      "plant_L": 0.014,
+      "plant_J": 0.65,
+      "plant_b": 0.0015,
+      "plant_Tc": 0.075,
+      "plant_Ron": 0.03,
+      "plant_Rd": 0.015,
+      "plant_Vf": 0.8,
+      "plant_Vs": 57,
+      "plant_Rs": 0.45,
+      "plant_C": 0.08,
+      "plant_deadtime_s": 2E-6,
+      "controller_R": 0.8,
+      "controller_b": 0.001,
+      "controller_deadtime_s": 1E-6,
+      "controller_Kp": 25.132741228718348,
+      "controller_Ki": 1030.4423903774521,
+      "speed_Kp": 10.18,
+      "speed_Ki": 2.55,
+      "speed_pi_enabled": true,
+      "speed_integrator_A": 0,
+      "recovery_credit_J": 3.604175279307325,
+      "credited_J": 51.980264139419482,
+      "spent_J": 46.007233268841631,
+      "leaked_J": 2.3688555911473421,
+      "initial_bus_V": 57,
+      "credit_decay_per_s": 0.02,
+      "credit_margin": 0.9,
+      "credit_reserve_J": 5,
+      "credit_time_s": 0.2,
+      "loss_fraction": 0.25
+    }
+  ],
+  "elapsed_s": 428.978282,
+  "caveats": [
+    "All controller parameters fixed; supply reference is the initial measured bus voltage",
+    "Credit is conservative estimated work, not actual physical stored energy",
+    "Common-terminal savings include 70 s restoration and a spinning bypass baseline",
+    "Selected provisional parameters and synthetic loads; noiseless measurements; no hardware validation"
+  ]
+}

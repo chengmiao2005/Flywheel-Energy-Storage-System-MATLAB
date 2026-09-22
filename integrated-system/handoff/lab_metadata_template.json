@@ -1,0 +1,15 @@
+{
+  "input_type": "real measurement pending",
+  "test_id": "",
+  "date": "",
+  "sensor_models_and_calibration": "",
+  "inertia_source": "",
+  "sampling_and_time_alignment": "",
+  "boundary_description": "Positive branch current flows from the DC bus into the entire FESS branch.",
+  "complete_cycle": false,
+  "boundary_complete": false,
+  "calibration_confirmed": false,
+  "other_stored_energy_change_J": null,
+  "terminal_energy_tolerance_J": null,
+  "endpoint_current_tolerance_A": null
+}

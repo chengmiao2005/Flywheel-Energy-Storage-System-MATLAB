@@ -1,0 +1,44 @@
+function checks=check_simulink(data,times,controller,plant,c)
+checks=struct('name',{},'value',{},'limit',{},'passed',{});
+checks=add(checks,'finite_logged_values',double(~all(isfinite(data(:)))),0);
+checks=add(checks,'complete_100Hz_log',abs(size(data,1)-(round((c.task+c.restore)/.01)+1)),0);
+checks=add(checks,'zero_start_time_s',abs(times(1)),1e-12);
+checks=add(checks,'full_horizon_s',abs(times(end)-c.task-c.restore),1e-9);
+checks=add(checks,'record_and_simulink_time_s',max(abs(data(:,1)-times)),1e-9);
+checks=add(checks,'logging_interval_s',max(abs(diff(times)-.01)),1e-9);
+fixture=native_simulink_fixture();idx=round(fixture(:,1)/.01)+1;names=column_names();
+if max(idx)<=size(data,1)
+ for j=1:numel(names)
+  limit=1e-6;if j==1,limit=1e-9;end
+  checks=add(checks,['accepted_native.' names{j}],max(abs(data(idx,j)-fixture(:,j))),limit);
+ end
+else,checks=add(checks,'accepted_native.missing_trace',1,0);end
+stores=.5*plant.J*data(:,3).^2+.5*plant.L*data(:,2).^2+.5*plant.C*data(:,4).^2;
+loss=data(:,6)+sum(data(:,8:12),2);
+checks=add(checks,'independent_energy_balance_J',max(abs(stores-stores(1)-data(:,5)+data(:,7)+loss)),1e-4);
+checks=add(checks,'all_cycle_energy_balance_J',max(data(:,50)),1e-4);
+checks=add(checks,'all_cycle_peak_current_excess_A',max(0,max(data(:,49))-20.1),0);
+checks=add(checks,'all_cycle_midpoint_defect',max(data(:,51)),5e-13);
+checks=add(checks,'converter_energy_identity_J',max(abs(data(:,13)-data(:,24)-data(:,9))),1e-7);
+checks=add(checks,'motor_energy_identity_J',max(abs(data(:,24)-data(:,10)-data(:,25)-data(:,38)+data(1,38))),1e-7);
+checks=add(checks,'credit_is_separate_controller_memory_J',max(abs(data(:,44)-data(:,45)+data(:,46)+data(:,47))),1e-7);
+checks=add(checks,'fixed_nominal_controller_R',abs(controller.R-.8),1e-12);
+checks=add(checks,'perturbed_plant_R',abs(plant.R-1),1e-12);
+checks=add(checks,'restored_speed_rpm',abs(data(end,36)-3000),1e-5);
+target_i=(plant.b*3000*2*pi/60+plant.Tc)/plant.Kt;
+checks=add(checks,'restored_cycle_mean_current_A',abs(data(end,35)-target_i),1e-6);
+checks=add(checks,'source_energy_matches_accepted_run_J',abs(data(end,5)-native_reference_source()),1e-6);
+checks=add(checks,'same_load_energy_J',abs(data(end,7)-sum(c.profile(:,2).*c.profile(:,3))),1e-6);
+end
+
+function make_simulink_plots(d,out)
+f=native_simulink_fixture();fig=figure('Name','Simulink integrated model validation','Color','w','Position',[60 60 1250 850]);
+subplot(2,2,1);plot(d(:,1),d(:,36),f(:,1),f(:,36),'--');xlabel('Time / s');ylabel('rpm');grid on;
+title('Flywheel speed');legend({'Simulink','Accepted MATLAB'},'Location','best');
+subplot(2,2,2);plot(d(:,1),d(:,4),f(:,1),f(:,4),'--');xlabel('Time / s');ylabel('V');grid on;title('DC bus voltage');
+subplot(2,2,3);plot(d(:,1),d(:,27),d(:,1),d(:,35));xlabel('Time / s');ylabel('A');grid on;
+title('Current reference and cycle mean');legend({'Reference','Cycle mean'},'Location','best');
+subplot(2,2,4);plot(d(:,1),d(:,40));xlabel('Time / s');ylabel('J');grid on;title('Complete physical energy balance residual');
+sgtitle('Combined plant mismatch | modular Simulink | same 90 s task and restoration');
+savefig(fig,fullfile(out,'simulink_validation.fig'));exportgraphics(fig,fullfile(out,'simulink_validation.png'),'Resolution',150);
+end

@@ -1,0 +1,9 @@
+__pycache__/
+*.bin
+SimulinkSystem_*/
+EnergyDispatch_*/
+scheduler_output/
+results/matlab/0[1-9]_*.csv
+results/matlab/1[01]_*.csv
+results/simulink/simulink_trace.csv
+lab_output/

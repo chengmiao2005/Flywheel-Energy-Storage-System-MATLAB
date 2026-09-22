@@ -1,0 +1,35 @@
+{
+  "stage": "FYP_SimulinkSystem_v1",
+  "source_sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+  "previous_native_MATLAB_energy_dispatch": {
+    "passed": 322,
+    "count": 322,
+    "source_exact_match": true
+  },
+  "MATLAB_static_lint": "passed",
+  "independent_scheduler_checks": {
+    "passed": 56,
+    "count": 56
+  },
+  "native_Simulink_execution": {
+    "status": "PASSED",
+    "MATLAB": "R2024a",
+    "Simulink": "24.1",
+    "source_exact_match": true,
+    "passed": 67,
+    "count": 67,
+    "full_trace_independently_audited": true,
+    "created": "2026-09-21 18:26:01"
+  },
+  "slx_status": "Included original native model, byte-for-byte; executed successfully on user MATLAB/Simulink",
+  "model_type": "Modular Level-2 MATLAB S-function PWM cycle map, with fixed-step discrete scheduling",
+  "hardware_validated": false,
+  "code_generation_validated": false,
+  "revision": "startup_fix_1",
+  "startup_fix": {
+    "previous_native_attempt": "Stopped at file-only availability assertion before model creation",
+    "validation": "MATLAB static lint passed; model/control/reference bytes unchanged; existing 56 reference and wiring checks passed",
+    "native_execution": "PASSED: new_system is built-in, Simulink license available"
+  },
+  "postprocessing_viewer": "Static MATLAB lint only; reads accepted data, does not modify or rerun model"
+}

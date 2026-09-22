@@ -1,0 +1,161 @@
+function output_dir=FYP_SimulinkSystem_v1(varargin)
+% FYP_SIMULINKSYSTEM_V1  Build and run the validated FESS as a Simulink model.
+% MATLAB R2024a + Simulink. No Simscape, compiler or external data required.
+% Default: build an editable .slx, run the combined-parameter 90 s case,
+% compare against the accepted native MATLAB trace, and make ReviewBundle.zip.
+% FYP_SimulinkSystem_v1('build') creates the model without simulating it.
+% Revision startup_fix_1: use actual Simulink loading, not a file-only probe.
+%
+% This same file implements the model's Level-2 MATLAB S-function blocks.
+% Keep it next to the .slx when moving the model to another computer.
+% Train load -> nominal controller -> hardware driver -> physical plant.
+% Feedback carries only [i, omega, Vdc, cycle mean i, previous omega].
+% Controller memory is per-block DWork. Outputs have no state side effects.
+% Physical state advances in Update; the current controller sees the previous
+% PWM-period measurements. Recovered-work credit is booked before the next
+% decision, with exactly the same causal ordering as the accepted MATLAB core.
+%
+% Explicit PWM gate/diode/commutation events with a slow-state midpoint map;
+% this is a custom simulation model, not a Simscape circuit or codegen target.
+% Provisional DC-motor/device data and noiseless synthetic train input.
+% The prior energy-dispatch version passed 322/322 in native MATLAB R2024a.
+% This new Simulink wiring must pass the embedded reference before acceptance.
+% APIs: https://www.mathworks.com/help/simulink/sfg/writing-level-2-matlab-s-functions.html
+%       https://www.mathworks.com/help/simulink/sfg/dwork-matlab.html
+
+if nargin==1 && isa(varargin{1},'Simulink.MSFcnRunTimeBlock')
+ sl_setup(varargin{1});output_dir=[];return;
+end
+mode='run';if nargin>0,mode=char(varargin{1});end
+assert(any(strcmp(mode,{'run','build'})),'Use no argument, ''run'', or ''build''.');
+clock_start=tic;base=fileparts(mfilename('fullpath'));if isempty(base),base=pwd;end
+stamp=datestr(now,'yyyymmdd_HHMMSS');stem=['SimulinkSystem_' stamp];output_dir=fullfile(base,stem);suffix=0;
+while exist(output_dir,'dir'),suffix=suffix+1;output_dir=fullfile(base,[stem '_' num2str(suffix)]);end
+mkdir(output_dir);source=[mfilename('fullpath') '.m'];
+copyfile(source,fullfile(output_dir,'FYP_SimulinkSystem_v1.m'));copyfile(source,fullfile(output_dir,'SourceSnapshot.m'));
+addpath(output_dir,'-begin');
+mdl=['FYP_Flywheel_Integrated_' stamp];if suffix>0,mdl=[mdl '_' num2str(suffix)];end
+report=struct('execution','Simulink construction','MATLABVersion',version,'created',datestr(now,31), ...
+ 'model',mdl,'simulink_executed',false,'mode',mode,'all_passed',false, ...
+ 'revision','startup_fix_1','stage','Simulink startup');
+fprintf('\nFYP Simulink integrated model [startup_fix_1]\nOutput: %s\n',output_dir);
+try
+ report.environment=simulink_environment();
+ write_json(fullfile(output_dir,'environment_diagnostics.json'),report.environment);
+ % exist(name,'file') excludes built-ins. License test alone also cannot
+ % establish runtime availability. Let the installed Simulink loader perform
+ % its normal initialization and license checkout, preserving genuine errors.
+ % https://www.mathworks.com/help/matlab/ref/exist.html
+ % https://www.mathworks.com/help/matlab/ref/license.html
+ load_system('simulink');
+ report.environment.load_succeeded=true;
+ write_json(fullfile(output_dir,'environment_diagnostics.json'),report.environment);
+ while bdIsLoaded(mdl),mdl=[mdl '_n'];end
+ report.model=mdl;report.stage='Model construction';
+ controller=parameters();plant=actual_parameters(2);c=sl_case();
+ build_model(mdl,controller,plant,c);
+ save_system(mdl,fullfile(output_dir,[mdl '.slx']));
+ write_json(fullfile(output_dir,'model_configuration.json'),struct('controller',controller,'plant',plant,'case_definition',c));
+ open_system(mdl);set_param(mdl,'ZoomFactor','FitSystem');
+ try,print(['-s' mdl],'-dpng','-r120',fullfile(output_dir,'model_diagram.png'));catch,disp('Diagram PNG skipped; model is saved.');end
+ if strcmp(mode,'run')
+  report.stage='Simulink simulation';
+  fprintf('Running 20 s train task + 70 s speed recovery. This may take several minutes.\n');
+  sim_result=sim(mdl,'SimulationMode','normal','ReturnWorkspaceOutputs','on');
+  report.stage='Result validation';
+  trace=sim_result.get('fyp_trace');data=squeeze(trace.signals.values);times=trace.time(:);
+  if size(data,1)==51 && size(data,2)==numel(times),data=data';end
+  assert(size(data,1)==numel(times) && size(data,2)==51,'FYP:LogShape','Unexpected Simulink log dimensions.');
+  checks=check_simulink(data,times,controller,plant,c);
+  report.execution='Native MATLAB/Simulink run';report.simulink_executed=true;
+  report.passed=sum([checks.passed]);report.count=numel(checks);report.all_passed=all([checks.passed]);report.tests=checks;
+  report.elapsed_s=toc(clock_start);report.final_source_J=data(end,5);
+  report.reference_source_J=native_reference_source();
+  report.caveats={'Custom discrete PWM-cycle-map blocks; no Simscape circuit or code-generation validation'; ...
+   'Single combined-parameter wiring regression; preceding 11-case MATLAB suite already accepted'; ...
+   'Provisional DC motor/devices and ideal sensors; hardware and measured parameters remain unverified'};
+  names=[column_names() {'max_current_A','max_balance_J','midpoint_defect'}];
+  writetable(array2table(data,'VariableNames',names),fullfile(output_dir,'simulink_trace.csv'));
+  save(fullfile(output_dir,'simulink_results.mat'),'data','times','controller','plant','c','report');
+  make_simulink_plots(data,output_dir);
+ else
+  report.execution='Simulink model built; simulation not requested';report.elapsed_s=toc(clock_start);
+ end
+ report.stage='Completed';
+ write_json(fullfile(output_dir,'tests_summary.json'),report);make_bundle(output_dir);
+ if strcmp(mode,'run')
+  fprintf('\nChecks passed: %d / %d\nSend: %s\n',report.passed,report.count,fullfile(output_dir,'ReviewBundle.zip'));
+  if ~report.all_passed,error('FYP:CheckFailed','Simulink/reference mismatch; send ReviewBundle.zip.');end
+ else,fprintf('Model ready: %s\n',fullfile(output_dir,[mdl '.slx']));end
+catch problem
+ report.error_identifier=problem.identifier;report.error_message=problem.message;
+ report.error_stack=problem.stack;report.elapsed_s=toc(clock_start);report.all_passed=false;
+ if strcmp(report.stage,'Simulink startup')
+  fprintf(2,'Simulink could not initialize. The original MATLAB error is preserved below.\n');
+  fprintf(2,'Send ReviewBundle.zip; it includes environment diagnostics.\n');
+ end
+ write_json(fullfile(output_dir,'tests_summary.json'),report);make_bundle(output_dir);
+ fprintf('\nDiagnostic bundle: %s\n',fullfile(output_dir,'ReviewBundle.zip'));rethrow(problem);
+end
+end
+
+function env=simulink_environment()
+% Diagnostic probes are advisory only; runtime loading is authoritative.
+env=struct('load_succeeded',false,'new_system_file',exist('new_system','file'), ...
+ 'new_system_builtin',exist('new_system','builtin'),'new_system_location',which('new_system'), ...
+ 'load_system_file',exist('load_system','file'),'load_system_builtin',exist('load_system','builtin'), ...
+ 'load_system_location',which('load_system'),'license_test',-1);
+try,env.simulink_version=ver('simulink');catch probe_error,env.version_probe_error=probe_error.message;end
+try,env.license_test=license('test','Simulink');catch probe_error,env.license_probe_error=probe_error.message;end
+end
+function c=sl_case()
+c=struct('name','06_combined_dispatch','profile',embedded_train_profile(),'on',true,'block',false,'stiff',false, ...
+ 'fixture',false,'pwm',false,'task',20,'restore',70,'n0',3000,'V0',57,'substeps',1,'speed_pi',true,'variant',2);
+end
+
+function build_model(mdl,controller,plant,c)
+new_system(mdl,'Model');workspace=get_param(mdl,'ModelWorkspace');
+assignin(workspace,'fyp_controller',controller);assignin(workspace,'fyp_plant',plant);assignin(workspace,'fyp_case',c);
+set_param(mdl,'SolverType','Fixed-step','Solver','FixedStepDiscrete','FixedStep',num2str(1/controller.fsw,17), ...
+ 'StartTime','0','StopTime',num2str(c.task+c.restore,17),'SolverMode','SingleTasking', ...
+ 'ReturnWorkspaceOutputs','on','SaveTime','off','SaveOutput','off','SignalLogging','off');
+set_param(mdl,'PostLoadFcn','addpath(fileparts(get_param(bdroot,''FileName'')));');
+put_block(mdl,'Train and brake load','load','fyp_controller',[40 75 200 165]);
+put_block(mdl,'Energy and current control','controller','fyp_controller',[295 75 490 180]);
+put_block(mdl,'Gate driver','driver','fyp_plant',[565 85 690 155]);
+put_block(mdl,'DC link and flywheel','plant','fyp_plant',[765 75 950 190]);
+put_block(mdl,'Measurements','observer','fyp_plant',[735 345 950 495]);
+wire(mdl,'Train and brake load/1','Energy and current control/2');
+wire(mdl,'Energy and current control/1','Gate driver/1');
+wire(mdl,'Gate driver/1','DC link and flywheel/1');
+wire(mdl,'Train and brake load/2','DC link and flywheel/2');
+wire(mdl,'DC link and flywheel/1','Energy and current control/1');
+wire(mdl,'DC link and flywheel/2','Measurements/1');
+wire(mdl,'Energy and current control/2','Measurements/2');
+wire(mdl,'Train and brake load/1','Measurements/3');
+wire(mdl,'Train and brake load/3','Measurements/4');
+wire(mdl,'Gate driver/1','Measurements/5');
+add_block('simulink/Sinks/To Workspace',[mdl '/Validation trace'],'VariableName','fyp_trace', ...
+ 'SaveFormat','Structure With Time','MaxDataPoints','inf','Decimation','200','SampleTime','-1','Position',[1040 350 1180 390]);
+wire(mdl,'Measurements/1','Validation trace/1');
+add_block('simulink/Sinks/Display',[mdl '/Speed rpm'],'Position',[1040 410 1180 440]);wire(mdl,'Measurements/2','Speed rpm/1');
+add_block('simulink/Sinks/Display',[mdl '/Bus voltage V'],'Position',[1040 455 1180 485]);wire(mdl,'Measurements/3','Bus voltage V/1');
+add_block('simulink/Sinks/Scope',[mdl '/Current reference and mean'],'Position',[1040 515 1180 555]);
+wire(mdl,'Measurements/4','Current reference and mean/1');
+annotation=Simulink.Annotation(mdl,['Flywheel energy storage | 20 kHz PWM cycle map | 100 Hz supervisor' newline ...
+ 'Fixed nominal controller; actual combined plant mismatch; 20 s task + 70 s recovery']);
+annotation.Position=[40 10];
+set_param(mdl,'Location',[40 80 1360 800]);
+end
+function put_block(mdl,name,kind,params,position)
+add_block('simulink/User-Defined Functions/Level-2 MATLAB S-Function',[mdl '/' name], ...
+ 'FunctionName','FYP_SimulinkSystem_v1','Parameters',['''' kind ''',' params ',fyp_case'], ...
+ 'Position',position,'BackgroundColor','lightBlue');
+end
+function wire(mdl,from,to)
+add_line(mdl,from,to,'autorouting','on');
+end
+function make_bundle(folder)
+files=dir(folder);files=files(~[files.isdir]);names={files.name};names=names(~strcmp(names,'ReviewBundle.zip'));
+zip(fullfile(folder,'ReviewBundle.zip'),names,folder);
+end

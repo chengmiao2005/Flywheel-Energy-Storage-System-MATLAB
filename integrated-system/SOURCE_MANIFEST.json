@@ -1,0 +1,406 @@
+{
+  "source_package": "FYP_SimulinkSystem_v1_Package.zip",
+  "source_package_sha256": "9dec9269cf304e33338e09f2d3011c7756f002f90e54a771c5f07cce30513ace",
+  "note": "Native source and model bytes preserved. Large CSV files use lossless gzip. MAT and FIG duplicates omitted. Documents delivered separately. No local MATLAB execution.",
+  "files": [
+    {
+      "path": "FYP_Flywheel_Integrated_20260921_182601.slx",
+      "original_path": "FYP_Flywheel_Integrated_20260921_182601.slx",
+      "original_sha256": "7c8f475980259647e12f76d5d1b305aa9a6e759ae95bd7b69a2a83ad621470b5",
+      "sha256": "7c8f475980259647e12f76d5d1b305aa9a6e759ae95bd7b69a2a83ad621470b5",
+      "size_bytes": 104317
+    },
+    {
+      "path": "accepted_native_combined_fixture.csv",
+      "original_path": "accepted_native_combined_fixture.csv",
+      "original_sha256": "d484ff0e201de61c33f516a52e8052c80092f96e98da5681fa4ed793c3117017",
+      "sha256": "d484ff0e201de61c33f516a52e8052c80092f96e98da5681fa4ed793c3117017",
+      "size_bytes": 796025
+    },
+    {
+      "path": "blocks.mpart",
+      "original_path": "blocks.mpart",
+      "original_sha256": "d7f338bc47d4e676718ee13703d554ee3841b54af1aa17adff742cf85547d49d",
+      "sha256": "d7f338bc47d4e676718ee13703d554ee3841b54af1aa17adff742cf85547d49d",
+      "size_bytes": 6521
+    },
+    {
+      "path": "FYP_ViewResults_v1.m",
+      "original_path": "FYP_ViewResults_v1.m",
+      "original_sha256": "403beb66165997ba116d4bab86dd2a20a011c8b29af963f4004bc217256991b5",
+      "sha256": "403beb66165997ba116d4bab86dd2a20a011c8b29af963f4004bc217256991b5",
+      "size_bytes": 2490
+    },
+    {
+      "path": "checks_plots.mpart",
+      "original_path": "checks_plots.mpart",
+      "original_sha256": "789562ccde53f4b36211c90e834e98c660fbcac13b184754f9c80abb5b6803d6",
+      "sha256": "789562ccde53f4b36211c90e834e98c660fbcac13b184754f9c80abb5b6803d6",
+      "size_bytes": 3244
+    },
+    {
+      "path": "validation_status.json",
+      "original_path": "validation_status.json",
+      "original_sha256": "b4d5d83dff5582436a21d190ebf3a6fe7d3db39dd52022ea038d49e2c14ca01d",
+      "sha256": "b4d5d83dff5582436a21d190ebf3a6fe7d3db39dd52022ea038d49e2c14ca01d",
+      "size_bytes": 1382
+    },
+    {
+      "path": "accepted_native_dispatch_audit.json",
+      "original_path": "accepted_native_dispatch_audit.json",
+      "original_sha256": "dc3ae40911148e3cfc80b2895b776a52a44557223a69f1f9d4dbc817bb5e0531",
+      "sha256": "dc3ae40911148e3cfc80b2895b776a52a44557223a69f1f9d4dbc817bb5e0531",
+      "size_bytes": 6794
+    },
+    {
+      "path": "render_saved_results.py",
+      "original_path": "render_saved_results.py",
+      "original_sha256": "f09644a9a603e51221ea9e34681698ab1d9a9eac7833f8acac36b11e9e60b771",
+      "sha256": "f09644a9a603e51221ea9e34681698ab1d9a9eac7833f8acac36b11e9e60b771",
+      "size_bytes": 2992
+    },
+    {
+      "path": "build_scheduler_reference.py",
+      "original_path": "build_scheduler_reference.py",
+      "original_sha256": "7872cc02d573e254e5383e7031431e331785622058afbcf568ee083ea16c5828",
+      "sha256": "7872cc02d573e254e5383e7031431e331785622058afbcf568ee083ea16c5828",
+      "size_bytes": 4687
+    },
+    {
+      "path": "build_provenance.json",
+      "original_path": "build_provenance.json",
+      "original_sha256": "9eb8592c079ec490bad7053bdbb345bd70bd2656b27cbe6cbd8d4d0ea1d271a6",
+      "sha256": "9eb8592c079ec490bad7053bdbb345bd70bd2656b27cbe6cbd8d4d0ea1d271a6",
+      "size_bytes": 607
+    },
+    {
+      "path": "build_standalone.py",
+      "original_path": "build_standalone.py",
+      "original_sha256": "af9c20edeb36af44546e6e82cad54efe52b98efab9d2acefcd34971a157f924a",
+      "sha256": "af9c20edeb36af44546e6e82cad54efe52b98efab9d2acefcd34971a157f924a",
+      "size_bytes": 2758
+    },
+    {
+      "path": "validate_reference.py",
+      "original_path": "validate_reference.py",
+      "original_sha256": "13cf64a0d78186f596c0104167aeada9d6b5f2f95d23d2d6512db2f2a9576e1a",
+      "sha256": "13cf64a0d78186f596c0104167aeada9d6b5f2f95d23d2d6512db2f2a9576e1a",
+      "size_bytes": 3727
+    },
+    {
+      "path": "entry.mpart",
+      "original_path": "entry.mpart",
+      "original_sha256": "711f87934cc7b456702759b5096faea83ee717f6bd337c8402a064c16e849f50",
+      "sha256": "711f87934cc7b456702759b5096faea83ee717f6bd337c8402a064c16e849f50",
+      "size_bytes": 10791
+    },
+    {
+      "path": "accepted_native_simulink_audit.json",
+      "original_path": "accepted_native_simulink_audit.json",
+      "original_sha256": "ed63b1cda38c71c87decaf82a1507e603941994c8fb555015c00b4d19569eba0",
+      "sha256": "ed63b1cda38c71c87decaf82a1507e603941994c8fb555015c00b4d19569eba0",
+      "size_bytes": 3425
+    },
+    {
+      "path": "train_profile.hpp",
+      "original_path": "train_profile.hpp",
+      "original_sha256": "e6bb974cc273d4c4f2d45a7da70f9e755d0dc0e121944f434e03198badba866b",
+      "sha256": "e6bb974cc273d4c4f2d45a7da70f9e755d0dc0e121944f434e03198badba866b",
+      "size_bytes": 39172
+    },
+    {
+      "path": "FYP_SimulinkSystem_v1.m",
+      "original_path": "FYP_SimulinkSystem_v1.m",
+      "original_sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+      "sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+      "size_bytes": 877129
+    },
+    {
+      "path": "reference_scheduler.cpp",
+      "original_path": "reference_scheduler.cpp",
+      "original_sha256": "2847c68e293eb7f5dfd89e33df0d48c8f6ea00891f1044b90377ae89cb741fac",
+      "sha256": "2847c68e293eb7f5dfd89e33df0d48c8f6ea00891f1044b90377ae89cb741fac",
+      "size_bytes": 17725
+    },
+    {
+      "path": "results/accepted_results_overview.svg",
+      "original_path": "results/accepted_results_overview.svg",
+      "original_sha256": "0ca57bc6c568e46f8d49fd608037de2b5b4d4dfab00e32f2f241cada65eca049",
+      "sha256": "0ca57bc6c568e46f8d49fd608037de2b5b4d4dfab00e32f2f241cada65eca049",
+      "size_bytes": 113407
+    },
+    {
+      "path": "results/accepted_results_overview.png",
+      "original_path": "results/accepted_results_overview.png",
+      "original_sha256": "c1d91f173429090f41438b8e1d5a43a185e72ab853a34ece9ee72645e619ac30",
+      "sha256": "c1d91f173429090f41438b8e1d5a43a185e72ab853a34ece9ee72645e619ac30",
+      "size_bytes": 329803
+    },
+    {
+      "path": "accepted_core/FYP_EnergyDispatch_v1.m",
+      "original_path": "accepted_core/FYP_EnergyDispatch_v1.m",
+      "original_sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+      "sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+      "size_bytes": 100690
+    },
+    {
+      "path": "accepted_core/train_replay.csv",
+      "original_path": "accepted_core/train_replay.csv",
+      "original_sha256": "60160bbe42644fefdb38365ea4b8bf81ca00f24cb138df7ce80f11f7b3a23b21",
+      "sha256": "60160bbe42644fefdb38365ea4b8bf81ca00f24cb138df7ce80f11f7b3a23b21",
+      "size_bytes": 49965
+    },
+    {
+      "path": "accepted_core/reference_dispatch.cpp",
+      "original_path": "accepted_core/reference_dispatch.cpp",
+      "original_sha256": "cccd899ace6e9b32a1a9f1f0399989f1f82a546f061e1cdb053619ef8b51b1ef",
+      "sha256": "cccd899ace6e9b32a1a9f1f0399989f1f82a546f061e1cdb053619ef8b51b1ef",
+      "size_bytes": 20931
+    },
+    {
+      "path": "accepted_core/train_profile.hpp",
+      "original_path": "accepted_core/train_profile.hpp",
+      "original_sha256": "e6bb974cc273d4c4f2d45a7da70f9e755d0dc0e121944f434e03198badba866b",
+      "sha256": "e6bb974cc273d4c4f2d45a7da70f9e755d0dc0e121944f434e03198badba866b",
+      "size_bytes": 39172
+    },
+    {
+      "path": "handoff/lab_input_template.csv",
+      "original_path": "handoff/lab_input_template.csv",
+      "original_sha256": "360ab652a7d733a958390d7750e91d15852aa3d03bd17f689aaafb261033d5f2",
+      "sha256": "360ab652a7d733a958390d7750e91d15852aa3d03bd17f689aaafb261033d5f2",
+      "size_bytes": 34
+    },
+    {
+      "path": "handoff/validation_status.json",
+      "original_path": "handoff/validation_status.json",
+      "original_sha256": "ab0227453105a9da1d0f176c8a58253749a277e761a1f5cbbae5954ffa6e5351",
+      "sha256": "ab0227453105a9da1d0f176c8a58253749a277e761a1f5cbbae5954ffa6e5351",
+      "size_bytes": 964
+    },
+    {
+      "path": "handoff/FYP_AnalyzeLabData_v1.m",
+      "original_path": "handoff/FYP_AnalyzeLabData_v1.m",
+      "original_sha256": "1d5f77a13ddb0c6e742d5a8243ae227669edad61adfcff66136c8fa9b734f205",
+      "sha256": "1d5f77a13ddb0c6e742d5a8243ae227669edad61adfcff66136c8fa9b734f205",
+      "size_bytes": 7350
+    },
+    {
+      "path": "handoff/parameter_register.json",
+      "original_path": "handoff/parameter_register.json",
+      "original_sha256": "589ef9d7bd3ef60e2e33df1b13fff9bebbe423a7bcdc8dc794f909f843b90b12",
+      "sha256": "589ef9d7bd3ef60e2e33df1b13fff9bebbe423a7bcdc8dc794f909f843b90b12",
+      "size_bytes": 17645
+    },
+    {
+      "path": "results/simulink/tests_summary.json",
+      "original_path": "results/simulink/tests_summary.json",
+      "original_sha256": "145b2546eedf8e1a7429fd6dea502c83e771db86c84f57ee2b7de808918d6bd2",
+      "sha256": "145b2546eedf8e1a7429fd6dea502c83e771db86c84f57ee2b7de808918d6bd2",
+      "size_bytes": 10178
+    },
+    {
+      "path": "results/simulink/environment_diagnostics.json",
+      "original_path": "results/simulink/environment_diagnostics.json",
+      "original_sha256": "502d43d403a7671278f8a6689b87595cb797200bbc61faef40a637c02beaafda",
+      "sha256": "502d43d403a7671278f8a6689b87595cb797200bbc61faef40a637c02beaafda",
+      "size_bytes": 503
+    },
+    {
+      "path": "results/simulink/model_diagram.png",
+      "original_path": "results/simulink/model_diagram.png",
+      "original_sha256": "4bcc5e8d122a2c3fbec8bbea6127fcb4528ace1ba51778fecb7bdd1245f48fb4",
+      "sha256": "4bcc5e8d122a2c3fbec8bbea6127fcb4528ace1ba51778fecb7bdd1245f48fb4",
+      "size_bytes": 78994
+    },
+    {
+      "path": "results/simulink/simulink_trace.csv.gz",
+      "original_path": "results/simulink/simulink_trace.csv",
+      "original_sha256": "613dcacb5da686a41d79416764390e9971de36f39e74a1bb80064e3889bb51b8",
+      "sha256": "497c4528e4af65a9c358f04ca062c7b09c5c49aefbca806438641395c960dbe5",
+      "size_bytes": 2188066
+    },
+    {
+      "path": "results/simulink/model_configuration.json",
+      "original_path": "results/simulink/model_configuration.json",
+      "original_sha256": "5ac29b9ac0a6bb943b4fbfa4a2f09d8ee0afca09fad645be0d77fbf48109db4d",
+      "sha256": "5ac29b9ac0a6bb943b4fbfa4a2f09d8ee0afca09fad645be0d77fbf48109db4d",
+      "size_bytes": 89243
+    },
+    {
+      "path": "results/simulink/simulink_validation.png",
+      "original_path": "results/simulink/simulink_validation.png",
+      "original_sha256": "8ab03fe9266f3353ae0fe4f83b7be93b634ee3de8e2f7a4843c1aeb60daa119f",
+      "sha256": "8ab03fe9266f3353ae0fe4f83b7be93b634ee3de8e2f7a4843c1aeb60daa119f",
+      "size_bytes": 110707
+    },
+    {
+      "path": "results/simulink/SourceSnapshot.m",
+      "original_path": "results/simulink/SourceSnapshot.m",
+      "original_sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+      "sha256": "05df85aeb8997122113043072b5449ac082c5651f22f687e4f0379bc7e1f60ee",
+      "size_bytes": 877129
+    },
+    {
+      "path": "results/matlab/10_high_source.csv.gz",
+      "original_path": "results/matlab/10_high_source.csv",
+      "original_sha256": "8d1b44c0d4d2812cc1d99ae87b3521c61ce5b65f67f9935f123e646ab96ccfa9",
+      "sha256": "d89d2cba3a7abd847f1c928491b9c2e4f4463cccdf468fe5e0b3637e47445651",
+      "size_bytes": 522112
+    },
+    {
+      "path": "results/matlab/09_no_regeneration.csv.gz",
+      "original_path": "results/matlab/09_no_regeneration.csv",
+      "original_sha256": "214310e4ccc3c01ef15e5267f5a57133e829a8eddd2f94a2d0293aca6cb17898",
+      "sha256": "299bf8464acb1d6746c1f72e15354e439e1cce1a7d7da7c7b12d147ea34c6424",
+      "size_bytes": 503860
+    },
+    {
+      "path": "results/matlab/01_nominal_bypass.csv.gz",
+      "original_path": "results/matlab/01_nominal_bypass.csv",
+      "original_sha256": "5b813454d8c815488168d0b53c4e422caa705eba210b5eb9425bb1ff26e01b41",
+      "sha256": "0241f8d165b667b34030d7b26b6a6bfd74792190df83898908b0cc44b67b60cf",
+      "size_bytes": 1743621
+    },
+    {
+      "path": "results/matlab/tests_summary.json",
+      "original_path": "results/matlab/tests_summary.json",
+      "original_sha256": "74d49d632217724903a9502e7b6b3b65f40574dbf12ac5b077ecdbeaf213e309",
+      "sha256": "74d49d632217724903a9502e7b6b3b65f40574dbf12ac5b077ecdbeaf213e309",
+      "size_bytes": 76662
+    },
+    {
+      "path": "results/matlab/11_credit_depletion.csv.gz",
+      "original_path": "results/matlab/11_credit_depletion.csv",
+      "original_sha256": "afbed622b391febf22e7815dd5f6af0eda52f4a7b0979b9b9b595003b8ab3e65",
+      "sha256": "9835f1ce53c1c702f79c55e94fb66a97aee751bc8898d06d60038a351faf25de",
+      "size_bytes": 479517
+    },
+    {
+      "path": "results/matlab/06_combined_dispatch.csv.gz",
+      "original_path": "results/matlab/06_combined_dispatch.csv",
+      "original_sha256": "f9ac6f0584d833e81cf5d975d7f15620bc88b78a191fb0d99505174ef103d9f1",
+      "sha256": "2b91cfba0b4835978a4d63863e82ff65aeaf38c9a54f3dcd855f640f288a3a02",
+      "size_bytes": 2129183
+    },
+    {
+      "path": "results/matlab/independent_review.json",
+      "original_path": "results/matlab/independent_review.json",
+      "original_sha256": "dc3ae40911148e3cfc80b2895b776a52a44557223a69f1f9d4dbc817bb5e0531",
+      "sha256": "dc3ae40911148e3cfc80b2895b776a52a44557223a69f1f9d4dbc817bb5e0531",
+      "size_bytes": 6794
+    },
+    {
+      "path": "results/matlab/04_friction_dispatch.csv.gz",
+      "original_path": "results/matlab/04_friction_dispatch.csv",
+      "original_sha256": "a5985c66ff2d5259205a07cc93cdf0bcfead51b8e3827632193d279ee3432e94",
+      "sha256": "26ef14b7d21887d2c2c2081fef321ef90847289aedfe76693a01b4346dfa54a5",
+      "size_bytes": 2107549
+    },
+    {
+      "path": "results/matlab/summary.csv",
+      "original_path": "results/matlab/summary.csv",
+      "original_sha256": "e29ef627a892d6ac93d080326e3b68b5518d4c6d3c83d410193327802c6106d7",
+      "sha256": "e29ef627a892d6ac93d080326e3b68b5518d4c6d3c83d410193327802c6106d7",
+      "size_bytes": 8841
+    },
+    {
+      "path": "results/matlab/02_nominal_dispatch.csv.gz",
+      "original_path": "results/matlab/02_nominal_dispatch.csv",
+      "original_sha256": "dd0b0a645951859d2c1ac97a5ec831f7e7a531070fb25d7aa8cb53f032d685f5",
+      "sha256": "b07093a03157ed52dffa9678a0f58df2f8570f7b6fe850de4d6c773ade7c9e1c",
+      "size_bytes": 2119386
+    },
+    {
+      "path": "results/matlab/legacy_comparison.csv",
+      "original_path": "results/matlab/legacy_comparison.csv",
+      "original_sha256": "f1b14c107043264e10c0762f644bd9f9719f8adf2cda1104c0415a3689795381",
+      "sha256": "f1b14c107043264e10c0762f644bd9f9719f8adf2cda1104c0415a3689795381",
+      "size_bytes": 274
+    },
+    {
+      "path": "results/matlab/recovery_credit.png",
+      "original_path": "results/matlab/recovery_credit.png",
+      "original_sha256": "f85bf9bfd05e0f1b48fbc947ac15fa4fb03bf7ebbe22c22c3b83c2b5c85454e3",
+      "sha256": "f85bf9bfd05e0f1b48fbc947ac15fa4fb03bf7ebbe22c22c3b83c2b5c85454e3",
+      "size_bytes": 86260
+    },
+    {
+      "path": "results/matlab/03_friction_bypass.csv.gz",
+      "original_path": "results/matlab/03_friction_bypass.csv",
+      "original_sha256": "b0398eb5dc001e1512b9d4ff685980f66c0456373ea593342f856333489f77f3",
+      "sha256": "874c30592054d74ded6e1f79d8f38050f5d09e8c7b2cf2c4e6e3345d6fb078b8",
+      "size_bytes": 1735216
+    },
+    {
+      "path": "results/matlab/05_combined_bypass.csv.gz",
+      "original_path": "results/matlab/05_combined_bypass.csv",
+      "original_sha256": "48d1f65e771fcc73d64399e88501ecbd4c4496ce95078a2323da0bd61d3c2837",
+      "sha256": "f079abe0060c8f518952e4e7452d272801d8b1016f3c49269afa3d0b753cf49e",
+      "size_bytes": 1751294
+    },
+    {
+      "path": "results/matlab/08_pulse_dispatch.csv.gz",
+      "original_path": "results/matlab/08_pulse_dispatch.csv",
+      "original_sha256": "2b6f7d91db28b8cbaafcedcb8aa3781faa88c10e8decdebb37524fa1f397809b",
+      "sha256": "0a4488c8cca47cff880b4b7a6ac9c4260f936432737fecc2724db605e6af1b54",
+      "size_bytes": 2110808
+    },
+    {
+      "path": "results/matlab/dispatch_comparison.png",
+      "original_path": "results/matlab/dispatch_comparison.png",
+      "original_sha256": "4430a5cb2f503d954c6c44ca9be0f5a09d7de203fb498068e9cc3004a43630e0",
+      "sha256": "4430a5cb2f503d954c6c44ca9be0f5a09d7de203fb498068e9cc3004a43630e0",
+      "size_bytes": 96985
+    },
+    {
+      "path": "results/matlab/comparisons.csv",
+      "original_path": "results/matlab/comparisons.csv",
+      "original_sha256": "03956336b592a4fa29acdc70b8a08e65ae8733b63a39a5306cd57bf9fd861ef4",
+      "sha256": "03956336b592a4fa29acdc70b8a08e65ae8733b63a39a5306cd57bf9fd861ef4",
+      "size_bytes": 877
+    },
+    {
+      "path": "results/matlab/SourceSnapshot.m",
+      "original_path": "results/matlab/SourceSnapshot.m",
+      "original_sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+      "sha256": "7718974519d31f7fba944b6898553fc826e0b4483b4b4034c3b3b204ddcaceb1",
+      "size_bytes": 100690
+    },
+    {
+      "path": "results/matlab/07_pulse_bypass.csv.gz",
+      "original_path": "results/matlab/07_pulse_bypass.csv",
+      "original_sha256": "9ed76d3c8501a930076339e73ba962b8d35c8a9827916effc46ac70c1f4de85e",
+      "sha256": "adf4ed31fa9d15e949680a77856734b617c475d7fa65cccb281e806417ecd55e",
+      "size_bytes": 1706381
+    },
+    {
+      "path": "handoff/train_input/train_replay.csv",
+      "original_path": "handoff/train_input/train_replay.csv",
+      "original_sha256": "60160bbe42644fefdb38365ea4b8bf81ca00f24cb138df7ce80f11f7b3a23b21",
+      "sha256": "60160bbe42644fefdb38365ea4b8bf81ca00f24cb138df7ce80f11f7b3a23b21",
+      "size_bytes": 49965
+    },
+    {
+      "path": "handoff/train_input/train_profile_provenance.json",
+      "original_path": "handoff/train_input/train_profile_provenance.json",
+      "original_sha256": "4c36bccc138374bca0014e2fb7e49960ad51bbde9f482200fa93dbc7ddf4bc98",
+      "sha256": "4c36bccc138374bca0014e2fb7e49960ad51bbde9f482200fa93dbc7ddf4bc98",
+      "size_bytes": 1358
+    },
+    {
+      "path": "handoff/train_input/build_train_profile.py",
+      "original_path": "handoff/train_input/build_train_profile.py",
+      "original_sha256": "67b531b6c3c7639eb658e9cced87d3566b44a53c7a964a25e53a0437c3d2cf21",
+      "sha256": "67b531b6c3c7639eb658e9cced87d3566b44a53c7a964a25e53a0437c3d2cf21",
+      "size_bytes": 6172
+    },
+    {
+      "path": "handoff/train_input/inherited_train_config.json",
+      "original_path": "handoff/train_input/inherited_train_config.json",
+      "original_sha256": "c3a00b7c981277bcc65cb98f09f9ea0f156edea7eec3d8948516a9b679ae1947",
+      "sha256": "c3a00b7c981277bcc65cb98f09f9ea0f156edea7eec3d8948516a9b679ae1947",
+      "size_bytes": 1259
+    }
+  ]
+}
