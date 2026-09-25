@@ -4,6 +4,10 @@ This directory connects synthetic train demand, a DC link, a bidirectional conve
 
 **[中文文件说明](docs/FILE_GUIDE_CN.md)** · **[Full technical report in Chinese](docs/THESIS_DRAFT_CN.md)** · **[Defense questions](docs/DEFENSE_QA_CN.md)**
 
+**[课程要求与执行计划](docs/COURSE_REQUIREMENTS_PLAN_CN.md)** · **[更新分工](docs/TEAM_TASKS_CN.md)** · **[每周 LogBook 模板](docs/templates/LOGBOOK_CN.md)** · **[过程与测试记录模板](docs/templates/RECORDS_CN.md)**
+
+The 25 September plan aligns the project with requirements analysis, design, implementation, testing and evaluation, weekly individual Feishu LogBooks, contribution records and the course assessment. These files are a plan and blank templates; they do not assert completed student submissions, peer reviews or hardware experiments.
+
 ## Reproduced evidence
 
 | Evidence | Result | Meaning |
