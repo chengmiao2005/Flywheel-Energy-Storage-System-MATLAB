@@ -1,18 +1,16 @@
 # Flywheel Energy Storage Modeling and Control
 
-MATLAB/Simulink models for a final-year project on urban rail transit braking energy recovery. The repository contains five motor–flywheel modeling stages, an integrated train-load/DC-link/converter simulation, and a separate synthetic rail DC-node dispatch study.
+MATLAB/Simulink models for urban rail transit braking energy recovery. The repository contains five motor–flywheel modeling stages, an integrated train-load/DC-link/converter simulation, and a separate synthetic rail DC-node dispatch study.
 
 **Technologies:** MATLAB · Simulink · Dynamic Modeling · Feedback Control · Energy Storage
 
-## Integrated system update — 21 September 2026
+## Integrated train-load and flywheel model
 
-**[Integrated model, source and saved results](integrated-system/README.md)** · **[中文文件说明](integrated-system/docs/FILE_GUIDE_CN.md)** · **[Technical report](integrated-system/docs/THESIS_DRAFT_CN.md)**
+**[Integrated model, source and saved results](integrated-system/README.md)** · **[中文项目说明](integrated-system/docs/FILE_GUIDE_CN.md)** · **[Technical report](integrated-system/docs/PROJECT_REPORT_CN.md)**
 
-The new integrated system connects synthetic railway demand, a DC link, a nonideal bidirectional converter and the DC motor–flywheel plant. Saved native MATLAB results cover **11 cases and 322 checks**; the native Simulink combined-parameter case passed **67 checks**. An independent reanalysis verifies the complete shared trace and energy accounts. Four paired scenarios show source-energy reductions of **1.46% to 9.50%**, including a common restoration phase and a spinning-bypass baseline. These are model results, not measured railway savings or round-trip efficiency.
+The integrated system connects synthetic railway demand, a DC link, a nonideal bidirectional converter and the DC motor–flywheel plant. Saved native MATLAB results cover **11 cases and 322 checks**; the native Simulink combined-parameter case passed **67 checks**. A separate Python reanalysis verifies the complete shared trace and energy accounts. Four paired scenarios show source-energy reductions of **1.46% to 9.50%**, including a common restoration phase and a spinning-bypass baseline. These are model results, not measured railway savings or round-trip efficiency.
 
-The update includes the original runnable model, compressed native CSV evidence, verification scripts, laboratory-data analysis, a technical report and defense notes. Actual parameter identification and hardware validation remain outstanding. This integrated DC model does not implement PMSM/FOC or PSIM.
-
-**[Course plan and current next steps / 课程计划与当前待办](integrated-system/docs/CONTINUITY_BASELINE_CN.md)**
+The directory includes the runnable model, compressed native CSV evidence, verification scripts, a laboratory-data analysis tool, a technical report and a [technical FAQ](integrated-system/docs/TECHNICAL_FAQ_CN.md). Parameters are provisional and hardware performance has not been validated. This integrated DC model does not implement PMSM/FOC or PSIM.
 
 ## Research study: schedule-informed rail storage dispatch
 
@@ -24,7 +22,7 @@ The research directory includes a runnable Python check of saved MATLAB results,
 
 ## Motor–flywheel project overview
 
-The models progress from ideal flywheel dynamics to electromechanical coupling, cascaded control, and operating-mode supervision. Numerical values are provisional test parameters. The new integrated-system directory extends the original stages with a synthetic train load, DC link and bidirectional converter; actual parameter identification remains in progress.
+The models progress from ideal flywheel dynamics to electromechanical coupling, cascaded control, and operating-mode supervision. Numerical values are provisional test parameters. The integrated-system directory extends the original stages with a synthetic train load, DC link and bidirectional converter.
 
 ## Simulation Stages
 

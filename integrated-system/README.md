@@ -2,13 +2,7 @@
 
 This directory connects synthetic train demand, a DC link, a bidirectional converter, and a DC motor–flywheel plant. It extends the five motor-model stages in the repository root. The separate `research/rail-dispatch` study uses a different aggregate storage model and comparison protocol.
 
-**[中文文件说明](docs/FILE_GUIDE_CN.md)** · **[Full technical report in Chinese](docs/THESIS_DRAFT_CN.md)** · **[Defense questions](docs/DEFENSE_QA_CN.md)**
-
-**[课程要求与执行计划](docs/COURSE_REQUIREMENTS_PLAN_CN.md)** · **[更新分工](docs/TEAM_TASKS_CN.md)** · **[每周 LogBook 模板](docs/templates/LOGBOOK_CN.md)** · **[过程与测试记录模板](docs/templates/RECORDS_CN.md)**
-
-**[当前基线与待办（26 September）](docs/CONTINUITY_BASELINE_CN.md)** · **[需求与测试对应表](docs/REQUIREMENTS_TRACEABILITY_CN.md)**
-
-The plan, cross-checked on 26 September, aligns the project with requirements analysis, design, implementation, testing and evaluation, weekly individual Feishu LogBooks, contribution records and the course assessment. These files are a plan and blank templates; they do not assert completed student submissions, peer reviews or hardware experiments.
+**[中文项目说明](docs/FILE_GUIDE_CN.md)** · **[Technical report in Chinese](docs/PROJECT_REPORT_CN.md)** · **[Technical FAQ](docs/TECHNICAL_FAQ_CN.md)** · **[Validation scope](docs/VALIDATION_SCOPE_CN.md)**
 
 ## Reproduced evidence
 
@@ -71,7 +65,7 @@ python validate_reference.py --run
 
 The reference check's legacy output text says native Simulink is pending: that phrase describes the reference checker, which cannot execute Simulink. The subsequent native records in `results/simulink` establish the saved 67-check run. The new reanalysis explicitly distinguishes these evidence levels.
 
-## Future measured data
+## Laboratory-data analysis tool
 
 `lab_analysis.py` processes synchronized `time_s,V_bus_V,I_fess_bus_A,n_rpm` records. Positive branch current enters the complete FESS branch from the bus. Provide confirmed total inertia and complete `handoff/lab_metadata_template.json`; do not copy provisional simulation values into a hardware record.
 
@@ -81,8 +75,8 @@ python lab_analysis.py actual_measurement.csv --inertia YOUR_CONFIRMED_INERTIA -
 
 The inertia placeholder must be replaced with a measured or otherwise justified value in kg·m². The program will not overwrite an existing output directory. It reports round-trip efficiency only when the caller documents a complete, calibrated system boundary and cycle, other internal energy changes, matched terminal energy and low-current endpoints. It does not silently fill missing evidence. The `identify_coastdown` function additionally requires motor-current records and documented zero applied torque. Its tests are synthetic analytical fixtures only.
 
-## Remaining scope
+## Model scope and limitations
 
-The project brief includes a DC servo/flywheel experimental platform. Actual device and railway parameters, calibration, hardware runs and independent experiment-to-model comparison are still required. PMSM/FOC and PSIM also appear in the brief's tools list and need an advisor's scope decision. They are not implemented here.
+The implementation is a DC motor–flywheel simulation with provisional parameters and synthetic railway demand. It has no measured device or railway calibration, hardware validation, or independent experiment-to-model comparison. PMSM/FOC and PSIM are not implemented here.
 
-The 2850 rpm threshold blocks further active discharge; friction can still lower speed. The 20 A limit applies to the reference, not an absolute instantaneous-current clamp. The 100 Hz saved logs cannot establish 20 kHz current ripple or sub-millisecond response. Final thesis format, contributor details and institutional acceptance remain with the project team and advisor.
+The 2850 rpm threshold blocks further active discharge; friction can still lower speed. The 20 A limit applies to the reference, not an absolute instantaneous-current clamp. The 100 Hz saved logs cannot establish 20 kHz current ripple or sub-millisecond response.

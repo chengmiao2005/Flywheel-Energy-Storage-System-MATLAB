@@ -1,11 +1,10 @@
-# 城市轨道交通制动能量回收
-飞轮储能系统建模控制与仿真
+# 飞轮储能系统：模型、控制与仿真报告
 
 Modeling, Control and Simulation of a Flywheel Energy Storage System for Urban Rail Transit Braking Energy Recovery
 
-澳门科技大学  电子信息方向  FYP 2026 099
-程淼与项目组  指导教师 李晓东
-2026年9月21日  仿真研究稿
+适用对象：城市轨道交通制动能量回收的直流电机飞轮仿真系统。
+
+[项目说明](../README.md) · [技术问答](TECHNICAL_FAQ_CN.md) · [验证范围与证据](VALIDATION_SCOPE_CN.md)
 
 ### 摘要
 
@@ -15,7 +14,7 @@ Modeling, Control and Simulation of a Flywheel Energy Storage System for Urban R
 
 ### Abstract
 
-An integrated simulation connects synthetic railway demand, a DC link, a bidirectional converter and a DC motor–flywheel plant. Current PI control and recovery-credit supervision coordinate charging and discharging. Four paired experiments include a common 70 s restoration stage after a 20 s task. Source-energy reductions range from 1.46% to 9.50% for the selected cases. Saved native MATLAB and Simulink results agree across 9,001 samples and 48 common variables. The study provides reproducible simulation evidence. Measured parameter identification, hardware validation and the final institutional submission remain outstanding.
+An integrated simulation connects synthetic railway demand, a DC link, a bidirectional converter and a DC motor–flywheel plant. Current PI control and recovery-credit supervision coordinate charging and discharging. Four paired experiments include a common 70 s restoration stage after a 20 s task. Source-energy reductions range from 1.46% to 9.50% for the selected cases. Saved native MATLAB and Simulink results agree across 9,001 samples and 48 common variables. The study provides reproducible simulation evidence. The parameters have not been identified from a physical platform, and no hardware validation is reported.
 
 关键词  飞轮储能  再生制动  双向变流  直流电机  能量核算
 
@@ -25,15 +24,7 @@ An integrated simulation connects synthetic railway demand, a DC link, a bidirec
 
 已有研究将车载与地面储能协调控制转化为离线优化、规则提取和局部优化，并用线路数据及功率硬件在环实验评价效果。[2] 这说明控制策略的仿真表现与真实平台验证需要分别建立证据。本课题当前聚焦直流电机飞轮支路的能量闭合和可复现控制，不据此宣称新的全局最优算法。
 
-| 任务书目标 | 现有对应成果 | 尚需补充 |
-| --- | --- | --- |
-| 车辆与飞轮动力学 | 双车合成负载、DC电机及飞轮方程 | 列车与器件参数来源 |
-| 双向DC/DC设计 | PWM、死区、二极管及损耗模型 | 实物选型、接线及器件约束 |
-| 闭环能量协调 | 电流PI、回收信用和方向保护 | 真实测量与工况验证 |
-| 集成仿真与实验平台 | 原生MATLAB与Simulink运行记录 | DC伺服飞轮实物平台 |
-| 效率 电压 动态分析 | 能量比较、电压与恢复动态 | 实测效率、高频纹波及独立阶跃测试 |
-
-任务书正文提出DC伺服实验台，同时工具栏列出PMSM/FOC和PSIM。两处口径需由导师确定实施范围。目前项目证据仅覆盖直流等效模型，不能把PMSM/FOC或PSIM列作已完成成果。[1]
+当前实现覆盖合成双车负载、直流母线、双向变流器、直流等效电机飞轮和闭环能量调度。证据来自原生MATLAB与Simulink运行记录及离线复核。PMSM/FOC、PSIM器件仿真和实物实验不属于当前已验证范围。
 
 ### 本研究的问题
 
@@ -61,7 +52,7 @@ $$
 m\frac{dv}{dt}=F_{traction}-F_{brake}-F_{resistance}
 $$
 
-列车模型根据区间距离、限速、牵引和制动过程生成速度及功率，阻力采用速度的经验二次式。牵引、再生与辅助功率经效率和母线功率限制转换后，两列车按照时刻偏移叠加，先计入列车间直接能量交换，再将净负载作为储能系统输入。阻力系数当前为继承场景设定，不能在论文中写成已经实测辨识的系数。
+列车模型根据区间距离、限速、牵引和制动过程生成速度及功率，阻力采用速度的经验二次式。牵引、再生与辅助功率经效率和母线功率限制转换后，两列车按照时刻偏移叠加，先计入列车间直接能量交换，再将净负载作为储能系统输入。阻力系数当前为继承场景设定，不属于已经实测辨识的系数。
 
 | 项目 | 当前合成场景 |
 | --- | --- |
@@ -168,15 +159,15 @@ $$
 r=\frac{E_{base}-E_{dispatch}}{E_{base}}\times100\%
 $$
 
-比较前逐项检查终端转子、电感和电容储能，而不是只看三者相加后是否偶然抵消。四组原生结果的总终端储能差均小于6×10⁻⁷ J；新增复核同时检查各储能分量。任务阶段和恢复阶段的源能量减少单独报告。
+比较前逐项检查终端转子、电感和电容储能，而不是只看三者相加后是否偶然抵消。四组原生结果的总终端储能差均小于6×10⁻⁷ J；保存的复核同时检查各储能分量。任务阶段和恢复阶段的源能量减少单独报告。
 
 | 证据 | 当前记录 | 解释 |
 | --- | --- | --- |
 | 原生MATLAB | 11工况 322/322 | 来自已保存的用户运行文件 |
 | 原生Simulink | 综合偏差 67/67 | 一组90秒集成回归 |
 | 入口一致性 | 9001行 48字段 | 最大绝对差约3.83×10⁻⁹，各列原单位 |
-| 本次Python复核 | 11工况通过 | 逐项能量、文件哈希和终端比较 |
-| 本次C++参考重跑 | 56/56 | 执行次序和数值参考，不是新原生MATLAB运行 |
+| 保存的Python复核 | 11工况通过 | 逐项能量、文件哈希和终端比较 |
+| 保存的C++参考重跑 | 56/56 | 执行次序和数值参考，不是新原生MATLAB运行 |
 
 MATLAB与Simulink复用了同一物理核心，二者一致性支持接口实现正确，但不构成两个独立物理模型的交叉验证。日志间隔0.01秒，用于系统层轨迹分析。开关纹波、亚毫秒响应和真实噪声表现需要单独证据。
 
@@ -206,9 +197,9 @@ MATLAB与Simulink复用了同一物理核心，二者一致性支持接口实现
 | 相对57 V的采样RMS偏差 | 5.046 V | 3.997 V |
 | 任务制动电阻耗能 | 337.162 J | 0 J |
 
-峰值与RMS偏差下降说明当前场景下再生升压有所抑制；低谷改善很小，因此不能据此宣布全程母线稳压已经达标。本报告未假定学校或设备允许的电压范围。组员应依据最终器件和导师要求确定合格阈值，再计算超限持续时间。
+峰值与RMS偏差下降说明当前场景下再生升压有所抑制；低谷改善很小，因此不能据此宣布全程母线稳压已经达标。本报告未定义器件允许的电压范围，现有结果不构成设备稳压验收，也不足以判定超限持续时间是否合格。
 
-新增RMS指标只使用0≤t<20秒的均匀100 Hz日志，排除20秒切入恢复时的参考切换。图用于展示趋势，数值指标由全任务日志计算。该采样率不足以测量20 kHz开关纹波。
+RMS指标只使用0≤t<20秒的均匀100 Hz日志，排除20秒切入恢复时的参考切换。图用于展示趋势，数值指标由全任务日志计算。该采样率不足以测量20 kHz开关纹波。
 
 ## 10 恢复动态与电流跟踪
 
@@ -225,13 +216,13 @@ MATLAB与Simulink复用了同一物理核心，二者一致性支持接口实现
 
 电流RMSE比较任务阶段的周期平均电流与参考电流，使用100 Hz采样。该值受功率切换和采样时刻影响，可用于同一记录口径的对照，不能据此推断模拟电流纹波或200 Hz闭环带宽已经测得。
 
-## 11 实物验证与数据分析方法
+## 11 实验数据分析工具与适用条件
 
-任务书包含DC伺服与定制飞轮实验平台。当前尚无可用于报告的实测记录。本章给出可执行的数据流程，后续实验结果必须来自实际平台。电压、电流、转速和保护值应依据所选器件与实验室条件确定，仿真中的60 V、20 A、3000 rpm不能直接作为未知设备的许可设定。
+仓库提供实验数据分析工具，但当前没有实测记录。下表说明工具所需的数据与分析条件，不代表已完成对应实验。电压、电流、转速和保护值依赖所选器件及平台边界，仿真中的60 V、20 A、3000 rpm不能直接作为未知设备的许可设定。
 
-| 阶段 | 需保留的资料 | 分析目标 |
+| 分析内容 | 数据与适用条件 | 分析目标 |
 | --- | --- | --- |
-| 参数与边界确认 | 电机 变流器 飞轮与传感器资料，惯量来源，接线图 | 区分额定值、测量值和控制设定 |
+| 参数与系统边界 | 电机 变流器 飞轮与传感器资料，惯量来源，接线图 | 区分额定值、测量值和控制设定 |
 | 滑行试验 | 同步转速与电机电流，无外力与电隔离条件 | 辨识黏性和库仑摩擦 |
 | 充电与放电 | 母线电压、整个飞轮支路电流、转速和控制记录 | 核对功率方向与能量变化 |
 | 完整循环 | 匹配端点储能、校准和采样信息 | 有条件报告往返效率 |
@@ -245,24 +236,15 @@ $$
 
 实验CSV至少记录time_s、V_bus_V、I_fess_bus_A和n_rpm。程序按采样功率的线性插值，在过零处拆分正负能量。元数据须明确传感器校准、完整系统边界、完整循环、其他内部储能变化和终态容差，缺失时保留能量结果但不报告往返效率。
 
-新增程序已通过9项解析和异常输入测试，测试数据全部是人工构造的数值夹具，不是实验。真实数据的偏置、时间错位、采样缺口和不确定度仍需由实验记录评估；输出不会自动把净输入减转子储能的余项解释为全部损耗。
+分析程序已通过9项解析和异常输入测试，测试数据全部是人工构造的数值夹具，不是实验。真实数据的偏置、时间错位、采样缺口和不确定度仍需由实验记录评估；输出不会自动把净输入减转子储能的余项解释为全部损耗。
 
-## 12 结论与最终交付条件
+## 12 结论与适用边界
 
-本研究已形成可运行的直流电机飞轮整机仿真，接通合成列车净负载、母线、含非理想损耗的双向变流和闭环能量调度。保存的原生运行及本次独立复核支持能量账本闭合、两种执行入口一致，以及所选四组条件下共同终态的源侧耗能减少。
+本研究已形成可运行的直流电机飞轮整机仿真，接通合成列车净负载、母线、含非理想损耗的双向变流和闭环能量调度。保存的原生运行及离线独立复核支持能量账本闭合、两种执行入口一致，以及所选四组条件下共同终态的源侧耗能减少。
 
 结果的价值在于明确了控制作用与核算边界：再生升压得到抑制，初始储能的消耗通过恢复与信用约束得到控制，任务和恢复的收益能够拆开检查。当前证据不足以证明实车节能率、硬件可靠性、普遍最优控制或高频纹波性能。
 
-| 最终交付条件 | 现状 | 负责人 |
-| --- | --- | --- |
-| 导师确认模型与平台范围 | DC平台明确；PMSM/FOC及PSIM具体要求待定 | 全组 |
-| 参数与来源 | 48项已有仿真值，实物与线路来源待回填 | A与C |
-| 硬件及独立验证 | 数据流程与分析程序就绪，尚无实测记录 | C采集 B分析 D复核 |
-| 正式论文与答辩 | 本稿与讲解材料可继续编辑，需套学校模板并补实验 | B与D 全组演练 |
-
-### 后续改进顺序
-
-先确认任务范围和参数，再实施实验与辨识。用一组数据识别参数，保留另一组独立验证。若导师要求PMSM/FOC、PSIM或实际控制器实现，应建立对应模型与专门验证，不把直流等效结果直接改名使用。随后完善高频日志与受控阶跃工况，并根据设备指标评价响应和纹波。
+当前参数仍为仿真假设，尚无实测辨识及独立硬件对照。直流等效结果不能直接视为PMSM/FOC或PSIM结果；100 Hz轨迹也不覆盖20 kHz开关纹波及亚毫秒电流动态。仿真阈值用于描述控制行为，不等于实物额定值或安全验收值。
 
 ### 与既有研究目录的关系
 
@@ -270,15 +252,15 @@ $$
 
 ## 13 复现说明与参考资料
 
-整机入口：integrated-system/FYP_SimulinkSystem_v1.m。配套SLX模型为FYP_Flywheel_Integrated_20260921_182601.slx，打开时应保留同目录M文件。MATLAB多工况入口为accepted_core/FYP_EnergyDispatch_v1.m。当前已验收运行环境为MATLAB R2024a及Simulink 24.1。
+整机入口：integrated-system/FYP_SimulinkSystem_v1.m。配套SLX模型为FYP_Flywheel_Integrated_20260921_182601.slx，打开时应保留同目录M文件。MATLAB多工况入口为accepted_core/FYP_EnergyDispatch_v1.m。保存的原生运行使用MATLAB R2024a及Simulink 24.1。
 
 离线复核：在integrated-system目录安装requirements.txt后，运行python verify_saved_results.py。它核对57份冻结输入的哈希并重算11个工况，不需要MATLAB，也不重新生成这些仿真结果。大型CSV采用无损gzip；python prepare_data.py可恢复原文件供MATLAB查看器读取。
 
-独立参考：python validate_reference.py --run需要g++，会重新执行C++回调次序参考。实验分析测试使用python -m unittest discover -s tests -v。原生复现会生成新的时间戳结果目录，组员应连同环境信息保留该次ReviewBundle.zip。
+独立参考：python validate_reference.py --run需要g++，会重新执行C++回调次序参考。实验分析测试使用python -m unittest discover -s tests -v。原生复现会生成新的时间戳结果目录和ReviewBundle.zip，可连同软件环境信息记录每次运行的输入与输出。
 
 ### 参考资料
 
-[1] 李晓东. FYP 2026 099项目任务书. Modeling, Control and Simulation of a Flywheel Energy Storage System for Urban Rail Transit Braking Energy Recovery. 澳门科技大学，用户提供原件。
+[1] 李晓东. FYP 2026 099项目任务书. Modeling, Control and Simulation of a Flywheel Energy Storage System for Urban Rail Transit Braking Energy Recovery. 澳门科技大学，内部项目范围文件；非公开实验数据。
 
 [2] Zhong Z, Mi J, Zhao Y, Yang Z, Lin F. Coordinated Control of the Onboard and Wayside Energy Storage System of an Urban Rail Train Based on Rule Mining. Urban Rail Transit, 2024, 10:232–247. https://link.springer.com/article/10.1007/s40864-024-00223-7
 
@@ -288,6 +270,6 @@ $$
 
 [5] 项目组. FYP EnergyDispatch v1与SimulinkSystem v1原生运行文件，2026年9月21日。数据位置：results/matlab、results/simulink及accepted_native_simulink_audit.json。
 
-[6] 项目组. 本次复核与派生指标。analysis/verified_metrics.json、case_metrics.csv及verify_saved_results.py。所有结果表与图2至图4均可追溯到上述CSV。
+[6] 项目组. 已保存复核与派生指标。analysis/verified_metrics.json、case_metrics.csv及verify_saved_results.py。所有结果表与图2至图4均可追溯到上述CSV。
 
 项目地址 https://github.com/chengmiao2005/Flywheel-Energy-Storage-System-MATLAB
