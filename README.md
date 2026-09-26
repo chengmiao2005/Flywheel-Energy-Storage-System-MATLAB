@@ -12,6 +12,8 @@ The new integrated system connects synthetic railway demand, a DC link, a nonide
 
 The update includes the original runnable model, compressed native CSV evidence, verification scripts, laboratory-data analysis, a technical report and defense notes. Actual parameter identification and hardware validation remain outstanding. This integrated DC model does not implement PMSM/FOC or PSIM.
 
+**[Course plan and current next steps / 课程计划与当前待办](integrated-system/docs/CONTINUITY_BASELINE_CN.md)**
+
 ## Research study: schedule-informed rail storage dispatch
 
 **[Research overview and results](research/rail-dispatch/README.md)** · **[Working manuscript](research/rail-dispatch/MANUSCRIPT.md)** · **[中文说明](research/rail-dispatch/README_CN.md)**
