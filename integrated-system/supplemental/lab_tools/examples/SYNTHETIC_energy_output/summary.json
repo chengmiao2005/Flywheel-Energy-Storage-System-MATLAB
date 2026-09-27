@@ -1,0 +1,54 @@
+{
+  "analysis": "branch_energy",
+  "input_type": "synthetic_test_data",
+  "confirmed_total_inertia_kg_m2": 0.4,
+  "current_sign": "positive_bus_into_fess",
+  "quality": {
+    "samples": 5,
+    "duration_s": 4.0,
+    "dt_min_s": 1.0,
+    "dt_median_s": 1.0,
+    "dt_max_s": 1.0,
+    "max_gap_over_median": 1.0,
+    "warnings": [],
+    "limits": [
+      "Numeric checks cannot prove sensor calibration, channel synchronization, or current polarity.",
+      "No automatic filtering, offset correction, resampling, or clock alignment is applied."
+    ]
+  },
+  "initial_rpm": 675.2372371178295,
+  "final_rpm": 676.9232253531212,
+  "imported_J": 20.0,
+  "returned_J": 10.0,
+  "net_input_J": 10.0,
+  "rotor_change_J": 5.000000000000341,
+  "net_input_minus_rotor_change_J": 4.999999999999659,
+  "signed_integral_identity_error_J": 0.0,
+  "integration": "Sampled V*I, linearly interpolated in time and split at power zero crossings.",
+  "interpretation": "The balance also contains internal electrical stored-energy changes and measurement error. It is not automatically total loss. No round-trip efficiency is reported.",
+  "metadata": {
+    "input_type": "synthetic_test_data",
+    "test_id": "SYNTHETIC_energy_analytic",
+    "inertia_confirmed_independently": true,
+    "inertia_source": "合成解析测试的已知常数；不是实测惯量，也不是从仿真工程继承的硬件参数。",
+    "sensor_models_and_calibration": "无传感器；全部由解析公式生成的合成测试数据。",
+    "sampling_and_time_alignment": "同一解析时间轴；不含实测采集。",
+    "current_sign": "positive_bus_into_fess",
+    "measurement_boundary": "合成的整支路边界，输入正、回送负。",
+    "synthetic_total_inertia_kg_m2": 0.4,
+    "expected": {
+      "imported_J": 20,
+      "returned_J": 10,
+      "net_input_J": 10,
+      "rotor_change_J": 5,
+      "net_input_minus_rotor_change_J": 5
+    },
+    "generating_equation": "V=10; sampled P=[0,20,0,-10,0]; E_rotor=1000+integral(P)-1.25*t; J=0.4"
+  },
+  "data_notice": "SYNTHETIC TEST DATA: not an experiment or native MATLAB/Simulink result.",
+  "input_file": "SYNTHETIC_energy.csv",
+  "input_sha256": "32773993736a04effe7c5e4e4f40f68b47e8a72c43ceb51c4defdbe36df00dd8",
+  "metadata_sha256": "a9d45850aeedcc8ada7dbd67566f2263dc07fd029e6f58846b9b5a76e6edf6a7",
+  "numerical_core_sha256": "4b33e3547845316e005c7e8ac6d058cb39040096192218990f932d7eb11a3425",
+  "tool_sha256": "84ce9dd264d8e1af60a0cdd622c5e0c6cb32c84a1936449f509ebcbaf57a200c"
+}

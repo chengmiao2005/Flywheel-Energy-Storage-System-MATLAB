@@ -1,0 +1,25 @@
+{
+  "compressed_csv_materialized_in_temporary_directory": [
+    "accepted_native_combined_fixture.csv",
+    "handoff/lab_input_template.csv",
+    "accepted_core/train_replay.csv",
+    "scheduler_output/scheduler_trace.csv",
+    "results/simulink/simulink_trace.csv",
+    "results/matlab/summary.csv",
+    "results/matlab/09_no_regeneration.csv",
+    "results/matlab/08_pulse_dispatch.csv",
+    "results/matlab/comparisons.csv",
+    "results/matlab/05_combined_bypass.csv",
+    "results/matlab/legacy_comparison.csv",
+    "results/matlab/01_nominal_bypass.csv",
+    "results/matlab/02_nominal_dispatch.csv",
+    "results/matlab/07_pulse_bypass.csv",
+    "results/matlab/06_combined_dispatch.csv",
+    "results/matlab/03_friction_bypass.csv",
+    "results/matlab/10_high_source.csv",
+    "results/matlab/11_credit_depletion.csv",
+    "results/matlab/04_friction_dispatch.csv",
+    "handoff/train_input/train_replay.csv"
+  ],
+  "optional_mat_present": false
+}

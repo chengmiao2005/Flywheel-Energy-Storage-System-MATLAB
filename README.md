@@ -12,6 +12,8 @@ The integrated system connects synthetic railway demand, a DC link, a nonideal b
 
 The directory includes the runnable model, compressed native CSV evidence, verification scripts, a laboratory-data analysis tool, a technical report and a [technical FAQ](integrated-system/docs/TECHNICAL_FAQ_CN.md). Parameters are provisional and hardware performance has not been validated. This integrated DC model does not implement PMSM/FOC or PSIM.
 
+A supplemental fixed-controller study now includes **12 paired scenarios (24 C++ runs)** with matched terminal stores. **945 of 948 checks pass**; three strict auxiliary energy-identity diagnostics remain explicitly failed at their original tolerance. See the [study report](integrated-system/supplemental/analysis/study_report.md). The [laboratory CSV CLI](integrated-system/supplemental/lab_tools/README_CN.md) passes 18 synthetic tests and requires measurement-boundary and parameter evidence for real data.
+
 ## Research study: schedule-informed rail storage dispatch
 
 **[Research overview and results](research/rail-dispatch/README.md)** · **[Working manuscript](research/rail-dispatch/MANUSCRIPT.md)** · **[中文说明](research/rail-dispatch/README_CN.md)**

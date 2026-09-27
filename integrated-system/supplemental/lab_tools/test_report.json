@@ -1,0 +1,93 @@
+{
+  "scope": "Python offline laboratory tools only; all numerical fixtures are SYNTHETIC TEST DATA.",
+  "does_not_establish": [
+    "Any new native MATLAB/Simulink execution",
+    "Any real experimental validation",
+    "Correct hardware parameters or sensor calibration",
+    "Measured round-trip efficiency"
+  ],
+  "timestamp_utc": "2026-09-27T07:57:58.195067+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "tests": [
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_analytic_coastdown_recovers_known_friction",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_analytic_energy_budget",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_branch_current_is_not_motor_current_evidence",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_cli_coastdown_end_to_end",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_cli_energy_end_to_end",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_cli_has_no_default_inertia",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_current_sign_declaration_required",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_documented_open_circuit_speed_only_route",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_independently_confirmed_inertia_required",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_inertia_scaling_shows_identifiability_limit",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_invalid_timestamps_and_nonfinite_csv_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_irregular_timestamps_preserved",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_missing_isolation_evidence_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_narrow_speed_span_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_nonzero_motor_current_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_output_directory_cannot_overwrite_existing",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_power_zero_crossing_areas",
+      "status": "passed"
+    },
+    {
+      "test": "test_lab_cli.OfflineLabTests.test_voltage_and_speed_sign_rejected",
+      "status": "passed"
+    }
+  ]
+}

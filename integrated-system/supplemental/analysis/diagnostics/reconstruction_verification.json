@@ -1,0 +1,92 @@
+{
+  "scope": "Recovery check only, not an additional scientific scenario or a part of the 948 study checks",
+  "original_value_source": "Exact original reported values retained in this agent conversation before workspace reset",
+  "tolerance_percentage_points": 1e-10,
+  "all_reproduced": true,
+  "rows": [
+    {
+      "scenario": "nominal",
+      "original_percent": 2.381847033069574,
+      "rerun_percent": 2.381847033069574,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "R_high",
+      "original_percent": 2.314095116110063,
+      "rerun_percent": 2.314095116110063,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "L_low",
+      "original_percent": 2.381505259792129,
+      "rerun_percent": 2.381505259792129,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "J_high",
+      "original_percent": 2.394797452160575,
+      "rerun_percent": 2.394797452160575,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "b_high",
+      "original_percent": 1.6305697067140228,
+      "rerun_percent": 1.6305697067140228,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "Tc_high",
+      "original_percent": 2.2232431777141266,
+      "rerun_percent": 2.2232431777141266,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "Vs_low",
+      "original_percent": 2.106287413626157,
+      "rerun_percent": 2.106287413626157,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "Rs_high",
+      "original_percent": 2.4020180623255944,
+      "rerun_percent": 2.4020180623255944,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "C_low",
+      "original_percent": 2.544380610952449,
+      "rerun_percent": 2.544380610952449,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "friction_high",
+      "original_percent": 1.573665126763521,
+      "rerun_percent": 1.573665126763521,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "device_high",
+      "original_percent": 2.3721165551843066,
+      "rerun_percent": 2.3721165551843066,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    },
+    {
+      "scenario": "combined",
+      "original_percent": 1.4648118743336374,
+      "rerun_percent": 1.4648118743336374,
+      "difference_percentage_points": 0.0,
+      "matched": true
+    }
+  ]
+}

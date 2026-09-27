@@ -1,0 +1,1 @@
+{"accepted": true, "rows": 9001, "columns": 48, "max_difference": 3.8269831748039e-09, "energy_balance_J": 9.534138371236622e-06, "MAT_CSV_comparison": {"status": "SKIPPED", "reason": "Optional MAT omitted from this distribution; no MAT/CSV claim is made", "max_difference": null}}

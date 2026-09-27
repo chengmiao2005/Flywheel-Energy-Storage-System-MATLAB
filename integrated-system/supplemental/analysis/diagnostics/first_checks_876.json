@@ -1,0 +1,5264 @@
+{
+  "status": "RECONSTRUCTED, not the original lost file",
+  "reconstruction_note": "Rerun of original 876-check subset after workspace reset. Excludes 72 completeness and pointwise-pair checks added later.",
+  "passed": 873,
+  "total": 876,
+  "checks": [
+    {
+      "name": "nominal_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.recomputed_balance_J",
+      "value": 3.4217209758935496e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.max_balance_J",
+      "value": 3.4219574445160106e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.target_rpm_error",
+      "value": 8.458300726488233e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.final_second_store_drift_J",
+      "value": 6.012403730437654e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.ledger_split_error_J",
+      "value": 2.2737367544323206e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.device_split_error_J",
+      "value": 1.977154551191518e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.converter_identity_J",
+      "value": 2.221295858362282e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.motor_identity_J",
+      "value": 6.461655988054815e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.recomputed_balance_J",
+      "value": 3.6168839869787917e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.max_balance_J",
+      "value": 3.6172896216157824e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.target_rpm_error",
+      "value": 7.09405867382884e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.final_second_store_drift_J",
+      "value": 7.687368963615882e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.ledger_split_error_J",
+      "value": 1.283524397877045e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.device_split_error_J",
+      "value": 2.0043204873587683e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.converter_identity_J",
+      "value": 1.967819684978167e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.motor_identity_J",
+      "value": 7.10355129163176e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.credit_balance_J",
+      "value": 1.8696155734687636e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.spent_above_credited_J",
+      "value": 9.442922648043982e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "nominal.same_final_store_J",
+      "value": 2.6807012165619426e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "nominal.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "nominal.pair_energy_identity_J",
+      "value": 1.675249484689445e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "nominal.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.recomputed_balance_J",
+      "value": 3.4138156479457393e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.max_balance_J",
+      "value": 3.4140866773668677e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.target_rpm_error",
+      "value": 1.0049916454590857e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.final_second_store_drift_J",
+      "value": 6.606909863648979e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.ledger_split_error_J",
+      "value": 1.8189894035458565e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.device_split_error_J",
+      "value": 6.055133061622087e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.converter_identity_J",
+      "value": 4.9392667733627604e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.motor_identity_J",
+      "value": 9.754688634622255e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.recomputed_balance_J",
+      "value": 3.6275505408411846e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.max_balance_J",
+      "value": 3.6276705941418186e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.target_rpm_error",
+      "value": 8.049028110690415e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.final_second_store_drift_J",
+      "value": 8.594575007236927e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.ledger_split_error_J",
+      "value": 7.543832225564984e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.device_split_error_J",
+      "value": 8.27763635413703e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.converter_identity_J",
+      "value": 4.563835886983725e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.motor_identity_J",
+      "value": 1.0555817131496781e-07,
+      "limit": 1e-07,
+      "passed": false
+    },
+    {
+      "name": "R_high_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.credit_balance_J",
+      "value": 3.644728963081434e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.spent_above_credited_J",
+      "value": 9.408243030581742e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "R_high.same_final_store_J",
+      "value": 4.1980596776625134e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "R_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "R_high.pair_energy_identity_J",
+      "value": 1.5437906908388754e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "R_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.recomputed_balance_J",
+      "value": 3.4005297493422404e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.max_balance_J",
+      "value": 3.400695277377963e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.target_rpm_error",
+      "value": 1.1004885891452432e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.final_second_store_drift_J",
+      "value": 3.4370965096286453e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.ledger_split_error_J",
+      "value": 3.637978807091713e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.device_split_error_J",
+      "value": 2.4571933376904553e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.converter_identity_J",
+      "value": 9.46043314797862e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.motor_identity_J",
+      "value": 5.0358712977427444e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.recomputed_balance_J",
+      "value": 3.614275556174107e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.max_balance_J",
+      "value": 3.614319211919792e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.target_rpm_error",
+      "value": 8.003553375601768e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.final_second_store_drift_J",
+      "value": 3.541775512871936e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.ledger_split_error_J",
+      "value": 9.177369975077454e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.device_split_error_J",
+      "value": 2.63419330792658e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.converter_identity_J",
+      "value": 1.0140681183656852e-07,
+      "limit": 1e-07,
+      "passed": false
+    },
+    {
+      "name": "L_low_dispatch.motor_identity_J",
+      "value": 4.91267205804391e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.credit_balance_J",
+      "value": 1.6111556533360272e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.spent_above_credited_J",
+      "value": 9.44487019000854e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "L_low.same_final_store_J",
+      "value": 5.298977923118287e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "L_low.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "L_low.pair_energy_identity_J",
+      "value": 1.0246679604808406e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "L_low.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.recomputed_balance_J",
+      "value": 1.6235826478805393e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.max_balance_J",
+      "value": 1.6236554074566811e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.target_rpm_error",
+      "value": 3.356944944243878e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.target_mean_current_error_A",
+      "value": 2.2816744049691806e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.final_second_store_drift_J",
+      "value": 2.0494115204883203e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.ledger_split_error_J",
+      "value": 9.094947017729282e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.device_split_error_J",
+      "value": 3.217316413284266e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.converter_identity_J",
+      "value": 3.489958544378169e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.motor_identity_J",
+      "value": 1.7073898739283777e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.mean_current_target_A",
+      "value": 2.2816744049691806e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.recomputed_balance_J",
+      "value": 1.625750883249566e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.max_balance_J",
+      "value": 1.625790901016444e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.target_rpm_error",
+      "value": 2.76895661954768e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.target_mean_current_error_A",
+      "value": 2.2816744049691806e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.final_second_store_drift_J",
+      "value": 1.712321967772823e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.ledger_split_error_J",
+      "value": 5.432099214885966e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.device_split_error_J",
+      "value": 3.124962510980822e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.converter_identity_J",
+      "value": 3.524178282532375e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.motor_identity_J",
+      "value": 2.1984926878992894e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.mean_current_target_A",
+      "value": 2.2816744049691806e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.credit_balance_J",
+      "value": 2.19824158875781e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.spent_above_credited_J",
+      "value": 9.471122633520842e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "J_high.same_final_store_J",
+      "value": 1.2659896020394967e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "J_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "J_high.pair_energy_identity_J",
+      "value": 2.06334527241836e-09,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "J_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.recomputed_balance_J",
+      "value": 8.55907637742348e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.max_balance_J",
+      "value": 8.55907637742348e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.target_rpm_error",
+      "value": 2.984506863867864e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.target_mean_current_error_A",
+      "value": 1.1231268359779278e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.final_second_store_drift_J",
+      "value": 2.1500249545169937e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.ledger_split_error_J",
+      "value": 3.637978807091713e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.device_split_error_J",
+      "value": 4.1964243191472406e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.converter_identity_J",
+      "value": 1.649624437050079e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.motor_identity_J",
+      "value": 3.534423531625919e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.mean_current_target_A",
+      "value": 1.1231268359779278e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.recomputed_balance_J",
+      "value": 8.416725904680789e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.max_balance_J",
+      "value": 8.416729542659596e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.target_rpm_error",
+      "value": 1.7521415429655463e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.target_mean_current_error_A",
+      "value": 1.1231268359779278e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.final_second_store_drift_J",
+      "value": 2.145271750464417e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.ledger_split_error_J",
+      "value": 1.496403001510771e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.device_split_error_J",
+      "value": 4.544491449820498e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.converter_identity_J",
+      "value": 7.848541372368345e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.motor_identity_J",
+      "value": 2.9391031386438726e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.mean_current_target_A",
+      "value": 1.1231268359779278e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.credit_balance_J",
+      "value": 4.533617925517319e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.spent_above_credited_J",
+      "value": 9.386772240488318e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "b_high.same_final_store_J",
+      "value": 2.0796497857134e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "b_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "b_high.pair_energy_identity_J",
+      "value": 1.4234292056158893e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "b_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.recomputed_balance_J",
+      "value": 3.1469335226574913e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.max_balance_J",
+      "value": 3.1469717214349657e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.target_rpm_error",
+      "value": 1.482476363889873e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.target_mean_current_error_A",
+      "value": 5.801915392567025e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.final_second_store_drift_J",
+      "value": 1.3253401931478947e-09,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.ledger_split_error_J",
+      "value": 3.637978807091713e-12,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.device_split_error_J",
+      "value": 1.4305642226375426e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.converter_identity_J",
+      "value": 9.254523547497229e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.motor_identity_J",
+      "value": 4.6205419157452354e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.mean_current_target_A",
+      "value": 5.801915392567025e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.recomputed_balance_J",
+      "value": 3.5186913009965792e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.max_balance_J",
+      "value": 3.518684025038965e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.target_rpm_error",
+      "value": 1.2778400559909642e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.target_mean_current_error_A",
+      "value": 5.801915392567025e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.final_second_store_drift_J",
+      "value": 7.183010097833176e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.ledger_split_error_J",
+      "value": 7.991332040546695e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.device_split_error_J",
+      "value": 1.6427195159707253e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.converter_identity_J",
+      "value": 1.0789491966534115e-07,
+      "limit": 1e-07,
+      "passed": false
+    },
+    {
+      "name": "Tc_high_dispatch.motor_identity_J",
+      "value": 5.128064139992006e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.mean_current_target_A",
+      "value": 5.801915392567025e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.credit_balance_J",
+      "value": 2.948219446352596e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.spent_above_credited_J",
+      "value": 9.433918972225471e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Tc_high.same_final_store_J",
+      "value": 3.821573058004901e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Tc_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Tc_high.pair_energy_identity_J",
+      "value": 3.1967380309527726e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "Tc_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.recomputed_balance_J",
+      "value": 3.4262120607309043e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.max_balance_J",
+      "value": 3.4264849091414362e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.target_rpm_error",
+      "value": 8.594724931754172e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.final_second_store_drift_J",
+      "value": 5.265798108666786e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.ledger_split_error_J",
+      "value": 2.2737367544323206e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.device_split_error_J",
+      "value": 2.4704582823886767e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.converter_identity_J",
+      "value": 1.1293394663880463e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.motor_identity_J",
+      "value": 4.26253048413372e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.recomputed_balance_J",
+      "value": 3.6485471355263144e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.max_balance_J",
+      "value": 3.6488545447355136e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.target_rpm_error",
+      "value": 7.321432349272072e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.final_second_store_drift_J",
+      "value": 4.682159726598912e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.ledger_split_error_J",
+      "value": 9.242739906767383e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.device_split_error_J",
+      "value": 2.778128838087923e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.converter_identity_J",
+      "value": 1.1109790420960053e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.motor_identity_J",
+      "value": 5.6145282645303496e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.credit_balance_J",
+      "value": 1.5368151196071267e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.spent_above_credited_J",
+      "value": 1.1006602152026037e-05,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Vs_low.same_final_store_J",
+      "value": 2.6467050773248957e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Vs_low.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Vs_low.pair_energy_identity_J",
+      "value": 1.7203057423031964e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "Vs_low.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.recomputed_balance_J",
+      "value": 3.4258991945534945e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.max_balance_J",
+      "value": 3.4261702239746228e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.target_rpm_error",
+      "value": 1.000444171950221e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.final_second_store_drift_J",
+      "value": 6.215270076381784e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.ledger_split_error_J",
+      "value": 9.094947017729282e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.device_split_error_J",
+      "value": 6.812094222041765e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.converter_identity_J",
+      "value": 4.594335223373491e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.motor_identity_J",
+      "value": 6.21590736660238e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.recomputed_balance_J",
+      "value": 3.6281235225033015e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.max_balance_J",
+      "value": 3.6285400710767135e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.target_rpm_error",
+      "value": 8.230927051045e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.final_second_store_drift_J",
+      "value": 5.348112352976386e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.ledger_split_error_J",
+      "value": 5.482689857672085e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.device_split_error_J",
+      "value": 6.395732832231715e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.converter_identity_J",
+      "value": 4.881462700723205e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.motor_identity_J",
+      "value": 6.995448575963792e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.credit_balance_J",
+      "value": 2.5305979534095968e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.spent_above_credited_J",
+      "value": 1.0643881853299703e-05,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Rs_high.same_final_store_J",
+      "value": 5.371164624179414e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "Rs_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "Rs_high.pair_energy_identity_J",
+      "value": 1.4339695708631695e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "Rs_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.recomputed_balance_J",
+      "value": 3.4146396501455456e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.max_balance_J",
+      "value": 3.4148197300964966e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.target_rpm_error",
+      "value": 8.049028110690415e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.final_second_store_drift_J",
+      "value": 6.119298490148139e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.ledger_split_error_J",
+      "value": 9.094947017729282e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.device_split_error_J",
+      "value": 1.9192436528925327e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.converter_identity_J",
+      "value": 2.1061026700408547e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.motor_identity_J",
+      "value": 6.265762830803823e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.recomputed_balance_J",
+      "value": 3.6090932553634048e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.max_balance_J",
+      "value": 3.6094097595196217e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.target_rpm_error",
+      "value": 7.23048287909478e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.final_second_store_drift_J",
+      "value": 6.009523190186883e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.ledger_split_error_J",
+      "value": 1.6504486666235607e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.device_split_error_J",
+      "value": 1.989793219081548e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.converter_identity_J",
+      "value": 2.0221392560415552e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.motor_identity_J",
+      "value": 7.454648875970804e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.credit_balance_J",
+      "value": 1.9389823080473434e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.spent_above_credited_J",
+      "value": 1.1005086470965825e-05,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "C_low.same_final_store_J",
+      "value": 2.0217660878785182e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "C_low.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "C_low.pair_energy_identity_J",
+      "value": 1.6391770307766507e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "C_low.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.recomputed_balance_J",
+      "value": 8.807928679743782e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.max_balance_J",
+      "value": 8.807932317722589e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.target_rpm_error",
+      "value": 4.631147021427751e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.target_mean_current_error_A",
+      "value": 1.2493645229483263e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.final_second_store_drift_J",
+      "value": 2.373864688820504e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.ledger_split_error_J",
+      "value": 1.1368683772161603e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.device_split_error_J",
+      "value": 6.727012280549616e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.converter_identity_J",
+      "value": 1.7080537872971036e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.motor_identity_J",
+      "value": 1.5908861783486827e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.mean_current_target_A",
+      "value": 1.2493645229483263e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.recomputed_balance_J",
+      "value": 8.503800927428529e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.max_balance_J",
+      "value": 8.503804565407336e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.target_rpm_error",
+      "value": 3.2573552743997425e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.target_mean_current_error_A",
+      "value": 1.0219908475050943e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.final_second_store_drift_J",
+      "value": 2.285783509137218e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.ledger_split_error_J",
+      "value": 6.208722425071755e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.device_split_error_J",
+      "value": 6.16457773716661e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.converter_identity_J",
+      "value": 1.4020884009369183e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.motor_identity_J",
+      "value": 3.44526682738433e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.mean_current_target_A",
+      "value": 1.0219908475050943e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.credit_balance_J",
+      "value": 5.1022297498093394e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.spent_above_credited_J",
+      "value": 9.37781734070633e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "friction_high.same_final_store_J",
+      "value": 2.4772852658117017e-08,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "friction_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "friction_high.pair_energy_identity_J",
+      "value": 3.0413084273206437e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "friction_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.recomputed_balance_J",
+      "value": 3.2547923183301464e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.max_balance_J",
+      "value": 3.2549996831221506e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.target_rpm_error",
+      "value": 8.049028110690415e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.final_second_store_drift_J",
+      "value": 5.954670712071674e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.ledger_split_error_J",
+      "value": 4.547473508864641e-13,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.device_split_error_J",
+      "value": 7.612548369451133e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.converter_identity_J",
+      "value": 3.654037072919891e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.motor_identity_J",
+      "value": 6.404642005630734e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.recomputed_balance_J",
+      "value": 3.467368514975533e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.max_balance_J",
+      "value": 3.467519491096027e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.target_rpm_error",
+      "value": 6.139089236967266e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.target_mean_current_error_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.final_second_store_drift_J",
+      "value": 4.023541322339952e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.ledger_split_error_J",
+      "value": 1.9407764284551376e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.device_split_error_J",
+      "value": 8.523136640903317e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.converter_identity_J",
+      "value": 3.5435334666544804e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.motor_identity_J",
+      "value": 7.258318956981924e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.mean_current_target_A",
+      "value": 4.539535858327781e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.credit_balance_J",
+      "value": 1.6997958596220997e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.spent_above_credited_J",
+      "value": 9.55397578564152e-06,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "device_high.same_final_store_J",
+      "value": 4.596012459501253e-10,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "device_high.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "device_high.pair_energy_identity_J",
+      "value": 1.8476654251031732e-07,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "device_high.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.recomputed_balance_J",
+      "value": 9.525349014438689e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.max_balance_J",
+      "value": 9.525349014438689e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.target_rpm_error",
+      "value": 1.4279976312536746e-08,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.target_mean_current_error_A",
+      "value": 3.295727601937415e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.final_second_store_drift_J",
+      "value": 6.242935878049139e-07,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.ledger_split_error_J",
+      "value": 5.684341886080802e-14,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.device_split_error_J",
+      "value": 3.115206981263441e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.converter_identity_J",
+      "value": 4.596586222760379e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.motor_identity_J",
+      "value": 8.1403784824019e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.mean_current_target_A",
+      "value": 3.295727601937415e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.finite_trace",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.task_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.restore_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.recomputed_balance_J",
+      "value": 9.532399417366832e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.computed_stores_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.max_balance_J",
+      "value": 9.532399417366832e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.target_rpm_error",
+      "value": 4.4519765651784837e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.target_mean_current_error_A",
+      "value": 2.1588592247212546e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.final_second_store_drift_J",
+      "value": 3.424015204416264e-07,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.high_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.low_direction_error_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.ledger_split_error_J",
+      "value": 1.580815478519071e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.device_split_error_J",
+      "value": 1.8847390315102075e-10,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.reference_above_20_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.current_above_20_1_A",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.bus_above_70_V",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.source_reverse_J",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.converter_identity_J",
+      "value": 6.960021892155055e-09,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.motor_identity_J",
+      "value": 1.2494745793567574e-08,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.mean_current_target_A",
+      "value": 2.1588592247212546e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.controller_R_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.controller_b_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.controller_deadtime_nominal",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.controller_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.controller_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.speed_Kp",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.speed_Ki",
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.credit_balance_J",
+      "value": 1.546140993013978e-11,
+      "limit": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.spent_above_credited_J",
+      "value": 1.4345430695760778e-05,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.initial_discharge_command_A",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.recovery_credit_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.credited_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.spent_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.leaked_J_frozen_in_restore",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined.same_initial_store_J",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "combined.same_final_store_J",
+      "value": 3.1716752380006596e-07,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "combined.same_load_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "combined.pair_energy_identity_J",
+      "value": 7.0520562722720115e-09,
+      "limit": 0.0002,
+      "passed": true
+    },
+    {
+      "name": "combined.common_terminal_invalid",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_total_source_J",
+      "value": 3.2741809263825417e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_task_source_J",
+      "value": 6.821210263296962e-13,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_restore_source_J",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_total_losses_J",
+      "value": 2.1827872842550278e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_final_rpm",
+      "value": 4.547473508864641e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_bypass.native_anchor_final_V",
+      "value": 1.4210854715202004e-14,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_total_source_J",
+      "value": 1.57160684466362e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_task_source_J",
+      "value": 2.7284841053187847e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_restore_source_J",
+      "value": 1.5643308870494366e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_total_losses_J",
+      "value": 6.184563972055912e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_final_rpm",
+      "value": 9.094947017729282e-13,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "nominal_dispatch.native_anchor_final_V",
+      "value": 1.354294454358751e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_total_source_J",
+      "value": 6.184563972055912e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_task_source_J",
+      "value": 6.821210263296962e-13,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_restore_source_J",
+      "value": 0.0,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_total_losses_J",
+      "value": 4.729372449219227e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_final_rpm",
+      "value": 1.3642420526593924e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_bypass.native_anchor_final_V",
+      "value": 2.1316282072803006e-14,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_total_source_J",
+      "value": 8.847564458847046e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_task_source_J",
+      "value": 1.0686562745831907e-11,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_restore_source_J",
+      "value": 8.818460628390312e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_total_losses_J",
+      "value": 1.44427758641541e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_final_rpm",
+      "value": 7.275957614183426e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "friction_high_dispatch.native_anchor_final_V",
+      "value": 8.171241461241152e-13,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_total_source_J",
+      "value": 7.785274647176266e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_task_source_J",
+      "value": 4.774847184307873e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_restore_source_J",
+      "value": 8.36735125631094e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_total_losses_J",
+      "value": 3.637978807091713e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_final_rpm",
+      "value": 0.0,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_bypass.native_anchor_final_V",
+      "value": 5.684341886080801e-13,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_total_source_J",
+      "value": 1.4624674804508686e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_task_source_J",
+      "value": 5.002220859751105e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_restore_source_J",
+      "value": 1.4842953532934189e-09,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_total_losses_J",
+      "value": 1.3096723705530167e-10,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_final_rpm",
+      "value": 5.002220859751105e-12,
+      "limit": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "combined_dispatch.native_anchor_final_V",
+      "value": 4.050093593832571e-13,
+      "limit": 1e-05,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "study_type": "Supplemental C++ computation sharing the accepted model; not MATLAB execution, hardware validation or independent physical validation",
+  "reconstruction_note": "Reconstructed after execution-workspace reset. The study design and thresholds match the original completed study; this is a rerun, not an additional scientific scenario.",
+  "recorded_utc": "2026-09-27T07:58:31.126112+00:00",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "numpy_version": "2.3.5",
+  "matplotlib_version": "3.10.8",
+  "workers": 4,
+  "compile_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-I",
+    "/workspace/scratch/275d02686893/work/fyp_completion/engineering/accepted_core",
+    "/workspace/scratch/275d02686893/work/fyp_completion/analysis/sensitivity_driver.cpp",
+    "-o",
+    "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver"
+  ],
+  "runs_wall_seconds": 63.051115906999996,
+  "source_sha256": {
+    "../analysis/sensitivity_driver.cpp": "dda4ac829ceed60dec279e850fb6db083e02408ee9511eba5d53dca08a7ef396",
+    "accepted_core/reference_dispatch.cpp": "cccd899ace6e9b32a1a9f1f0399989f1f82a546f061e1cdb053619ef8b51b1ef",
+    "accepted_core/train_profile.hpp": "e6bb974cc273d4c4f2d45a7da70f9e755d0dc0e121944f434e03198badba866b"
+  },
+  "trace_format": "Lossless XZ-compressed CSV",
+  "runs": [
+    {
+      "case": "nominal_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "nominal_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.7739397339999528,
+      "stdout": "nominal_bypass source=18646.4 balance=3.42196e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/nominal_bypass.csv.xz",
+      "trace_sha256": "252eb59e23f580c368b8db773c3626af438517719fbfe7f2dd8edbcff609c515"
+    },
+    {
+      "case": "nominal_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "nominal_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.2381172940000056,
+      "stdout": "nominal_dispatch source=18202.2 balance=3.61729e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/nominal_dispatch.csv.xz",
+      "trace_sha256": "9f1588de96f006f28c291348eeaba6bf96ae302bfd1b344fece15720bf32363e"
+    },
+    {
+      "case": "R_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "R_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.5962724800000387,
+      "stdout": "R_high_bypass source=20281.5 balance=3.41409e-06 V=59.1419 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/R_high_bypass.csv.xz",
+      "trace_sha256": "2bfc665ebb0e845074508fc03687566ac640e10155f7b68de33e712d80e931b3"
+    },
+    {
+      "case": "R_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "R_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.3035727769999994,
+      "stdout": "R_high_dispatch source=19812.2 balance=3.62767e-06 V=59.1419 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/R_high_dispatch.csv.xz",
+      "trace_sha256": "6e80b86cc3f1df0c48475403310f24f185d26fc6fb8f47beb5adacd7fa5107c0"
+    },
+    {
+      "case": "L_low_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "L_low_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.7049454860000424,
+      "stdout": "L_low_bypass source=18646.2 balance=3.4007e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/L_low_bypass.csv.xz",
+      "trace_sha256": "4efe24ab73d28439939de8032a17e95a991822f9d6bff7c0cb44c3004d97377c"
+    },
+    {
+      "case": "L_low_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "L_low_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.2401018519999525,
+      "stdout": "L_low_dispatch source=18202.1 balance=3.61432e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/L_low_dispatch.csv.xz",
+      "trace_sha256": "4bb1c640838321242c5f82db1a280d910996181585bc2c205797b1913deb1dba"
+    },
+    {
+      "case": "J_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "J_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.844412368999997,
+      "stdout": "J_high_bypass source=18691.9 balance=1.62366e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/J_high_bypass.csv.xz",
+      "trace_sha256": "0dc56c5e9b1e0b9939947fa8274c94ae513c220e789784f8f4fa521f327b037f"
+    },
+    {
+      "case": "J_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "J_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.21108973500003,
+      "stdout": "J_high_dispatch source=18244.3 balance=1.62579e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/J_high_dispatch.csv.xz",
+      "trace_sha256": "d876ab1fe657ffd7b8c0a5a8d9f9511587ee5b35017df9d300fe5f353e226453"
+    },
+    {
+      "case": "b_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "b_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.010398217000045,
+      "stdout": "b_high_bypass source=28296.7 balance=8.55908e-06 V=58.7031 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/b_high_bypass.csv.xz",
+      "trace_sha256": "587d992ed0d40da493b09ff10e0fe6e9d87864fe58793e840f1a80de85419baf"
+    },
+    {
+      "case": "b_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "b_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.4323715830000197,
+      "stdout": "b_high_dispatch source=27835.3 balance=8.41673e-06 V=58.7031 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/b_high_dispatch.csv.xz",
+      "trace_sha256": "d1d4b65748c5f7f145d7888847f2f83f7e4bc4fb730f52559ba3bd974cb2deaf"
+    },
+    {
+      "case": "Tc_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Tc_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8569956680000246,
+      "stdout": "Tc_high_bypass source=20108.1 balance=3.14697e-06 V=59.1241 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Tc_high_bypass.csv.xz",
+      "trace_sha256": "8a7ae868d766a7d46a2a7de742884b16402a128663a33c4bc17286cf46b3c5c3"
+    },
+    {
+      "case": "Tc_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Tc_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.64416034300001,
+      "stdout": "Tc_high_dispatch source=19661.1 balance=3.51868e-06 V=59.1241 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Tc_high_dispatch.csv.xz",
+      "trace_sha256": "f66efa39eafc0d78ed0fb4d4a00800772199a47d5e5b26436dcc4d74799e308c"
+    },
+    {
+      "case": "Vs_low_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Vs_low_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.4404697819999797,
+      "stdout": "Vs_low_bypass source=18657.2 balance=3.42648e-06 V=56.1531 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Vs_low_bypass.csv.xz",
+      "trace_sha256": "5f3000953ac17a2a089874ac3f56adb41c12e1237a78de5941199ed96777c474"
+    },
+    {
+      "case": "Vs_low_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Vs_low_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.5923465740000324,
+      "stdout": "Vs_low_dispatch source=18264.2 balance=3.64885e-06 V=56.1531 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Vs_low_dispatch.csv.xz",
+      "trace_sha256": "ac9d8c43dced16502395ecd56c68c5ec1e6b8bdb9976110364b484122c80adb6"
+    },
+    {
+      "case": "Rs_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Rs_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.7649674010000354,
+      "stdout": "Rs_high_bypass source=18967.3 balance=3.42617e-06 V=58.7863 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Rs_high_bypass.csv.xz",
+      "trace_sha256": "5c9603e0484c9a3f92851f360c4a9185959add0266662d348522fb5481fe3fd4"
+    },
+    {
+      "case": "Rs_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "Rs_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.4992202700000234,
+      "stdout": "Rs_high_dispatch source=18511.7 balance=3.62854e-06 V=58.7863 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/Rs_high_dispatch.csv.xz",
+      "trace_sha256": "d100876b518481d4259976fea460a7745241831f220c995d1e6236b06428ba40"
+    },
+    {
+      "case": "C_low_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "C_low_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8652371549999884,
+      "stdout": "C_low_bypass source=18680.5 balance=3.41482e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/C_low_bypass.csv.xz",
+      "trace_sha256": "a580bb0ab7f27830a6d1b0a2a86b701937a3f62650d67eb321be0cd2ca5128bf"
+    },
+    {
+      "case": "C_low_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "C_low_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.250586569999996,
+      "stdout": "C_low_dispatch source=18205.2 balance=3.60941e-06 V=59.1965 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/C_low_dispatch.csv.xz",
+      "trace_sha256": "f0e9084b1862538a381d086d5f787e2d5dc0b25ab7ff7c54a54744e3fde2b4b3"
+    },
+    {
+      "case": "friction_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "friction_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8583392259999982,
+      "stdout": "friction_high_bypass source=29976.2 balance=8.80793e-06 V=58.616 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/friction_high_bypass.csv.xz",
+      "trace_sha256": "bbde6e69e7c77cfa2f6fed787e619cdb663ded9e2d9f2f82ecc151c42534f5f8"
+    },
+    {
+      "case": "friction_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "friction_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.4202119230000108,
+      "stdout": "friction_high_dispatch source=29504.5 balance=8.5038e-06 V=58.616 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/friction_high_dispatch.csv.xz",
+      "trace_sha256": "de2f318a8c95244182c6e17e7dafb40efc235698ec5365ca1c0d9fd2eec033d6"
+    },
+    {
+      "case": "device_high_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "device_high_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.9441172470000083,
+      "stdout": "device_high_bypass source=18746.1 balance=3.255e-06 V=59.1926 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/device_high_bypass.csv.xz",
+      "trace_sha256": "9f170065e6298dcc49508e24742391b64b00a142e870dfcdc06366ef7a4f3147"
+    },
+    {
+      "case": "device_high_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "device_high_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.276841594000018,
+      "stdout": "device_high_dispatch source=18301.4 balance=3.46752e-06 V=59.1926 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/device_high_dispatch.csv.xz",
+      "trace_sha256": "c7396a778bd1e1a06710f5c6722a0afecb0d951380b03285fa5c6bac22d9c2a6"
+    },
+    {
+      "case": "combined_bypass",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "combined_bypass"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.354076555000006,
+      "stdout": "combined_bypass source=34770.8 balance=9.52535e-06 V=54.561 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/combined_bypass.csv.xz",
+      "trace_sha256": "f590a1e90841da8dc7a08d4c6462c31233a06342c37e3dfc16a4c665941c5ffe"
+    },
+    {
+      "case": "combined_dispatch",
+      "command": [
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/build/sensitivity_driver",
+        "/workspace/scratch/275d02686893/work/fyp_completion/analysis/results",
+        "combined_dispatch"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.7081459150000455,
+      "stdout": "combined_dispatch source=34261.4 balance=9.5324e-06 V=54.561 rpm=3000",
+      "stderr": "",
+      "trace_file": "results/combined_dispatch.csv.xz",
+      "trace_sha256": "d709658381f0a69c588ddad215c3a4044ca4a1d445c96d7df552b12d9e43478b"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+In file included from /workspace/scratch/275d02686893/work/fyp_completion/analysis/sensitivity_driver.cpp:4:
+/workspace/scratch/275d02686893/work/fyp_completion/engineering/accepted_core/reference_dispatch.cpp: In function ‘int accepted_reference_original_main(int, char**)’:
+/workspace/scratch/275d02686893/work/fyp_completion/engineering/accepted_core/reference_dispatch.cpp:291:68: warning: control reaches end of non-void function [-Wreturn-type]
+  291 | }catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 1;}}
+      |                                                                    ^

@@ -1,0 +1,146 @@
+{
+  "method": "Extended-precision numpy.longdouble subtraction of stored double-precision ledgers.",
+  "longdouble_precision_digits": 18,
+  "interpretation": "Residuals persist under higher-precision subtraction; stored traces do not prove all upstream ledger disagreement is floating-point roundoff. Original 1e-7 J checks remain failed; no threshold changed.",
+  "reconstruction_note": "Reconstructed after execution-workspace reset. The study design and thresholds match the original completed study; this is a rerun, not an additional scientific scenario.",
+  "records": [
+    {
+      "case": "R_high_dispatch",
+      "identity": "motor",
+      "max_abs_residual_extended_precision_J": 1.0555817131496781e-07,
+      "max_at_s": 83.07000000000001,
+      "sum_abs_ledger_terms_at_max_J": 32827.340944820884,
+      "relative_to_sum_abs_terms": 3.2155565536788184e-12,
+      "samples": [
+        {
+          "t_s": 0,
+          "signed_residual_J": 0.0,
+          "sum_abs_ledger_terms_J": 0.0,
+          "integration_steps": 0
+        },
+        {
+          "t_s": 20,
+          "signed_residual_J": -4.1666451003391204e-12,
+          "sum_abs_ledger_terms_J": 605.7042773775115,
+          "integration_steps": 400000
+        },
+        {
+          "t_s": 40,
+          "signed_residual_J": -1.4905687795163658e-10,
+          "sum_abs_ledger_terms_J": 18419.469831838705,
+          "integration_steps": 800000
+        },
+        {
+          "t_s": 60,
+          "signed_residual_J": -2.920446107168573e-10,
+          "sum_abs_ledger_terms_J": 25101.250897147424,
+          "integration_steps": 1200000
+        },
+        {
+          "t_s": 80,
+          "signed_residual_J": 5.59891897289333e-08,
+          "sum_abs_ledger_terms_J": 31799.20470699323,
+          "integration_steps": 1600000
+        },
+        {
+          "t_s": 90,
+          "signed_residual_J": 8.49391681434497e-08,
+          "sum_abs_ledger_terms_J": 35148.182681113045,
+          "integration_steps": 1800000
+        }
+      ]
+    },
+    {
+      "case": "L_low_dispatch",
+      "identity": "converter",
+      "max_abs_residual_extended_precision_J": 1.0140681183656852e-07,
+      "max_at_s": 90.0,
+      "sum_abs_ledger_terms_at_max_J": 32595.331358761374,
+      "relative_to_sum_abs_terms": 3.111083937771081e-12,
+      "samples": [
+        {
+          "t_s": 0,
+          "signed_residual_J": 0.0,
+          "sum_abs_ledger_terms_J": 0.0,
+          "integration_steps": 0
+        },
+        {
+          "t_s": 20,
+          "signed_residual_J": -6.136424701708165e-12,
+          "sum_abs_ledger_terms_J": 568.9374240882626,
+          "integration_steps": 400000
+        },
+        {
+          "t_s": 40,
+          "signed_residual_J": -1.2865086773672374e-10,
+          "sum_abs_ledger_terms_J": 16754.877705107974,
+          "integration_steps": 800000
+        },
+        {
+          "t_s": 60,
+          "signed_residual_J": 1.126579718402354e-09,
+          "sum_abs_ledger_terms_J": 23082.265490976763,
+          "integration_steps": 1200000
+        },
+        {
+          "t_s": 80,
+          "signed_residual_J": 4.9422226311435224e-08,
+          "sum_abs_ledger_terms_J": 29424.308758758405,
+          "integration_steps": 1600000
+        },
+        {
+          "t_s": 90,
+          "signed_residual_J": 1.0140681183656852e-07,
+          "sum_abs_ledger_terms_J": 32595.331358761374,
+          "integration_steps": 1800000
+        }
+      ]
+    },
+    {
+      "case": "Tc_high_dispatch",
+      "identity": "converter",
+      "max_abs_residual_extended_precision_J": 1.0789491966534115e-07,
+      "max_at_s": 90.0,
+      "sum_abs_ledger_terms_at_max_J": 35382.00186927947,
+      "relative_to_sum_abs_terms": 3.049429482932147e-12,
+      "samples": [
+        {
+          "t_s": 0,
+          "signed_residual_J": 0.0,
+          "sum_abs_ledger_terms_J": 0.0,
+          "integration_steps": 0
+        },
+        {
+          "t_s": 20,
+          "signed_residual_J": -6.154188270102168e-12,
+          "sum_abs_ledger_terms_J": 568.0416103094684,
+          "integration_steps": 400000
+        },
+        {
+          "t_s": 40,
+          "signed_residual_J": 8.71978045324795e-11,
+          "sum_abs_ledger_terms_J": 18140.964646750508,
+          "integration_steps": 800000
+        },
+        {
+          "t_s": 60,
+          "signed_residual_J": -9.947598300641403e-13,
+          "sum_abs_ledger_terms_J": 25024.659279693857,
+          "integration_steps": 1200000
+        },
+        {
+          "t_s": 80,
+          "signed_residual_J": 3.826991701316729e-08,
+          "sum_abs_ledger_terms_J": 31929.55327770345,
+          "integration_steps": 1600000
+        },
+        {
+          "t_s": 90,
+          "signed_residual_J": -1.0789491966534115e-07,
+          "sum_abs_ledger_terms_J": 35382.00186927947,
+          "integration_steps": 1800000
+        }
+      ]
+    }
+  ]
+}

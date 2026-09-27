@@ -1,82 +1,97 @@
-# Integrated rail-load and flywheel simulation
+# 飞轮储能整机仿真
 
-This directory connects synthetic train demand, a DC link, a bidirectional converter, and a DC motor–flywheel plant. It extends the five motor-model stages in the repository root. The separate `research/rail-dispatch` study uses a different aggregate storage model and comparison protocol.
+Flywheel Energy Storage System — MATLAB / Simulink
 
-**[中文项目说明](docs/FILE_GUIDE_CN.md)** · **[Technical report in Chinese](docs/PROJECT_REPORT_CN.md)** · **[Technical FAQ](docs/TECHNICAL_FAQ_CN.md)** · **[Validation scope](docs/VALIDATION_SCOPE_CN.md)**
+本工程把合成列车负载、动态直流母线、双向变流支路、直流电机与飞轮、闭环控制接成一套仿真。核心是配套的 `.m` 与 `.slx` 文件；模型采用自定义 Level-2 MATLAB S-function 和 PWM 周期内事件映射。
 
-## Reproduced evidence
+**[技术报告](docs/PROJECT_REPORT_CN.md)** · **[项目讲解与答辩问答](docs/TECHNICAL_FAQ_CN.md)** · **[验证范围](docs/VALIDATION_SCOPE_CN.md)** · **[文件说明](docs/FILE_GUIDE_CN.md)**
 
-| Evidence | Result | Meaning |
-| --- | --- | --- |
-| Saved native MATLAB R2024a suite | 11 cases, 322/322 checks | Four paired cases plus three diagnostic cases |
-| Saved native Simulink 24.1 run | 67/67 checks | One combined-parameter 90 s case |
-| Complete native trace comparison | 9,001 rows, 48 shared columns | Maximum difference about 3.83e-9 in each column's original unit |
-| Python reanalysis on 21 September 2026 | All 11 cases passed | File integrity, individual energy stores, loss accounts and terminal comparisons |
-| Maximum reanalysed energy residual | 9.66e-6 J | Across all 11 saved cases |
-| C++ callback-order reference rerun | 56/56 checks | Scheduling and numerical reference, not a new native MATLAB execution |
-| New laboratory analysis tests | 9/9 passed | Analytical synthetic fixtures; no measured hardware data |
+## 先看哪几个文件
 
-The native source snapshots and the `.slx` model are preserved byte for byte. The Python reanalysis and C++ reference were executed while preparing this update. MATLAB/Simulink were not available in that preparation environment; native execution claims refer to the included earlier user-run records. Shared physical routines mean that agreement between MATLAB and Simulink is an implementation check, not independent physical validation.
+| 文件 | 用途 |
+| --- | --- |
+| `FYP_Flywheel_Integrated_20260921_182601.slx` | 查看 Simulink 模块、连接及已有模型 |
+| `FYP_SimulinkSystem_v1.m` | 飞轮、母线、电机、变流器、控制器的计算与仿真入口 |
+| `FYP_ViewResults_v1.m` | 直接读取已有结果并显示曲线 |
+| `results/matlab/`、`results/simulink/` | 原生结果、源码快照、配置和检查记录 |
 
-## Results and comparison boundary
+`.slx` 与主 `.m` 配套使用。查看模型或已有曲线时，无需重新执行完整仿真。
 
-| Case | Baseline source energy J | Dispatch source energy J | Reduction J | Reduction |
-| --- | ---: | ---: | ---: | ---: |
-| Nominal | 18646.37 | 18202.24 | 444.13 | 2.38% |
-| Friction +50% | 29976.19 | 29504.46 | 471.72 | 1.57% |
-| Combined parameter deviations | 34770.77 | 34261.44 | 509.33 | 1.46% |
-| Pulse demand with combined deviations | 35061.05 | 31731.59 | 3329.46 | 9.50% |
+## 在 MATLAB 中运行
 
-Each pair includes the same 20 s demand task and 70 s restoration. The baseline retains the same spinning flywheel, bypassed during the task. Initial states and demand match; final rotor, inductor and capacitor energies are checked individually. The values are scenario-specific source-energy differences, not measured rail savings or round-trip efficiency.
+已验证的原生环境为 MATLAB R2024a、Simulink 24.1。将本工程设为 MATLAB 当前文件夹：
 
-![Task and restoration energy contributions](analysis/figures/energy_savings.png)
+```matlab
+FYP_SimulinkSystem_v1('build') % 只构建新模型
+FYP_SimulinkSystem_v1          % 构建并运行 90 s 综合偏差工况
+FYP_ViewResults_v1             % 查看已保存结果
+```
 
-In the combined-deviation case, only 58.76 J of the 509.33 J total reduction occurs in the task; the remaining 450.57 J occurs during restoration. Task bus-voltage peak decreases from 68.709 V to 67.054 V, but the dispatch minimum remains about 54.367 V. The speed reaches and remains within 1% of 3000 rpm 17.50 s after restoration begins, versus 18.45 s for the bypass baseline. This is a sampled restoration measure, not current-loop step response.
+完整运行创建新的时间戳目录、轨迹、检查记录及 `ReviewBundle.zip`。既有一次原生运行耗时约二十多分钟，具体取决于电脑。11 工况的 MATLAB 入口为 `accepted_core/FYP_EnergyDispatch_v1.m`，进入该目录后运行。
 
-## Open or rerun the model
+完整包中的 CSV 已解压，并保留 MAT、FIG 等原生结果。公开 GitHub 版本可能使用无损压缩 CSV、省略冗余格式；若该版本包含 `prepare_data.py`，运行它可为 MATLAB 查看器恢复 CSV。
 
-Requires MATLAB R2024a and Simulink 24.1 for the environment already demonstrated.
+## 不运行 MATLAB 也能复核
 
-1. Keep this directory intact and use it as the MATLAB current folder.
-2. Open `FYP_Flywheel_Integrated_20260921_182601.slx`; its model workspace stores its configuration. Keep `FYP_SimulinkSystem_v1.m` next to it.
-3. To build a fresh model without simulation, run `FYP_SimulinkSystem_v1('build')`.
-4. To build and run the 90 s combined case, run `FYP_SimulinkSystem_v1`. Its earlier native run took about 22 minutes. It writes a separate timestamped directory and `ReviewBundle.zip`.
-5. For all 11 MATLAB cases, run `accepted_core/FYP_EnergyDispatch_v1.m` from its directory.
-
-Use a working copy for manual model edits. The original source creates new timestamped outputs. The simulation uses custom Level-2 MATLAB S-function PWM-period maps; it is not a Simscape circuit or a validated code-generation target.
-
-## Check saved results without MATLAB
-
-From this directory:
+在工程目录执行：
 
 ```bash
 python -m pip install -r requirements.txt
-python verify_saved_results.py
-python -m unittest discover -s tests -v
+python verification/run_verification.py
 ```
 
-`verify_saved_results.py` reads losslessly compressed CSV files and regenerates `analysis/verified_metrics.json` and `analysis/case_metrics.csv`. `SOURCE_MANIFEST.json` records both compressed and original hashes. Redundant `.mat` and `.fig` copies are omitted from this public directory; the original full package retains them. To restore CSV files for the unchanged MATLAB viewer, run `python prepare_data.py`, then run `FYP_ViewResults_v1` in MATLAB.
-
-For a new numerical scheduler run, with `g++` available:
+该入口在临时副本中调用既有核验，重新计算能量账本、终态比较、模型结构和检查记录，原始输入不变。每次生成 `verification/runs/时间戳/`，先看其中的 `verification_summary.json`。已安装 `g++` 时，可重新执行 90 s C++ 调度参考：
 
 ```bash
-python validate_reference.py --run
+python verification/run_verification.py --rerun-cpp
 ```
 
-The reference check's legacy output text says native Simulink is pending: that phrase describes the reference checker, which cannot execute Simulink. The subsequent native records in `results/simulink` establish the saved 67-check run. The new reanalysis explicitly distinguishes these evidence levels.
+[复核说明](verification/README_CN.md) · [本次完整包复核](verification/runs/recovered_full_20260927/verification_summary.json)
 
-## Laboratory-data analysis tool
+入口兼容压缩 CSV；解压只发生在临时目录。公开包若省略可选 MAT，摘要明确跳过 MAT/CSV 对比，其余核心核验仍执行，不生成替代 MAT 冒充证据。
 
-`lab_analysis.py` processes synchronized `time_s,V_bus_V,I_fess_bus_A,n_rpm` records. Positive branch current enters the complete FESS branch from the bus. Provide confirmed total inertia and complete `handoff/lab_metadata_template.json`; do not copy provisional simulation values into a hardware record.
+| 证据 | 结果 | 含义 |
+| --- | --- | --- |
+| 保存的原生 MATLAB | 11 工况，322/322 | 保存记录中的数值与限值重新核对 |
+| 保存的原生 Simulink | 1 个 90 s 工况，67/67 | 原生执行、模型结构及保存数据 |
+| 两入口轨迹比较 | 9001 行、48 个共同列 | 最大差异约 3.83×10⁻⁹，各列采用自身单位 |
+| Python 能量复核 | 11 工况通过 | 最大总能量残差约 9.66×10⁻⁶ J |
+| C++ 调度参考 | 56/56 | C++ 执行，不能称为新的 MATLAB/Simulink 运行 |
+| 比较与保护补充核对 | 213/213 | 成对参数、固定控制器和保护方向等 |
+| 原实验分析工具合成测试 | 9/9 | 解析数值夹具，不是硬件实验 |
+
+原生记录创建于2026-09-21。本轮环境重置后重新执行了离线核验，实际时间与环境见新的JSON；重置前丢失的临时日志没有被伪造重建。多个入口共享物理核心，一致性支持实现核对，不替代独立实物验证。
+
+## 结果怎样理解
+
+四组配对试验包括相同的20 s任务和70 s恢复，并分别核对终端转子、电感、电容储能。
+
+| 工况 | 旁路源能量 J | 调度源能量 J | 减少比例 |
+| --- | ---: | ---: | ---: |
+| 标称 | 18646.37 | 18202.24 | 2.38% |
+| 摩擦增加50% | 29976.19 | 29504.46 | 1.57% |
+| 综合偏差 | 34770.77 | 34261.44 | 1.46% |
+| 人工脉冲与综合偏差 | 35061.05 | 31731.59 | 9.50% |
+
+这些是给定场景下90 s的源侧能量差。综合偏差减少509.33 J，其中任务段58.76 J、恢复段450.57 J。旁路仍保留旋转飞轮及其摩擦；结果不是实车普遍节能率、往返效率或完全拆除飞轮后的比较。
+
+## 补充计算与实测分析
+
+- [参数敏感性计算](supplemental/analysis/run_study.py)：固定名义控制器，拆分参数偏差，执行成对 C++ 数值试验。结果须连同 `study_summary.json`、`checks.json` 与执行记录阅读，不计入原生 MATLAB 的322项检查。
+- [实测数据分析工具](supplemental/lab_tools/)：供实际数据接入、参数辨识和模型对比使用。示例及自测记录是合成数据，不能当成已经完成的实验。
 
 ```bash
-python lab_analysis.py actual_measurement.csv --inertia YOUR_CONFIRMED_INERTIA --metadata completed_metadata.json --output lab_output/run_01
+python supplemental/analysis/run_study.py --project-root . --workers 4
 ```
 
-The inertia placeholder must be replaced with a measured or otherwise justified value in kg·m². The program will not overwrite an existing output directory. It reports round-trip efficiency only when the caller documents a complete, calibrated system boundary and cycle, other internal energy changes, matched terminal energy and low-current endpoints. It does not silently fill missing evidence. The `identify_coastdown` function additionally requires motor-current records and documented zero applied torque. Its tests are synthetic analytical fixtures only.
+补充研究执行12组配对、24次C++仿真，共同终态均通过；总体检查为 **945/948**。3项严格子账本恒等式略超原1e-7 J限值，失败记录与诊断保留，脚本完成输出后返回非零状态。不能写成全部验收通过；详细解释见研究报告与 `checks.json`。
 
-## Model scope and limitations
+## 验证与版本边界
 
-The implementation is a DC motor–flywheel simulation with provisional parameters and synthetic railway demand. It has no measured device or railway calibration, hardware validation, or independent experiment-to-model comparison. PMSM/FOC and PSIM are not implemented here.
+物理参数暂定，列车输入为合成轨迹。20 A是参考电流限幅；2850 rpm是禁止继续主动放电的方向阈值，摩擦仍可使转速下降。20 kHz是计算及电流控制频率，100 Hz是常规日志采样率；这些日志不能证明完整开关纹波或亚毫秒阶跃性能。
 
-The 2850 rpm threshold blocks further active discharge; friction can still lower speed. The 20 A limit applies to the reference, not an absolute instantaneous-current clamp. The 100 Hz saved logs cannot establish 20 kHz current ripple or sub-millisecond response.
+原始 `scheduler_output/validation.json` 中 `PENDING` 是参考工具保留的历史文字，不否定 `results/simulink/` 中已经存在的67/67原生运行。新复核输出区分既有原生证据和本次C++执行。
+
+`release_manifest.json` 是历史发布快照，可能不覆盖新增文件或更新后的说明。`SOURCE_MANIFEST.json` 校验保留的核心验收输入；每次复核另存 `input_sha256.json`。历史清单不能代替最终交付包的完整文件清单。
+
+当前没有实测硬件验证、真实线路验证、PMSM/FOC或PSIM实现，也未验证嵌入式代码生成。详细范围见[验证范围](docs/VALIDATION_SCOPE_CN.md)。

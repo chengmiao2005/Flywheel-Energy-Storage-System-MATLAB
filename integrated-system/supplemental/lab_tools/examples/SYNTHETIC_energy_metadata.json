@@ -1,0 +1,19 @@
+{
+  "input_type": "synthetic_test_data",
+  "test_id": "SYNTHETIC_energy_analytic",
+  "inertia_confirmed_independently": true,
+  "inertia_source": "合成解析测试的已知常数；不是实测惯量，也不是从仿真工程继承的硬件参数。",
+  "sensor_models_and_calibration": "无传感器；全部由解析公式生成的合成测试数据。",
+  "sampling_and_time_alignment": "同一解析时间轴；不含实测采集。",
+  "current_sign": "positive_bus_into_fess",
+  "measurement_boundary": "合成的整支路边界，输入正、回送负。",
+  "synthetic_total_inertia_kg_m2": 0.4,
+  "expected": {
+    "imported_J": 20,
+    "returned_J": 10,
+    "net_input_J": 10,
+    "rotor_change_J": 5,
+    "net_input_minus_rotor_change_J": 5
+  },
+  "generating_equation": "V=10; sampled P=[0,20,0,-10,0]; E_rotor=1000+integral(P)-1.25*t; J=0.4"
+}

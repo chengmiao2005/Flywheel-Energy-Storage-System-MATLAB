@@ -1,0 +1,1 @@
+{"accepted": true, "rows": 9001, "columns": 48, "max_difference": 3.8269831748039e-09, "energy_balance_J": 9.534138371236622e-06, "MAT_CSV_comparison": {"status": "PASS", "reason": "Saved MAT and CSV compared directly", "max_difference": 5.093170329928398e-11}}

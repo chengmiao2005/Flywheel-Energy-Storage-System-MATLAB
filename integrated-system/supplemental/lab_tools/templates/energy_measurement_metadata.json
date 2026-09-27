@@ -1,0 +1,10 @@
+{
+  "input_type": "real_measurement",
+  "test_id": "",
+  "inertia_confirmed_independently": false,
+  "inertia_source": "",
+  "sensor_models_and_calibration": "",
+  "sampling_and_time_alignment": "",
+  "current_sign": "positive_bus_into_fess",
+  "measurement_boundary": ""
+}

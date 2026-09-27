@@ -1,0 +1,24 @@
+{
+  "input_type": "synthetic_test_data",
+  "test_id": "SYNTHETIC_coastdown_analytic",
+  "inertia_confirmed_independently": true,
+  "inertia_source": "合成解析测试的已知常数；不是实测惯量，也不是从仿真工程继承的硬件参数。",
+  "sensor_models_and_calibration": "无传感器；全部由解析公式生成的合成测试数据。",
+  "sampling_and_time_alignment": "同一解析时间轴；不含实测采集。",
+  "synthetic_total_inertia_kg_m2": 0.5,
+  "expected": {
+    "b_Nm_s_rad": 0.006,
+    "Tc_Nm": 0.04
+  },
+  "generating_equation": "omega=(300+Tc/b)*exp(-b*t/J)-Tc/b; J=0.5,b=0.006,Tc=0.04",
+  "coastdown_conditions": {
+    "positive_rotation_only": true,
+    "no_external_torque": true,
+    "motor_electrically_isolated": true,
+    "isolation_evidence": "合成测试的解析设定，非真实实验确认。",
+    "external_torque_evidence": "合成测试设定无外加转矩。",
+    "zero_torque_evidence_type": "measured_motor_current",
+    "motor_current_sensor_and_zero_check": "仅为软件入口测试生成的全零电机电流；无实测传感器。",
+    "motor_current_tolerance_A": 0.001
+  }
+}

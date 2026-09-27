@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-27T07:57:23.194991+00:00",
+  "scope": "Saved native evidence reanalysis, static model audit, optional new C++ reference; no new MATLAB/Simulink execution",
+  "recovery_note": "This is a newly executed verification after environment reset. Missing pre-reset transient logs are not reconstructed or claimed as retained.",
+  "environment": {
+    "utc": "2026-09-27T07:57:06.528092+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    "executables": {
+      "matlab": null,
+      "octave": null,
+      "g++": "/usr/bin/g++"
+    },
+    "new_native_matlab_execution": false,
+    "new_native_simulink_execution": false
+  },
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_saved_results.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 4.788,
+      "log": "01_saved_results.log"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verification/audit_native_results_compatible.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 8.579,
+      "log": "02_native_evidence.log"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "validate_reference.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.046,
+      "log": "03_scheduler.log"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.684,
+      "log": "04_lab_analysis_synthetic_tests.log"
+    }
+  ],
+  "input_files_checked": 68,
+  "original_input_bytes_unchanged": true,
+  "saved_native_matlab_checks": 322,
+  "saved_native_simulink_checks": 67,
+  "saved_native_matlab_cases": 11,
+  "scheduler_checks": 56,
+  "new_cpp_execution": false,
+  "synthetic_lab_analysis_tests": 9,
+  "extended_checks": {
+    "passed": 213,
+    "count": 213
+  },
+  "saved_native_records": {
+    "matlab": {
+      "created": "2026-09-21 17:54:38",
+      "checks": 322,
+      "MATLABVersion": "24.1.0.2537033 (R2024a)"
+    },
+    "simulink": {
+      "created": "2026-09-21 18:26:01",
+      "checks": 67,
+      "MATLABVersion": "24.1.0.2537033 (R2024a)"
+    }
+  },
+  "protection_scope": {
+    "current_reference_limit_A": 20,
+    "largest_native_all_cycle_peak_current_A": 20.0485967652138,
+    "minimum_native_all_cycle_speed_rpm": 2801.32154420873,
+    "lower_active_discharge_threshold_rpm": 2850,
+    "note": "The speed threshold blocks active discharge; friction may lower speed. A reference limit is not an instantaneous current clamp. Saved 100 Hz traces do not resolve 20 kHz ripple."
+  },
+  "maximum_all_case_energy_residual_J": 9.656083420850337e-06,
+  "max_native_common_column_difference": 3.8269831748039e-09,
+  "mat_csv_comparison": {
+    "status": "SKIPPED",
+    "reason": "Optional MAT omitted from this distribution; no MAT/CSV claim is made",
+    "max_difference": null
+  },
+  "compressed_csv_materialized_count": 20,
+  "hardware_validated": false,
+  "real_railway_load_validated": false,
+  "shared_physical_core_limits_independence": true
+}

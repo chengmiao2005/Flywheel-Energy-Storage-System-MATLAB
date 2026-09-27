@@ -1,0 +1,6 @@
+{
+  "execution": "Independent C++ scheduler emulation plus static wiring analysis; native Simulink execution PENDING",
+  "passed": 56,
+  "count": 56,
+  "all_passed": true
+}

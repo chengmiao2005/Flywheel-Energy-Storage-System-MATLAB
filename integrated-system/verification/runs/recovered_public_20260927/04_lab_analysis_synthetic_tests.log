@@ -1,0 +1,14 @@
+test_coastdown_analytical_recovery (test_lab_analysis.LabAnalysisTests.test_coastdown_analytical_recovery) ... ok
+test_coastdown_requires_current_evidence (test_lab_analysis.LabAnalysisTests.test_coastdown_requires_current_evidence) ... ok
+test_crossing_triangles (test_lab_analysis.LabAnalysisTests.test_crossing_triangles) ... ok
+test_duplicate_time_rejected (test_lab_analysis.LabAnalysisTests.test_duplicate_time_rejected) ... ok
+test_efficiency_gate_and_energy (test_lab_analysis.LabAnalysisTests.test_efficiency_gate_and_energy) ... ok
+test_irregular_intervals (test_lab_analysis.LabAnalysisTests.test_irregular_intervals) ... ok
+test_nan_rejected (test_lab_analysis.LabAnalysisTests.test_nan_rejected) ... ok
+test_negative_direction (test_lab_analysis.LabAnalysisTests.test_negative_direction) ... ok
+test_unmatched_state_withholds_efficiency (test_lab_analysis.LabAnalysisTests.test_unmatched_state_withholds_efficiency) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

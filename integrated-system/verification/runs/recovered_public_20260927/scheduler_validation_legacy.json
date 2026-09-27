@@ -1,0 +1,457 @@
+{
+  "execution": "Independent C++ scheduler emulation plus static wiring analysis; native Simulink execution PENDING",
+  "passed": 56,
+  "count": 56,
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "complete_log",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "full_horizon_s",
+      "value": 0.0,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.t_s",
+      "value": 1.4210854715202004e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.i_A",
+      "value": 4.95022689506186e-10,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.omega_rad_s",
+      "value": 2.3874235921539366e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Vdc_V",
+      "value": 3.4788172342814505e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wsource_J",
+      "value": 3.0740920919924974e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wline_J",
+      "value": 3.406057658139616e-10,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wload_J",
+      "value": 5.002220859751105e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wchopper_J",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wconverter_J",
+      "value": 5.871925168321468e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wcopper_J",
+      "value": 1.6771082300692797e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wviscous_J",
+      "value": 5.4569682106375694e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wcoulomb_J",
+      "value": 5.4569682106375694e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wfess_J",
+      "value": 2.9431248549371958e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wcharge_J",
+      "value": 2.950400812551379e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wreturn_J",
+      "value": 2.5579538487363607e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wtraction_J",
+      "value": 5.002220859751105e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wregen_J",
+      "value": 5.115907697472721e-13,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Qcurrent_As",
+      "value": 6.673417374258861e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wchannel_J",
+      "value": 4.843059286940843e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wdiode_J",
+      "value": 4.575895218295045e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wtransition_J",
+      "value": 3.801403636316536e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Woss_J",
+      "value": 1.6209256159527285e-14,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wgate_J",
+      "value": 4.884981308350689e-15,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wterminal_J",
+      "value": 2.979504643008113e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Wem_J",
+      "value": 1.1586962500587106e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Pload_W",
+      "value": 4.973799150320701e-13,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.iref_A",
+      "value": 1.1425171919654531e-10,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Preq_W",
+      "value": 3.83477072318783e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Ptarget_W",
+      "value": 3.83477072318783e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.high_block",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.low_block",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.gate_blocked",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.duty",
+      "value": 1.060771026573093e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.integrator_V",
+      "value": 1.1572125480086015e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.cycle_mean_i_A",
+      "value": 2.273786492423824e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.rpm",
+      "value": 2.2282620193436742e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Erot_J",
+      "value": 4.147295840084553e-10,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Emag_J",
+      "value": 7.571865356936769e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.Ecap_J",
+      "value": 1.5161560895649018e-10,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.residual_J",
+      "value": 1.8299033399637435e-09,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.restore_active",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.connected",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.speed_integrator_A",
+      "value": 1.0185630117121036e-11,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.recovery_credit_J",
+      "value": 4.305888978706207e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.credited_J",
+      "value": 1.1368683772161603e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.spent_J",
+      "value": 1.7479351299698465e-12,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.leaked_J",
+      "value": 9.592326932761353e-14,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "accepted_native.initial_bus_V",
+      "value": 0.0,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "independent_energy_balance_J",
+      "value": 9.532399417366832e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "pure_repeated_outputs",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "all_cycle_peak_current_excess_A",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    },
+    {
+      "name": "all_cycle_balance_J",
+      "value": 9.532399417366832e-06,
+      "limit": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "all_cycle_midpoint_defect",
+      "value": 4.973799150320701e-13,
+      "limit": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "static_port_wiring",
+      "value": 0.0,
+      "limit": 0.0,
+      "passed": true
+    }
+  ],
+  "ports": {
+    "load": [
+      [],
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "controller": [
+      [
+        5,
+        1
+      ],
+      [
+        2,
+        14
+      ]
+    ],
+    "driver": [
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "plant": [
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        29
+      ]
+    ],
+    "observer": [
+      [
+        29,
+        14,
+        1,
+        2,
+        2
+      ],
+      [
+        51,
+        1,
+        1,
+        2
+      ]
+    ]
+  },
+  "connections": [
+    [
+      "Train and brake load/1",
+      "Energy and current control/2"
+    ],
+    [
+      "Energy and current control/1",
+      "Gate driver/1"
+    ],
+    [
+      "Gate driver/1",
+      "DC link and flywheel/1"
+    ],
+    [
+      "Train and brake load/2",
+      "DC link and flywheel/2"
+    ],
+    [
+      "DC link and flywheel/1",
+      "Energy and current control/1"
+    ],
+    [
+      "DC link and flywheel/2",
+      "Measurements/1"
+    ],
+    [
+      "Energy and current control/2",
+      "Measurements/2"
+    ],
+    [
+      "Train and brake load/1",
+      "Measurements/3"
+    ],
+    [
+      "Train and brake load/3",
+      "Measurements/4"
+    ],
+    [
+      "Gate driver/1",
+      "Measurements/5"
+    ],
+    [
+      "Measurements/1",
+      "Validation trace/1"
+    ],
+    [
+      "Measurements/2",
+      "Speed rpm/1"
+    ],
+    [
+      "Measurements/3",
+      "Bus voltage V/1"
+    ],
+    [
+      "Measurements/4",
+      "Current reference and mean/1"
+    ]
+  ],
+  "physical_state_breaks_algebraic_loop": true,
+  "native_simulink_verified": false
+}

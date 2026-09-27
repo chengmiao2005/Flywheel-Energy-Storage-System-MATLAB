@@ -1,0 +1,66 @@
+{
+  "analysis": "coastdown_friction",
+  "input_type": "synthetic_test_data",
+  "confirmed_total_inertia_kg_m2": 0.5,
+  "quality": {
+    "samples": 1001,
+    "duration_s": 100.0,
+    "dt_min_s": 0.09999999999999432,
+    "dt_median_s": 0.10000000000000142,
+    "dt_max_s": 0.10000000000000853,
+    "max_gap_over_median": 1.000000000000071,
+    "warnings": [],
+    "limits": [
+      "Numeric checks cannot prove sensor calibration, channel synchronization, or current polarity.",
+      "No automatic filtering, offset correction, resampling, or clock alignment is applied."
+    ]
+  },
+  "zero_torque_evidence_type": "measured_motor_current",
+  "zero_torque_evidence_interpretation": "Synthetic current-channel fixture, not a measurement; exercises the measured_motor_current evidence route.",
+  "fit": {
+    "b_Nm_s_rad": 0.005999999280000092,
+    "Tc_Nm": 0.039999995200002435,
+    "normalized_design_condition": 18.29488253037801,
+    "integral_residual_rmse_Nm_s": 3.0186754838455107e-14,
+    "scope": "Positive-speed viscous+Coulomb fit conditional on supplied inertia. No statistical confidence interval. Validate on a separate coast-down."
+  },
+  "speed_fit_rmse_rpm": 0.00010520125282677977,
+  "model": "J*domega/dt = -b*omega - Tc, positive speed only; fixed independently supplied J.",
+  "identifiability": "A single coast-down identifies b/J and Tc/J, not J, b, and Tc independently. Reported b and Tc depend on supplied J.",
+  "limitations": [
+    "Conditions are user-supplied evidence and cannot be verified by this script.",
+    "A small fit residual is not independent validation or a confidence interval.",
+    "Use a separate coast-down for validation; temperature, bearing state, and drag can change fitted values.",
+    "A nonzero current tolerance bounds rather than proves zero electromagnetic torque."
+  ],
+  "metadata": {
+    "input_type": "synthetic_test_data",
+    "test_id": "SYNTHETIC_coastdown_analytic",
+    "inertia_confirmed_independently": true,
+    "inertia_source": "合成解析测试的已知常数；不是实测惯量，也不是从仿真工程继承的硬件参数。",
+    "sensor_models_and_calibration": "无传感器；全部由解析公式生成的合成测试数据。",
+    "sampling_and_time_alignment": "同一解析时间轴；不含实测采集。",
+    "synthetic_total_inertia_kg_m2": 0.5,
+    "expected": {
+      "b_Nm_s_rad": 0.006,
+      "Tc_Nm": 0.04
+    },
+    "generating_equation": "omega=(300+Tc/b)*exp(-b*t/J)-Tc/b; J=0.5,b=0.006,Tc=0.04",
+    "coastdown_conditions": {
+      "positive_rotation_only": true,
+      "no_external_torque": true,
+      "motor_electrically_isolated": true,
+      "isolation_evidence": "合成测试的解析设定，非真实实验确认。",
+      "external_torque_evidence": "合成测试设定无外加转矩。",
+      "zero_torque_evidence_type": "measured_motor_current",
+      "motor_current_sensor_and_zero_check": "仅为软件入口测试生成的全零电机电流；无实测传感器。",
+      "motor_current_tolerance_A": 0.001
+    }
+  },
+  "data_notice": "SYNTHETIC TEST DATA: not an experiment or native MATLAB/Simulink result.",
+  "input_file": "SYNTHETIC_coastdown.csv",
+  "input_sha256": "4f1db1399daa55bf792338a48058586c1690bfbaf6b1791cba28a4756743491f",
+  "metadata_sha256": "9e1e478486f1f0fb501a5fbf1edef34f06429c4f64c04a8f220df95160164909",
+  "numerical_core_sha256": "4b33e3547845316e005c7e8ac6d058cb39040096192218990f932d7eb11a3425",
+  "tool_sha256": "84ce9dd264d8e1af60a0cdd622c5e0c6cb32c84a1936449f509ebcbaf57a200c"
+}

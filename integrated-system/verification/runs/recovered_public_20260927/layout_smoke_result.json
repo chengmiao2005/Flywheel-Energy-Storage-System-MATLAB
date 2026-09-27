@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "Simulated compressed-CSV/no-MAT public layout; not downloaded from GitHub",
+  "mat_not_created_or_supplied": true,
+  "mat_csv_comparison": {
+    "status": "SKIPPED",
+    "reason": "Optional MAT omitted from this distribution; no MAT/CSV claim is made",
+    "max_difference": null
+  },
+  "compressed_csv_materialized_count": 20,
+  "all_other_native_audit_checks_executed": true,
+  "new_native_matlab_execution": false,
+  "new_native_simulink_execution": false
+}

@@ -1,0 +1,20 @@
+{
+  "input_type": "real_measurement",
+  "test_id": "",
+  "inertia_confirmed_independently": false,
+  "inertia_source": "",
+  "sensor_models_and_calibration": "",
+  "sampling_and_time_alignment": "",
+  "coastdown_conditions": {
+    "positive_rotation_only": false,
+    "no_external_torque": false,
+    "motor_electrically_isolated": false,
+    "isolation_evidence": "",
+    "external_torque_evidence": "",
+    "zero_torque_evidence_type": "measured_motor_current",
+    "motor_current_sensor_and_zero_check": "",
+    "motor_current_tolerance_A": null,
+    "open_circuit_no_closed_current_path": false,
+    "open_circuit_evidence": ""
+  }
+}
